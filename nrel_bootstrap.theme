@@ -41,6 +41,7 @@ function nrel_bootstrap_page_attachments_alter(array &$page) {
  */
 function nrel_bootstrap_preprocess_page(array &$variables) {
 
+  $variables['page']['show_navbar'] = 1;
 }
 
 /**

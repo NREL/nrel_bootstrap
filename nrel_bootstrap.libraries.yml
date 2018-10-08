@@ -1,9 +1,7 @@
-global-styling:
+framework:
   css:
     theme:
       css/style.css: {}
-
-bootstrap-scripts:
   js:
     bootstrap/js/affix.js: {}
     bootstrap/js/alert.js: {}
@@ -17,6 +15,7 @@ bootstrap-scripts:
     bootstrap/js/scrollspy.js: {}
     bootstrap/js/tab.js: {}
     bootstrap/js/transition.js: {}
+
 font-awesome:
   remote: http://fontawesome.io
   version: 4.6.0

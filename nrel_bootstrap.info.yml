@@ -20,7 +20,9 @@ regions:
   page_bottom: 'Page bottom'
 
 libraries:
-  - 'nrel_bootstrap/global-styling'
-  - 'nrel_bootstrap/bootstrap-scripts'
   - 'nrel_bootstrap/font-awesome'
   - 'nrel_bootstrap/fonts'
+
+libraries-extend:
+  bootstrap/framework:
+    - nrel_bootstrap/framework
