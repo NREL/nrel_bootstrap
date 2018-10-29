@@ -4443,7 +4443,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-bottom: 1px solid transparent;
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
-  font-family: Roboto, "Helvetica Neue", Helvetica, sans-serif;
   margin-top: 8px;
   margin-bottom: 8px;
 }
@@ -8255,10 +8254,9 @@ table#staff td.child ul li {
 /*
  *  FORMS
  *********************************************/
-.form-horizontal,
-.form-inline,
-.form,
-form {
+.form-horizontal :not(p),
+.form-inline :not(p),
+.form :not(p) {
   font-family: Roboto, "Helvetica Neue", Helvetica, sans-serif;
 }
 span.required {
@@ -9945,6 +9943,17 @@ figcaption {
   color: #757575;
   margin-top: 0.5em;
 }
+.form-required:after {
+  content: " (Required)";
+  color: red;
+  font-weight: 400;
+  background-image: unset;
+  background-size: unset;
+  display: unset;
+  line-height: unset;
+  height: unset;
+  width: unset;
+}
 /* 08-28-2018 design refresh */
 header {
   border-bottom: 1px solid #d1d5d8;
@@ -9993,4 +10002,158 @@ header a.app-name:hover {
     text-align: left;
   }
 }
-/*# sourceMappingURL=style.css.map */
+/* Exposed Views Form */
+.views-exposed-form {
+  /* Adds separation between filter of results */
+  /* Floats Label to the left and aligns */
+  /* Adds Columns */
+  /* Styling for the Div surrounding the select. Sets width, & hides overflow */
+  /* Background image from core! */
+  /* Styling for the select itself, extra width hides natural dropdown */
+  /* Removes focus outline for Firefox */
+  /* Adds Bootstrap styling to Apply button input */
+}
+.views-exposed-form label {
+  color: #777777;
+}
+.views-exposed-form .form-item {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 10px;
+}
+@media (min-width: 768px) {
+  .views-exposed-form .form-item {
+    float: left;
+    width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  .views-exposed-form .form-item {
+    float: left;
+    width: 41.66666667%;
+  }
+}
+.views-exposed-form .form-actions {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  padding-left: 0;
+}
+@media (min-width: 768px) {
+  .views-exposed-form .form-actions {
+    float: left;
+    width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  .views-exposed-form .form-actions {
+    float: left;
+    width: 16.66666667%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .views-exposed-form .form-actions {
+    margin-top: 0;
+    padding-left: 15px;
+  }
+}
+.views-exposed-form .select-style {
+  border: 1px solid #808080;
+  color: #808080;
+  width: 100%;
+  border-radius: 3px;
+  overflow: hidden;
+  background: #fff url("/core/misc/icons/333333/caret-down.svg") no-repeat 99% 50%;
+  float: left;
+}
+.views-exposed-form .select-style select {
+  padding: 5px 8px;
+  width: 130%;
+  border: none;
+  box-shadow: none;
+  background: transparent;
+  background-image: none;
+  -webkit-appearance: none;
+}
+.views-exposed-form .select-style select:focus {
+  outline: none;
+}
+.views-exposed-form .form-actions .button {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: Roboto, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 400;
+  height: 40px;
+  text-transform: uppercase;
+  line-height: 1.8;
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+.views-exposed-form .form-actions .button:focus,
+.views-exposed-form .form-actions .button:active:focus,
+.views-exposed-form .form-actions .button.active:focus,
+.views-exposed-form .form-actions .button.focus,
+.views-exposed-form .form-actions .button:active.focus,
+.views-exposed-form .form-actions .button.active.focus {
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.views-exposed-form .form-actions .button:hover,
+.views-exposed-form .form-actions .button:focus,
+.views-exposed-form .form-actions .button.focus {
+  color: #333;
+  text-decoration: none;
+}
+.views-exposed-form .form-actions .button:active,
+.views-exposed-form .form-actions .button.active {
+  outline: 0;
+  background-image: none;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+.views-exposed-form .form-actions .button.disabled,
+.views-exposed-form .form-actions .button[disabled],
+fieldset[disabled] .views-exposed-form .form-actions .button {
+  cursor: not-allowed;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+a.views-exposed-form .form-actions .button.disabled,
+fieldset[disabled] a.views-exposed-form .form-actions .button {
+  pointer-events: none;
+}
+.views-exposed-form .form-actions .button.icon-before .glyphicon,
+.views-exposed-form .form-actions .button .glyphicon.icon-before {
+  margin-left: -0.25em;
+  margin-right: 0.25em;
+}
+.views-exposed-form .form-actions .button.icon-after .glyphicon,
+.views-exposed-form .form-actions .button .glyphicon.icon-after {
+  margin-left: 0.25em;
+  margin-right: -0.25em;
+}

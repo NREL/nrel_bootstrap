@@ -900,10 +900,9 @@ table#staff td.child ul li {
  *  FORMS
  *********************************************/
 
-.form-horizontal,
-.form-inline,
-.form,
-form {
+.form-horizontal :not(p),
+.form-inline :not(p),
+.form :not(p)  {
     font-family: Roboto, "Helvetica Neue", Helvetica, sans-serif;
 }
 
@@ -2841,4 +2840,17 @@ figcaption {
 	font-size: 12px;
     color: #757575;
 	margin-top: .5em;
+}
+
+
+.form-required:after {
+    content:" (Required)";
+    color:red;
+    font-weight: 400;
+    background-image: unset;
+    background-size: unset;
+    display: unset;
+    line-height: unset;
+    height: unset;
+    width: unset;
 }
