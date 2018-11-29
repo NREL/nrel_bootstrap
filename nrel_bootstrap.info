@@ -24,6 +24,9 @@ regions[page_bottom]    = 'Page bottom'
 ;; Stylesheets
 ;;;;;;;;;;;;;;;;;;;;;
 
+stylesheets[all][] = css/nrel.complete.css
+stylesheets[all][] = css/nrel.application.css
+stylesheets[all][] = css/nrel.footer.css
 stylesheets[all][] = css/style.css
 
 

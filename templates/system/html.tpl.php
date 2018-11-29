@@ -64,48 +64,28 @@
   <!-- Global application head code -->
     <!-- == APPLICATION HEAD == -->
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
 
     <!-- iOS icons -->
-    <link rel="apple-touch-icon" href="https://www.nrel.gov/client/img/touch-icon-iphone.png" />
-    <link rel="apple-touch-icon" sizes="72x72"   href="https://www.nrel.gov/client/img/touch-icon-ipad.png" />
-    <link rel="apple-touch-icon" sizes="114x114" href="https://www.nrel.gov/client/img/touch-icon-iphone-retina.png" />
-    <link rel="apple-touch-icon" sizes="144x144" href="https://www.nrel.gov/client/img/touch-icon-ipad-retina.png" />
+    <link rel="apple-touch-icon" href="/sites/all/themes/nrel_bootstrap/img/touch-icon-iphone.png">
+    <link rel="apple-touch-icon" sizes="72x72"   href="/sites/all/themes/nrel_bootstrap/img/touch-icon-ipad.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/sites/all/themes/nrel_bootstrap/touch-icon-iphone-retina.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/sites/all/themes/nrel_bootstrap/img/touch-icon-ipad-retina.png">
 
 
     <!-- Bootstrap styles -->
     <!-- <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" media="all"> -->
 
 
-    <!-- GLOBAL styles -->
-    <link href="https://www.nrel.gov/client/css/nrel.complete.min.css" rel="stylesheet" >
-
-
-    <!-- NREL Application styles -->
-    <link href="https://www.nrel.gov/client/css/nrel.application.min.css" rel="stylesheet" >
-
-
     <!-- Fonts -->
     <link href="//fonts.googleapis.com/css?family=Droid+Serif:400,400italic,700%7CRoboto:300,400,700" rel="stylesheet" type="text/css">
-
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,400i,700,700i" rel="stylesheet"> 
 
     <!-- Font Awesome -->
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
 
-    <!-- jQuery -->
-    <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
-
-
-    <!-- Google Analytics-->
-    <script type="text/javascript">
-     (function() {
-        var so = document.createElement('script'); so.type = 'text/javascript'; so.async = true;
-        so.src = '//www.nrel.gov/includes/ga/nrel.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(so, s);
-      })();
-    </script>
     <!-- == END APPLICATION HEAD == -->
 
   <?php print $styles; ?>
