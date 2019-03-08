@@ -255,7 +255,7 @@
         </div>
         <div class="row">
             <div class="col-sm-2 border-right padtop">
-                <a href="https://www.energy.gov"><img src="client/img/logo-doe-footer.png" alt="U.S. Department of Energy"></a>
+                <a href="https://www.energy.gov"><img src="/sites/all/themes/contrib/nrel_bootstrap/img/logo-doe-footer.png" alt="U.S. Department of Energy"></a>
             </div>
         </div>
     </div>
