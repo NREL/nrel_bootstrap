@@ -172,109 +172,92 @@
 
 <!-- == APPLICATION FOOTER == -->
 <!--stopindex-->
-<footer id="footer">
+<footer id="footer" class="hidden-print">
     <div class="container">
-    <div class="row">
-        <div class="col-sm-10 col-sm-push-2">
-            <div class="row">
-                <div class="col-sm-2">
-                    <p class="header"><a href="https://www.nrel.gov">Home <i class="fa fa-angle-double-right"></i></a></p>
-                </div>
-                <div class="col-sm-8">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <p class="header"><a href="https://www.nrel.gov/research/">Research <i class="fa fa-angle-double-right"></i></a></p>
+        <div class="row">
+            <div class="col-sm-10 col-sm-push-2">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <p class="header"><a href="https://www.nrel.gov/">Home</a></p>
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <p class="header"><a href="https://www.nrel.gov/research/">Research</a></p>
+                            </div>
+                            <div class="col-sm-4">
+                                <ul>
+                                    <li><a href="https://www.nrel.gov/manufacturing/">Advanced Manufacturing</a></li>
+                                    <li><a href="https://www.nrel.gov/bioenergy/">Bioenergy</a></li>
+                                    <li><a href="https://www.nrel.gov/buildings/">Buildings</a></li>
+                                    <li><a href="https://www.nrel.gov/chemistry-nanoscience/">Chemistry and Nanoscience</a></li>
+                                    <li><a href="https://www.nrel.gov/computational-science/">Computational Science</a></li>
+                                    <li><a href="https://www.nrel.gov/analysis/">Energy Analysis</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-4">
+                                <ul>
+                                    <li><a href="https://www.nrel.gov/esif/">Energy Systems Integration Facility</a></li>
+                                    <li><a href="https://www.nrel.gov/geothermal/">Geothermal</a></li>
+                                    <li><a href="https://www.nrel.gov/grid/">Grid Modernization</a></li>
+                                    <li><a href="https://www.nrel.gov/hydrogen/">Hydrogen and Fuel Cells</a></li>
+                                    <li><a href="https://www.nrel.gov/energy-solutions/">Integrated Energy Solutions</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-4">
+                                <ul>
+                                    <li><a href="https://www.nrel.gov/materials-science/">Materials Science</a></li>
+                                    <li><a href="https://www.nrel.gov/solar/">Solar</a></li>
+                                    <li><a href="https://www.nrel.gov/transportation/">Transportation</a></li>
+                                    <li><a href="https://www.nrel.gov/water/">Water</a></li>
+                                    <li><a href="https://www.nrel.gov/wind/">Wind</a></li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="col-sm-4">
-                        <ul>
-                        <li><a href="https://www.nrel.gov/manufacturing/">Advanced Manufacturing</a></li>
-                        <li><a href="https://www.nrel.gov/bioenergy/">Bioenergy</a></li>
-                        <li><a href="https://www.nrel.gov/buildings/">Buildings Efficiency</a></li>
-                        <li><a href="https://energysciences.nrel.gov/chemical_materials/chemistry_and_nanoscience">Chemistry &amp; Nanoscience</a></li>
-                        <li><a href="https://energysciences.nrel.gov/csc">Computational Science</a></li>
-                        <li><a href="https://www.nrel.gov/csp/">Concentrating Solar Power</a></li>
+                    </div>
+                    <!-- Follow -->
+                    <div class="col-sm-2">
+                        <p class="header"><span id="directedit">Follow NREL</span></p>
+                        <ul class="social-links list-inline">
+                            <li><a href="https://www.facebook.com/nationalrenewableenergylab" aria-label="Follow NREL on Facebook"><i class="fa fa-facebook-square"></i></a></li>
+                            <li><a href="https://www.nrel.gov/news/subscribe.html" aria-label="Subscribe to news"><i class="fa fa-envelope"></i></a></li>
+                            <li><a href="https://twitter.com/nrel/" aria-label="Follow NREL on Twitter"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="https://www.linkedin.com/company/national-renewable-energy-laboratory" aria-label="Follow NREL on Linked In"><i class="fa fa-linkedin-square"></i></a></li>
+                            <li><a href="https://www.youtube.com/user/NRELPR/" aria-label="Follow NREL on YouTube"><i class="fa fa-youtube"></i></a></li>
+                            <li><a href="https://www.instagram.com/nationalrenewableenergylab/" aria-label="Follow NREL on Instagram"><i class="fa fa-instagram"></i></a></li>
                         </ul>
-                        </div>
-                        <div class="col-sm-4">
-                        <ul>
-                        <li><a href="https://www.nrel.gov/analysis/">Energy Analysis</a></li>
-                        <li><a href="https://www.nrel.gov/esi/">Energy Systems Integration</a></li>
-                        <li><a href="https://www.nrel.gov/geothermal/">Geothermal Energy</a></li>
-                         <li><a href="https://www.nrel.gov/grid/">Grid Modernization</a></li>
-                         <li><a href="https://www.nrel.gov/hydrogen/">Hydrogen &amp; Fuel Cells</a></li>
-                          <li><a href="https://www.nrel.gov/materials-science/">Materials Science</a></li>
-                        </ul>
-                        </div>
-                        <div class="col-sm-4">
-                        <ul>
-
-
-                        <li><a href="https://www.nrel.gov/pv/">Photovoltaics</a></li>
-                        <li><a href="https://www.nrel.gov/solar/">Solar</a></li>
-                        <li><a href="https://www.nrel.gov/tech_deployment/">Technology Deployment</a></li>
-                          <li><a href="https://www.nrel.gov/transportation/">Transportation</a></li>
-                        <li><a href="https://www.nrel.gov/water/">Water Power</a></li>
-                        <li><a href="https://www.nrel.gov/wind/">Wind Energy</a></li>
-                        </ul>
-                        </div>
-                        <!--div class="col-sm-2">
-                        <ul>
-
-                        </ul>
-                        </div-->
                     </div>
                 </div>
-
-                <!-- Follow -->
-                <div class="col-sm-2">
-                    <p class="header">Follow NREL</p>
-                    <ul class="social-links list-inline">
-                    <li><a href="https://www.facebook.com/nationalrenewableenergylab"><i class="fa fa-facebook-square"></i></a></li>
-                    <li><a href="https://www.nrel.gov/news/subscribe.html"><i class="fa fa-envelope"></i></a></li>
-                    <li><a href="https://twitter.com/nrel/"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="https://www.linkedin.com/company/national-renewable-energy-laboratory"><i class="fa fa-linkedin-square"></i></a></li>
-                    <li><a href="https://www.youtube.com/user/NRELPR/"><i class="fa fa-youtube"></i></a></li>
-                    <li><a href="https://www.instagram.com/nationalrenewableenergylab/"><i class="fa fa-instagram"></i></a></li>
-                    <li><a href="http://feeds.feedburner.com/NrelFeatureStories"><i class="fa fa-rss-square"></i></a></li>
-                    </ul>
+            </div>
+            <!-- NREL is... -->
+            <div class="col-sm-2 col-sm-pull-10 border-right">
+                <div class="row">
+                    <div class="col-sm-12 only-nrel">
+                        <p class="nrel-attr">The National Renewable Energy Laboratory is a national laboratory of the <a href="https://www.energy.gov/">U.S. Department of Energy</a>, <a href="https://www.energy.gov/eere/office-energy-efficiency-renewable-energy">Office of Energy Efficiency and Renewable Energy</a>, operated by the <a href="https://www.allianceforsustainableenergy.org/">Alliance for Sustainable Energy, LLC</a>.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <ul>
+                            <li><a href="https://www.nrel.gov/security.html">Security &amp; Privacy Policy</a></li>
+                            <li><a href="https://www.nrel.gov/accessibility.html">Accessibility</a></li>
+                            <li><a href="https://www.nrel.gov/disclaimer.html">Disclaimer</a></li>
+                            <li><a id="contact-link" href="https://www.nrel.gov/webmaster.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul>
+                            <li><a href="https://www.nrel.gov/careers/">Apply for a Job</a></li>
+                            <li><a href="https://developer.nrel.gov/">Developers</a></li>
+                            <li><a href="https://images.nrel.gov/bp/#/">Image Gallery</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <!-- NREL is... -->
-        <div class="col-sm-2 col-sm-pull-10 border-right">
-            <div class="row">
-                <div class="col-sm-12 only-nrel">
-                    <p class="nrel-attr">NREL is a national laboratory of the <a href="http://energy.gov/">U.S. Department of Energy</a>, <a href="http://energy.gov/eere/office-energy-efficiency-renewable-energy">Office of Energy Efficiency and Renewable Energy</a>, operated by the <a href="http://www.allianceforsustainableenergy.org/">Alliance for Sustainable Energy, LLC</a>.</p>
-                </div>
-                <div class="col-md-6">
-                    <ul>
-                    <li><a href="https://www.nrel.gov/security.html">Security &amp; Privacy Policy</a></li>
-                    <li><a href="https://www.nrel.gov/accessibility.html">Accessibility</a></li>
-                    <li><a href="https://www.nrel.gov/disclaimer.html">Disclaimer</a></li>
-                    <li><a id="contact-link" href="https://www.nrel.gov/webmaster.html">Contact Us</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-6">
-                    <ul>
-                    <li><a href="https://www.nrel.gov/careers/">Apply for a Job</a></li>
-                    <li><a href="http://developer.nrel.gov/">Developers</a></li>
-                    <li><a href="https://images.nrel.gov/bp/#/">Image Gallery</a></li>
-                    </ul>
-                </div>
+        <div class="row">
+            <div class="col-sm-2 border-right padtop">
+                <a href="https://www.energy.gov"><img src="client/img/logo-doe-footer.png" alt="U.S. Department of Energy"></a>
             </div>
         </div>
-
-    </div>
-
-    <div class="row">
-        <div class="col-sm-2 border-right">
-            <a href="http://energy.gov"><img src="https://www.nrel.gov/client/img/logo_doe_footer.svg"  alt="U.S. Department of Energy" class="logo"></a>
-        </div>
-    </div>
-
-
-
     </div>
 </footer>
 <!--startindex-->
