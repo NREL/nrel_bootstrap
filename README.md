@@ -1,3 +1,16 @@
+For Drupal, we prefer developers use the [package](https://packagist.org/packages/nrel/nrel_bootstrap) rather that going directly to github.  This is because using the package will guarantee that developers are using a stable version (with version numbers) rather than something that is unstable.  In addition the packages will automatically stay up to date for such things as security remediations.
+
+To install the nrel_bootstrap package:
+
+For Drupal 8:
+composer require nrel/nrel_bootstrap ~2.0.0
+
+For Drupal 7:
+composer require nrel/nrel_bootstrap "dev-d7"
+
+
+
+
 <!-- @file Instructions for subtheming using the Less Starterkit. -->
 <!-- @defgroup sub_theming_less -->
 <!-- @ingroup sub_theming -->

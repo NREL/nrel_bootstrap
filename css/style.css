@@ -1297,7 +1297,7 @@ small,
 mark,
 .mark {
   background-color: #fcf8e3;
-  padding: 0.2em;
+  padding: .2em;
 }
 .text-left {
   text-align: left;
@@ -1600,71 +1600,13 @@ pre code {
   margin-left: -15px;
   margin-right: -15px;
 }
-.col-xs-1,
-.col-sm-1,
-.col-md-1,
-.col-lg-1,
-.col-xs-2,
-.col-sm-2,
-.col-md-2,
-.col-lg-2,
-.col-xs-3,
-.col-sm-3,
-.col-md-3,
-.col-lg-3,
-.col-xs-4,
-.col-sm-4,
-.col-md-4,
-.col-lg-4,
-.col-xs-5,
-.col-sm-5,
-.col-md-5,
-.col-lg-5,
-.col-xs-6,
-.col-sm-6,
-.col-md-6,
-.col-lg-6,
-.col-xs-7,
-.col-sm-7,
-.col-md-7,
-.col-lg-7,
-.col-xs-8,
-.col-sm-8,
-.col-md-8,
-.col-lg-8,
-.col-xs-9,
-.col-sm-9,
-.col-md-9,
-.col-lg-9,
-.col-xs-10,
-.col-sm-10,
-.col-md-10,
-.col-lg-10,
-.col-xs-11,
-.col-sm-11,
-.col-md-11,
-.col-lg-11,
-.col-xs-12,
-.col-sm-12,
-.col-md-12,
-.col-lg-12 {
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
 }
-.col-xs-1,
-.col-xs-2,
-.col-xs-3,
-.col-xs-4,
-.col-xs-5,
-.col-xs-6,
-.col-xs-7,
-.col-xs-8,
-.col-xs-9,
-.col-xs-10,
-.col-xs-11,
-.col-xs-12 {
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
   float: left;
 }
 .col-xs-12 {
@@ -1821,18 +1763,7 @@ pre code {
   margin-left: 0%;
 }
 @media (min-width: 768px) {
-  .col-sm-1,
-  .col-sm-2,
-  .col-sm-3,
-  .col-sm-4,
-  .col-sm-5,
-  .col-sm-6,
-  .col-sm-7,
-  .col-sm-8,
-  .col-sm-9,
-  .col-sm-10,
-  .col-sm-11,
-  .col-sm-12 {
+  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
     float: left;
   }
   .col-sm-12 {
@@ -1990,18 +1921,7 @@ pre code {
   }
 }
 @media (min-width: 992px) {
-  .col-md-1,
-  .col-md-2,
-  .col-md-3,
-  .col-md-4,
-  .col-md-5,
-  .col-md-6,
-  .col-md-7,
-  .col-md-8,
-  .col-md-9,
-  .col-md-10,
-  .col-md-11,
-  .col-md-12 {
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     float: left;
   }
   .col-md-12 {
@@ -2159,18 +2079,7 @@ pre code {
   }
 }
 @media (min-width: 1200px) {
-  .col-lg-1,
-  .col-lg-2,
-  .col-lg-3,
-  .col-lg-4,
-  .col-lg-5,
-  .col-lg-6,
-  .col-lg-7,
-  .col-lg-8,
-  .col-lg-9,
-  .col-lg-10,
-  .col-lg-11,
-  .col-lg-12 {
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
     float: left;
   }
   .col-lg-12 {
@@ -4443,6 +4352,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-bottom: 1px solid transparent;
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
+  font-family: Roboto, "Helvetica Neue", Helvetica, sans-serif;
   margin-top: 8px;
   margin-bottom: 8px;
 }
@@ -4915,7 +4825,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 }
 .label {
   display: inline;
-  padding: 0.2em 0.6em 0.3em;
+  padding: .2em .6em .3em;
   font-size: 75%;
   font-weight: bold;
   line-height: 1;
@@ -4923,7 +4833,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
-  border-radius: 0.25em;
+  border-radius: .25em;
 }
 a.label:hover,
 a.label:focus {
@@ -6865,12 +6775,12 @@ a .glyphicon-spin {
   text-decoration: none;
 }
 html.js .btn .ajax-throbber {
-  margin-left: 0.5em;
+  margin-left: .5em;
   margin-right: -0.25em;
 }
 html.js .form-item .input-group-addon .glyphicon {
   color: #777777;
-  opacity: 0.5;
+  opacity: .5;
   transition: 150ms color, 150ms opacity;
 }
 html.js .form-item .input-group-addon .glyphicon.glyphicon-spin {
@@ -6949,7 +6859,7 @@ html.js .ajax-new-content:empty {
 .file-icon {
   display: table-cell;
   font-size: 150%;
-  padding: 0.25em 0.5em;
+  padding: .25em .5em;
   text-align: center;
   vertical-align: middle;
 }
@@ -6990,7 +6900,7 @@ html.js .ajax-new-content:empty {
 .filter-help {
   float: right;
   line-height: 1;
-  margin: 0.5em 0 0;
+  margin: .5em 0 0;
 }
 .nav.nav-tabs.filter-formats {
   margin-bottom: 15px;
@@ -7039,7 +6949,7 @@ table .radio.form-no-label {
   font-weight: 400;
   line-height: 1;
   margin-top: -0.5em;
-  padding-right: 0.5em;
+  padding-right: .5em;
   pointer-events: none;
   position: absolute;
   right: 0;
@@ -7083,20 +6993,20 @@ table .radio.form-no-label {
  */
 a.icon-before .glyphicon,
 a .glyphicon.icon-before {
-  margin-right: 0.25em;
+  margin-right: .25em;
 }
 a.icon-after .glyphicon,
 a .glyphicon.icon-after {
-  margin-left: 0.25em;
+  margin-left: .25em;
 }
 .btn.icon-before .glyphicon,
 .btn .glyphicon.icon-before {
   margin-left: -0.25em;
-  margin-right: 0.25em;
+  margin-right: .25em;
 }
 .btn.icon-after .glyphicon,
 .btn .glyphicon.icon-after {
-  margin-left: 0.25em;
+  margin-left: .25em;
   margin-right: -0.25em;
 }
 /**
@@ -8136,7 +8046,7 @@ h6 .fa,
 @media (min-width: 768px) {
   .content-sandwich.vertical-aligned [class*="col-"] .icon,
   .content-sandwich.vertical-aligned [class*="col-"] > *:only-child {
-    margin-top: 0.75em;
+    margin-top: .75em;
   }
 }
 @media (min-width: 1200px) {
@@ -8254,9 +8164,10 @@ table#staff td.child ul li {
 /*
  *  FORMS
  *********************************************/
-.form-horizontal :not(p),
-.form-inline :not(p),
-.form :not(p) {
+.form-horizontal,
+.form-inline,
+.form,
+form {
   font-family: Roboto, "Helvetica Neue", Helvetica, sans-serif;
 }
 span.required {
@@ -8781,8 +8692,8 @@ a.singleLightbox:hover {
   margin-top: 0;
 }
 .actionbox .btn {
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
+  margin-top: .5em;
+  margin-bottom: .5em;
 }
 .actionbox.inline {
   padding-top: 1em;
@@ -8790,7 +8701,7 @@ a.singleLightbox:hover {
 }
 .actionbox.inline .header {
   margin-top: 0;
-  margin-bottom: 0.5em;
+  margin-bottom: .5em;
 }
 @media (min-width: 768px) {
   .actionbox.inline .header {
@@ -8836,7 +8747,7 @@ a.singleLightbox:hover {
   box-sizing: border-box;
   color: #fff;
   font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  padding: 0.5em;
+  padding: .5em;
   text-align: left;
   left: 0;
   right: 0;
@@ -9103,7 +9014,7 @@ a > .fa-ml {
   margin-top: 2em;
 }
 .item .date + .headline {
-  margin-top: 0.25em;
+  margin-top: .25em;
 }
 /*
  *  EVENTS LIST
@@ -9684,9 +9595,9 @@ header .logo {
  *  SEARCH
  ************************************************************/
 .searchbar-toggle {
-  border: 1px solid #5e6a71;
+  border: 1px solid #5e6a71 ;
   border-radius: 5px;
-  color: #5e6a71;
+  color: #5e6a71 ;
   margin-top: 15px;
   padding: 2px 6px 3px 6px;
   position: absolute;
@@ -9917,7 +9828,7 @@ footer ul.dotlist li:first-child:before {
 }
 .results-pager p {
   font-family: Roboto;
-  padding-top: 0.5em;
+  padding-top: .5em;
 }
 .results-pager a {
   text-decoration: none;
@@ -9941,7 +9852,7 @@ figcaption {
   caption-side: bottom;
   font-size: 12px;
   color: #757575;
-  margin-top: 0.5em;
+  margin-top: .5em;
 }
 .form-required:after {
   content: " (Required)";
@@ -9954,17 +9865,29 @@ figcaption {
   height: unset;
   width: unset;
 }
-/* 08-28-2018 design refresh */
+/* Feedback form honeypot field */
+.hpf6df8a6f-3fb6-4eba-b28d-c99912998305 {
+  display: none;
+  margin-left: -1000px;
+}
+.hpe2cd04f6-da55-4773-80a2-c25c4ca203c4 {
+  display: none;
+  margin-left: -1000px;
+}
+/* 10-12-2018 */
 header {
   border-bottom: 1px solid #d1d5d8;
 }
 #content {
-  margin-top: 0.5em;
+  margin-top: .5em;
 }
 .app-topnav .navbar-inverse .navbar-nav > li.active > a,
 .app-topnav .navbar-inverse .navbar-nav > li.active > a:hover {
   background-color: #5e6a71;
   border-top: 3px solid #62d2ff;
+}
+.navbar-inverse .navbar-right > li > a {
+  color: #0a87d3;
 }
 @media (min-width: 768px) {
   #content {
@@ -10150,10 +10073,10 @@ fieldset[disabled] a.views-exposed-form .form-actions .button {
 .views-exposed-form .form-actions .button.icon-before .glyphicon,
 .views-exposed-form .form-actions .button .glyphicon.icon-before {
   margin-left: -0.25em;
-  margin-right: 0.25em;
+  margin-right: .25em;
 }
 .views-exposed-form .form-actions .button.icon-after .glyphicon,
 .views-exposed-form .form-actions .button .glyphicon.icon-after {
-  margin-left: 0.25em;
+  margin-left: .25em;
   margin-right: -0.25em;
 }
