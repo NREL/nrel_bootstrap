@@ -12,3 +12,6 @@ npm-debug.log
 .libraries
 lib
 starterkits/*/bootstrap
+
+# CSS Compilers
+css/style.css.map

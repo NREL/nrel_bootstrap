@@ -131,19 +131,10 @@
   <div role="main" class="main-container {{ container }} js-quickedit-main-content">
     <div class="row">
 
-      {# Sidebar First #}
-      {% if page.sidebar_first %}
-        {% block sidebar_first %}
-          <aside class="col-sm-3" role="complementary">
-            {{ page.sidebar_first }}
-          </aside>
-        {% endblock %}
-      {% endif %}
-
       {# Content #}
       {%
         set content_classes = [
-          page.sidebar_first and page.sidebar_second ? 'col-sm-6',
+          page.sidebar_first and page.sidebar_second ? 'col-sm-6 col-sm-push-3',
           page.sidebar_first and page.sidebar_second is empty ? 'col-sm-9',
           page.sidebar_second and page.sidebar_first is empty ? 'col-sm-9',
           page.sidebar_first is empty and page.sidebar_second is empty ? 'col-sm-12'
@@ -189,8 +180,17 @@
       {# Sidebar Second #}
       {% if page.sidebar_second %}
         {% block sidebar_second %}
-          <aside class="col-sm-3" role="complementary">
+          <aside class="col-sm-3 col-sm-push-3" role="complementary">
             {{ page.sidebar_second }}
+          </aside>
+        {% endblock %}
+      {% endif %}
+
+      {# Sidebar First #}
+      {% if page.sidebar_first %}
+        {% block sidebar_first %}
+          <aside class="col-sm-3 col-sm-pull-9" role="complementary">
+            {{ page.sidebar_first }}
           </aside>
         {% endblock %}
       {% endif %}
