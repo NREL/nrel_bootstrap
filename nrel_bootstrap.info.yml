@@ -5,6 +5,7 @@ base theme: bootstrap
 name: 'nrel_bootstrap'
 description: 'Uses the Bootstrap framework LESS source files and must be compiled (not for beginners).'
 package: 'communications'
+version: '8.x-2.0.1'
 
 regions:
   navigation: 'Navigation'
