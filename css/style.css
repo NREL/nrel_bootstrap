@@ -2237,12 +2237,15 @@ header .logo {
 }
 @media (max-width: 768px) {
   header .logo {
+    background-size: 185px;
     margin-left: auto;
     margin-right: auto;
+    width: 30%;
   }
 }
 @media (min-width: 768px) {
   header .logo {
+    background-size: 266px;
     float: right;
     height: 130px;
     padding: 32px 15px 5px;
