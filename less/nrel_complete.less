@@ -1,6 +1,4 @@
-/* NREL Global styles
-08/31/2018 design refresh -ag
-*/
+/* NREL Global styles 11-29-2018 */
 
 /*
  *  GENERAL TYPOGRAPHY
@@ -176,12 +174,6 @@ a.fa:hover {
     }
 }
 
-@media (max-width: 1200px) {
-    .container {
-        width: 100%;
-    }
-}
-
 /*
  *  SITE BANNER
  *********************************************/
@@ -321,7 +313,7 @@ a.fa:hover {
     display: list-item;
 }
 .sidenav ul.nav ul.nav ul.nav li > a:before {
-    content: '\25A0  '; /* square bullet */
+    content: '\25A0\00a0'; /* square bullet */
     vertical-align: text-bottom;
 }
 .sidenav ul.nav ul.nav ul.nav li > a {
@@ -528,11 +520,6 @@ h6 .fa,
     padding:2em 1em;
 }
 
-
-
-
-
-
 /*
  *  Accordions
  ********************/
@@ -563,13 +550,13 @@ h6 .fa,
 
 
 .panel-heading > .panel-title >  .accordion-toggle {
-    background-image: url('/images/icon_minus.svg');
+    background-image: url('../img/icon_minus.svg');
     background-repeat: no-repeat;
     background-position: 1% center;
     background-size: 25px 25px;
 }
 .panel-heading > .panel-title >  .accordion-toggle.collapsed {
-    background-image: url('/images/icon_plus_blue.svg');
+    background-image: url('../img/icon_plus_blue.svg');
 }
 
 .panel-group .panel {
@@ -750,7 +737,7 @@ h6 .fa,
         <div class="content-sandwich vertical-aligned">
         <div class="row">
             <div class="col-xs-3 col-sm-3">
-                <img class="img-responsive icon" src="/images/icon-people.svg" alt="">
+                <img class="img-responsive icon" src="../img/icon-people.svg" alt="">
             </div>
             <div class="col-xs-9 col-sm-9">
                 <h4 class="header"><a href="">Heder</a></p>
@@ -900,6 +887,99 @@ table#staff td.child ul li {
     margin-top:0;
 }
 
+/*
+ *  landing pages - 3 feature design
+ ************************************************************/
+
+.feature-secondary .link-tile {
+    margin-top: 24px;
+}
+.feature-secondary .link-tile + .link-tile {
+    margin-top:24px;
+}
+.showcase {
+    font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    opacity: 1;
+    padding-bottom: 2em;
+    padding-top: 2em;
+}
+.showcase .caption {
+    background-color: rgba(0,0,0,.8);
+    box-sizing: border-box;
+    color: #fff;
+    font-weight: 300;
+    line-height: 1.1;
+    padding: .5em 1em;
+    position:relative;
+}
+.showcase.nobc {margin-top:-45px;} /* for landing pages without a breadcrumb */
+.showcase .link-tile,
+.showcase .link-tile {
+    position: relative;
+}
+.showcase .feature-primary .caption,
+.showcase .feature-secondary .caption {
+    font-size: 30px;
+}
+.modal-footer {
+    text-align: left;
+}
+@media(min-width:768px){
+    .showcase {
+        height:431px;
+    }
+    .showcase .caption {
+        left: 0;
+        right: 0;
+        bottom: 0;
+        position: absolute;
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+1,000000+82&0+0,1+81 */
+        background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.01) 1%, rgba(0,0,0,1) 81%, rgba(0,0,0,1) 82%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.01) 1%,rgba(0,0,0,1) 81%,rgba(0,0,0,1) 82%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.01) 1%,rgba(0,0,0,1) 81%,rgba(0,0,0,1) 82%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+    }
+    .feature-secondary .link-tile {
+        margin-top: 0px;
+    }
+    .showcase .feature-primary .caption {
+        font-size: 20px;
+    }
+    .showcase .feature-secondary .caption {
+        font-size: 14px;
+    }
+}
+@media(min-width:992px){
+    .showcase {
+        height:545px;
+    }
+}
+@media(min-width:1200px){
+    .showcase {
+        height:649px;
+    }
+    .showcase .feature-primary .caption {
+        font-size: 30px;
+    }
+    .showcase .feature-secondary .caption {
+        font-size: 20px;
+    }
+}
+
+/*
+Modal bugfix http://stackoverflow.com/questions/18622508/bootstrap-3-and-youtube-in-modal
+*/
+.modal.fade .modal-dialog {
+    transform: none !important;
+    -webkit-transition: -webkit-transform 0.3s ease-out;
+    -moz-transition: -moz-transform 0.3s ease-out;
+    -o-transition: -o-transform 0.3s ease-out;
+    transition: transform 0.3s ease-out;
+}
+
+.modal.in .modal-dialog {
+    transform: none !important;
+}
 
 
 /*
@@ -1082,44 +1162,7 @@ input.form-control {
  *  ROWS / COLUMNS
  *********************************************/
 
-.row {
-    margin-right: 0;
-    margin-left: 0;
-}
-.col-sm-6 .region-content {
-    margin: 30px 30px 30px 0;
-}
-
-@media (max-width:768px) {
-    .col-sm-6 .region-content {
-        margin: 30px;
-    }
-    #footer .col-sm-12, #footer .col-sm-4 li {
-        padding: 0;
-    }
-    #footer .col-sm-12 {
-        margin-bottom: 15px;
-    }
-    #footer .nrel-attr, #footer .logo {
-        margin: 15px;
-    }
-    footer .border-right {
-        border-right: 0px solid #5a5b5b !important;
-    }
-}
-@media (min-width:768px) and (max-width:980px) {
-    .col-sm-3 {
-        padding-left:0;
-        padding-right:0;
-    }
-    .col-sm-6 {
-        padding-right: 0;
-    }
-}
-@media (min-width:768px){
-    .col-sm-6 .region-content {
-        margin: 30px 15px 30px 0;
-    }
+@media(min-width:768px){
     /* make columns within row equal height*/
     .row-eq-height {
         display: -webkit-box;
@@ -1175,7 +1218,7 @@ iframe {
     margin: 1em 0;
 }
 
-/* http://www.nrel.gov/images/play-overlay.png */
+/* http://www.nrel.gov/client/img/play-overlay.png */
 .play-overlay {
     position: absolute;
     top: 50%;
@@ -1381,6 +1424,9 @@ a[data-toggle=lightbox] {
     font-family: 'FontAwesome';
     padding-right: 3px;
 }
+.border {
+    border:1px solid #666;
+}
 
 /* old lightbox */
 a.singleLightbox {
@@ -1489,6 +1535,7 @@ a.singleLightbox:hover {
     box-shadow: none;
     font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
 }
+
 /*
  *  WELLS
  *********************************************/
@@ -1650,7 +1697,7 @@ a.singleLightbox:hover {
   Vertically align content alongside an icon
     <div class="v-center">
       <div class="row">
-        <div class="col-sm-1"><img src="/images/icon-paper.svg" alt="" class="img-responsive"></div>
+        <div class="col-sm-1"><img src="../img/icon-paper.svg" alt="" class="img-responsive"></div>
         <div class="col-sm-11"><p>...</p></div>
       </div>
     </div>
@@ -2015,6 +2062,9 @@ div.event {margin-bottom:10px;}
 .media-block h6.header {
     margin-top:0;
 }
+
+
+
 /* vertical media block */
 .media-block img +   .header,
 .media-block img + h2.header,
@@ -2539,37 +2589,40 @@ ul.dropdown-menu {
     min-height:60px;
 }
 header .logo {
-    // background:  url('/images/nrel-logo@2x-01.png') no-repeat center;
-    background-color: #0079c2;
-    margin: 0 0 10px;
-    display: block;
-    @media (max-width: 480px) {
-        height: 75px;
-        padding: 20px 10px 0;
-    }
-    @media (min-width: 480px) and (max-width: 768px) {
+    background:  url("../img/nrel-logo@2x-01.png") no-repeat center;
+    height: 75px;
+    background-size: 160px;
+    margin: 0 0 10px 0;
+}
+.program-header .navbar-inverse {border-top: 1px solid #d1d5d8;}
+.program-header .container {padding-right: 0;padding-left: 0;}
+
+@media only screen and (min-width : 480px) {
+    header .logo {
         height: 85px;
-        padding: 22px 10px 0;
-    }
-    @media (max-width: 768px) {
-        background-size: 185px;
-        margin-left: auto;
-        margin-right: auto;
-        width: 30%;
-    }
-    @media (min-width: 768px) {
-        background-size: 266px;
-        float: right;
-        height: 130px;
-        padding: 32px 15px 5px;
-        margin-right: 50px;
+        background-size: 181px;
+        margin: 0 0 10px 0;
     }
 }
+
 @media (min-width: 768px) {
+    header .logo {
+        background: url("../img/nrel-logo@2x-01.png") no-repeat left;
+        height:130px;
+        background-size: 277px;
+    }
+    .program-header {background-color: #ededed;}
+    .program-header .container {padding-right: 15px;padding-left: 15px;}
     .banner-logo {
         min-height:92px;
     }
 }
+
+@media only screen and (min-width : 1200px) {
+    .program-header .navbar-inverse {border-top: none;}
+}
+
+
 
 
 
@@ -2894,17 +2947,6 @@ figcaption {
 }
 
 
-.form-required:after {
-    content:" (Required)";
-    color:red;
-    font-weight: 400;
-    background-image: unset;
-    background-size: unset;
-    display: unset;
-    line-height: unset;
-    height: unset;
-    width: unset;
-}
 /* Feedback form honeypot field */
 .hpf6df8a6f-3fb6-4eba-b28d-c99912998305{display:none; margin-left:-1000px;}
 .hpe2cd04f6-da55-4773-80a2-c25c4ca203c4{display:none; margin-left:-1000px;}
