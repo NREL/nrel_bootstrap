@@ -176,6 +176,12 @@ a.fa:hover {
     }
 }
 
+@media (max-width: 1200px) {
+    .container {
+        width: 100%;
+    }
+}
+
 /*
  *  SITE BANNER
  *********************************************/
@@ -1076,7 +1082,44 @@ input.form-control {
  *  ROWS / COLUMNS
  *********************************************/
 
-@media(min-width:768px){
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+.col-sm-6 .region-content {
+    margin: 30px 30px 30px 0;
+}
+
+@media (max-width:768px) {
+    .col-sm-6 .region-content {
+        margin: 30px;
+    }
+    #footer .col-sm-12, #footer .col-sm-4 li {
+        padding: 0;
+    }
+    #footer .col-sm-12 {
+        margin-bottom: 15px;
+    }
+    #footer .nrel-attr, #footer .logo {
+        margin: 15px;
+    }
+    footer .border-right {
+        border-right: 0px solid #5a5b5b !important;
+    }
+}
+@media (min-width:768px) and (max-width:980px) {
+    .col-sm-3 {
+        padding-left:0;
+        padding-right:0;
+    }
+    .col-sm-6 {
+        padding-right: 0;
+    }
+}
+@media (min-width:768px){
+    .col-sm-6 .region-content {
+        margin: 30px 15px 30px 0;
+    }
     /* make columns within row equal height*/
     .row-eq-height {
         display: -webkit-box;
@@ -2496,26 +2539,33 @@ ul.dropdown-menu {
     min-height:60px;
 }
 header .logo {
-	  // background:  url('/images/nrel-logo@2x-01.png') no-repeat center;
-	  height: 75px;
-	  background-size: 160px;
+    // background:  url('/images/nrel-logo@2x-01.png') no-repeat center;
     background-color: #0079c2;
-	  margin: 0 0 10px 0;
-}
-
-@media only screen and (min-width : 480px) {
-    header .logo {
+    margin: 0 0 10px;
+    display: block;
+    @media (max-width: 480px) {
+        height: 75px;
+        padding: 20px 10px 0;
+    }
+    @media (min-width: 480px) and (max-width: 768px) {
         height: 85px;
-        background-size: 181px;
-        margin: 0 0 10px 0;
+        padding: 22px 10px 0;
+    }
+    @media (max-width: 768px) {
+        background-size: 185px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 30%;
+    }
+    @media (min-width: 768px) {
+        background-size: 266px;
+        float: right;
+        height: 130px;
+        padding: 32px 15px 5px;
+        margin-right: 50px;
     }
 }
 @media (min-width: 768px) {
-    header .logo {
-		    // background: url('/images/nrel-logo@2x-01.png') no-repeat left;
-		    height:130px;
-		    background-size: 277px;
-    }
     .banner-logo {
         min-height:92px;
     }
