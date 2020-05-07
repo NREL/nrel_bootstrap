@@ -26,24 +26,21 @@ ol, ul {
 }
 
 header .logo {
+  background-image: none;
   display: block;
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
   @media (max-width: 480px) {
-    height: 75px;
-    padding: 20px 10px 0;
+
   }
   @media (min-width: 480px) and (max-width: 768px) {
-    height: 85px;
-    padding: 22px 10px 0;
+
   }
   @media (max-width: 768px) {
-    margin-left: auto;
-    margin-right: auto;
   }
   @media (min-width: 768px) {
     float: right;
-    height: 130px;
-    padding: 32px 15px 5px;
-    margin-right: 50px;
   }
 }
 @media (min-width: 768px) {
@@ -52,24 +49,17 @@ header .logo {
   }
 }
 
+@media (min-width: 768px) {
+  header .navbar-collapse,
+  header .navbar-form  {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
 // Page header.
 .page-header {
   margin-top: 0;
-}
-
-// Footer.
-.footer {
-  margin-top: 45px;
-  padding-top: 35px;
-  padding-bottom: 36px;
-  border-top: 1px solid #E5E5E5;
-}
-
-// Paragraphs.
-p:last-child,
-.form-group:last-child,
-.panel:last-child {
-  margin-bottom: 0;
 }
 
 // Help region.
