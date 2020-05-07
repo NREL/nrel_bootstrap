@@ -4,7 +4,6 @@ schemas:
 favicon:
   mimetype: image/vnd.microsoft.icon
   path: profiles/contrib/lightning/favicon.ico
-  url: 'http://d8-demo07.dev/profiles/contrib/communications/themes/contrib/nrel_bootstrap/favicon.ico'
   use_default: true
 logo:
   path: profiles/contrib/lightning/lightning.png
@@ -14,10 +13,16 @@ table_responsive: '-1'
 table: ''
 navbar_inverse: 1
 _core:
-  default_config_hash: svs-dcy4NObUiPnCAOPqBhNV3Yi_4q0v873tHPA5Bgo
+  default_config_hash: F5nML5FDIglNaHND1O-JIVkwUfUFQoMRs8TMfShU6gc
+cdn_theme: bootstrap
+cdn_cache_ttl_versions: 0
+cdn_cache_ttl_themes: 0
+cdn_cache_ttl_assets: 0
+cdn_cache_ttl_library: 0
+reset_http_request_cache: ''
 features:
   comment_user_picture: true
   comment_user_verification: true
   favicon: true
   node_user_picture: true
-navbar_position: static-top
+cdn_provider: ''
