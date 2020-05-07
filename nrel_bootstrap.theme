@@ -11,6 +11,20 @@ use Drupal\block\Entity\Block;
 
 
 /**
+ * Implements hook_form_alter().
+ */
+function nrel_bootstrap_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+    // For all themes, disable the CDN provider option since the Bootstrap styles are already compiled into the NREL
+    // Bootstrap theme.
+    if ('system_theme_settings' == $form_id) {
+        if (!empty($form['cdn']['cdn_provider']['cdn_provider'])) {
+            $form['cdn']['cdn_provider']['cdn_provider']['#description'] .= FieldFilteredMarkup::create(t(' This option is disabled in sites using NREL Bootstrap as a base theme since the Bootsrap styles are already compiled into the theme CSS.'));
+            $form['cdn']['cdn_provider']['cdn_provider']['#disabled'] = 'disabled';
+        }
+    }
+}
+
+/**
  * Implements hook_preprocess_HOOK() for html.html.twig.
  */
 function nrel_bootstrap_preprocess_html(array &$variables) {
