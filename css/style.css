@@ -10104,6 +10104,9 @@ header .logo {
 .region-help .block {
   overflow: hidden;
 }
+img {
+  width: 100%;
+}
 .help-block,
 .control-group .help-inline {
   color: #777777;
