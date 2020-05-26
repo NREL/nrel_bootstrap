@@ -1,7 +1,8 @@
 core: 8.x
 type: theme
 base theme: bootstrap
-
+dependencies:
+  - nrel_bootstrap_module
 name: 'nrel_bootstrap'
 description: 'Uses the Bootstrap framework LESS source files and must be compiled (not for beginners).'
 package: 'communications'
