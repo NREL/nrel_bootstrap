@@ -5,13 +5,8 @@
     "license": "GPL-2.0",
     "prefer-stable": true,
     "minimum-stability": "dev",
-    "homepage": "https://www.drupal.org/project/bootstrap",
+    "homepage": "https://github.com/NREL/nrel_bootstrap",
     "authors": [
-        {
-            "name": "Damon Haley (dhaley)",
-            "email": "damon.haley@nrel.gov",
-            "role": "Maintainer"
-        },
         {
             "name": "Shaun Laws (slaws)",
             "email": "shaun.laws@nrel.gov",
@@ -22,7 +17,6 @@
             "email": "christian.modern@nrel.gov",
             "role": "Co-maintainer"
         }
-
     ],
     "support": {
         "issues": "https://github.com/NREL/nrel_bootstrap/issues"
@@ -35,7 +29,8 @@
     },
     "require": {
         "drupal/bootstrap": "~3.13",
-        "drupal/bootstrap_layouts": "^5.1"
+        "drupal/bootstrap_layouts": "^5.1",
+        "nrel/nrel_bootstrap_module": "dev-master"
     },
     "repositories": {
         "drupal": {
