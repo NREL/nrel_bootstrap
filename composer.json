@@ -29,8 +29,7 @@
     },
     "require": {
         "drupal/bootstrap": "~3.13",
-        "drupal/bootstrap_layouts": "^5.1",
-        "nrel/nrel_bootstrap_module": "dev-master"
+        "drupal/bootstrap_layouts": "^5.1"
     },
     "repositories": {
         "drupal": {
