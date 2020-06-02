@@ -9736,7 +9736,7 @@ body.navbar-is-fixed-bottom {
 }
 @media screen and (min-width: 768px) {
   body {
-    margin-top: 15px;
+    margin-top: 0px;
   }
 }
 @media screen and (max-width: 767px) {
