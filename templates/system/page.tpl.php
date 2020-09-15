@@ -82,7 +82,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-6 col-sm-push-6">
-                    <a href="https://www.nrel.gov"><div class="logo"></div></a>
+                    <?php if ($logo): ?>
+                        <a href="https://www.nrel.gov">
+                            <img class="logo" src="<?php print $logo; ?>" alt="<?php print t('National Renewable Energy Laboratory Home'); ?>" />
+                        </a>
+                    <?php endif; ?>
                 </div>
                 <div class="site-name col-sm-6 col-sm-pull-6">
                     <a class="app-name" href="/"><?php print $site_name; ?></a>
