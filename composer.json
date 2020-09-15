@@ -6,9 +6,9 @@
   "homepage": "https://www.drupal.org/project/bootstrap",
     "authors": [
         {
-            "name": "Damon Haley (dhaley)",
-            "email": "damon.haley@nrel.gov",
-            "role": "Maintainer"
+            "name": "Chris Modern (cmodern)",
+            "email": "christian.modern@nrel.gov",
+            "role": "Co-maintainer"
         },
         {
             "name": "Shaun Laws (slaws)",

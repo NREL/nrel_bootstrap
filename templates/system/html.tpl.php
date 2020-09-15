@@ -56,22 +56,23 @@
 ?><!DOCTYPE html>
 <html<?php print $html_attributes;?><?php print $rdf_namespaces;?>>
 <head>
-  <link rel="profile" href="<?php print $grddl_profile; ?>" />
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <?php print $head; ?>
-  <title><?php print $head_title; ?></title>
-  <!-- Global application head code -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <link rel="profile" href="<?php print $grddl_profile; ?>" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <?php print $head; ?>
+    <title><?php print $head_title; ?></title>
+    <!-- Global application head code -->
     <!-- == APPLICATION HEAD == -->
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
 
     <!-- iOS icons -->
-    <link rel="apple-touch-icon" href="/sites/all/themes/nrel_bootstrap/img/touch-icon-iphone.png">
-    <link rel="apple-touch-icon" sizes="72x72"   href="/sites/all/themes/nrel_bootstrap/img/touch-icon-ipad.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/sites/all/themes/nrel_bootstrap/touch-icon-iphone-retina.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/sites/all/themes/nrel_bootstrap/img/touch-icon-ipad-retina.png">
+    <link rel="apple-touch-icon" href="/sites/all/themes/contrib/nrel_bootstrap/img/touch-icon-iphone.png">
+    <link rel="apple-touch-icon" sizes="72x72"   href="/sites/all/themes/contrib/nrel_bootstrap/img/touch-icon-ipad.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/sites/all/themes/contrib/nrel_bootstrap/touch-icon-iphone-retina.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/sites/all/themes/contrib/nrel_bootstrap/img/touch-icon-ipad-retina.png">
 
 
     <!-- Bootstrap styles -->
@@ -80,7 +81,7 @@
 
     <!-- Fonts -->
     <link href="//fonts.googleapis.com/css?family=Droid+Serif:400,400italic,700%7CRoboto:300,400,700" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,400i,700,700i" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,400i,700,700i" rel="stylesheet">
 
     <!-- Font Awesome -->
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
@@ -88,19 +89,19 @@
 
     <!-- == END APPLICATION HEAD == -->
 
-  <?php print $styles; ?>
-  <!-- HTML5 element support for IE6-8 -->
-  <!--[if lt IE 9]>
+    <?php print $styles; ?>
+    <!-- HTML5 element support for IE6-8 -->
+    <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
-  <?php print $scripts; ?>
+    <![endif]-->
+    <?php print $scripts; ?>
 </head>
 <body<?php print $body_attributes; ?>>
-  <div id="skip-link">
+<div id="skip-link">
     <a href="#main-content" class="element-invisible element-focusable"><?php print t('Skip to main content'); ?></a>
-  </div>
-  <?php print $page_top; ?>
-  <?php print $page; ?>
-  <?php print $page_bottom; ?>
+</div>
+<?php print $page_top; ?>
+<?php print $page; ?>
+<?php print $page_bottom; ?>
 </body>
 </html>
