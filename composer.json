@@ -27,7 +27,8 @@
         }
     },
     "require": {
-        "drupal/bootstrap_barrio": "^5"
+        "drupal/bootstrap_barrio": "^5",
+        "nrel/nrel_bootstrap_module": "dev-8.x-5.1.4"
     },
     "require-dev": {
         "nuvoleweb/drupal-component-scaffold": "*",

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8f2cd3f6beb12cfa3be49dd400ffeb54",
+    "content-hash": "054987f509642bacedf7fdf31f775880",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1866,6 +1866,44 @@
                 "xml"
             ],
             "time": "2020-10-01T13:52:52+00:00"
+        },
+        {
+            "name": "nrel/nrel_bootstrap_module",
+            "version": "dev-8.x-5.1.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/NREL/nrel_bootstrap_module.git",
+                "reference": "459797335af6c395420f8ecb57e5dbdf5c73ca7b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/NREL/nrel_bootstrap_module/zipball/459797335af6c395420f8ecb57e5dbdf5c73ca7b",
+                "reference": "459797335af6c395420f8ecb57e5dbdf5c73ca7b",
+                "shasum": ""
+            },
+            "require": {
+                "nrel/nrel_bootstrap": "dev-8.x-5.1.4"
+            },
+            "type": "drupal-module",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Shaun Laws (slaws)",
+                    "email": "shaun.laws@nrel.gov",
+                    "role": "Co-maintainer"
+                },
+                {
+                    "name": "Chris Modern (cmodern)",
+                    "email": "christian.modern@nrel.gov",
+                    "role": "Co-maintainer"
+                }
+            ],
+            "description": "Companion module to the NREL Bootstrap theme.",
+            "homepage": "https://github.com/NREL/nrel_bootstrap_module",
+            "time": "2021-01-14T15:24:26+00:00"
         },
         {
             "name": "pear/archive_tar",
@@ -6958,7 +6996,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "nrel/nrel_bootstrap_module": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],
