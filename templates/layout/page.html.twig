@@ -70,178 +70,178 @@
 <!-- TOP NAVIGATION -->
 <!--stopindex-->
 <div class="program-header">
-  <div class="container">
-    <nav class="navbar navbar-expand-md navbar-light">
+    <div class="container">
+        <nav class="navbar navbar-expand-md navbar-light">
 
-      <div id="program-menu" class="mr-auto">
-        <button class="custom-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#topnav-collapse" aria-controls="topnav-collapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-          <span class="navbar-toggle-label">Menu</span>
-        </button>
-      </div>
+            <div id="program-menu" class="mr-auto">
+                <button class="custom-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#topnav-collapse" aria-controls="topnav-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggle-label">Menu</span>
+                </button>
+            </div>
 
-      <!-- Navigation -->
-      {% if page.primary_menu or page.secondary_menu %}
-      <div class="navbar-collapse collapse" id="topnav-collapse">
-        {% if page.primary_menu %}
-          <div class="nav navbar-nav">
-            {{ page.primary_menu }}
-          </div>
-        {% endif %}
-        {% if page.secondary_menu %}
-          <div class="nav navbar-nav ml-auto">
-            {{ page.secondary_menu }}
-          </div>
-        {% endif %}
-        <!-- desktop search button -->
-        <button type="button" class="custom-toggler site-navbar-toggler site-searchbar-toggle d-none d-md-inline" data-toggle="collapse" data-target="#searchbar-collapse" aria-expanded="false" aria-label="Toggle Search">
-          <span class="fa fa-search" aria-hidden="true"></span>
-        </button>
-      </div>
-
-    </nav>
-  </div><!--program-header-->
+            <!-- Navigation -->
+            {% if page.primary_menu or page.secondary_menu %}
+                <div class="navbar-collapse collapse" id="topnav-collapse">
+                    {% if page.primary_menu %}
+                        <div class="nav navbar-nav">
+                            {{ page.primary_menu }}
+                        </div>
+                    {% endif %}
+                    {% if page.secondary_menu %}
+                        <div class="nav navbar-nav ml-auto">
+                            {{ page.secondary_menu }}
+                        </div>
+                    {% endif %}
+                    <!-- desktop search button -->
+                    <button type="button" class="custom-toggler site-navbar-toggler site-searchbar-toggle d-none d-md-inline" data-toggle="collapse" data-target="#searchbar-collapse" aria-expanded="false" aria-label="Toggle Search">
+                        <span class="fa fa-search" aria-hidden="true"></span>
+                    </button>
+                </div>
+            {% endif %}
+        </nav>
+    </div><!--program-header-->
 </div><!--container-->
 <!-- mobile search button -->
 <button type="button" class="custom-toggler site-navbar-toggler site-searchbar-toggle d-md-none" data-toggle="collapse" data-target="#searchbar-collapse-mobile" aria-expanded="false" aria-label="Toggle Search">
-  <span class="fa fa-search" aria-hidden="true"></span>
+    <span class="fa fa-search" aria-hidden="true"></span>
 </button>
 <!-- Start collapsible site search bar -->
 <div class="site-search-bar">
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <nav class="navbar navbar-light">
-          <div class="navbar-collapse collapse" id="searchbar-collapse">
-            <form
-              method="get"
-              class="site-searchbar-form form-inline ThunderstoneForm"
-              action="https://search4.nrel.gov/texis/search/"
-              id="ThunderstoneSearchForm">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <nav class="navbar navbar-light">
+                    <div class="navbar-collapse collapse" id="searchbar-collapse">
+                        <form
+                                method="get"
+                                class="site-searchbar-form form-inline ThunderstoneForm"
+                                action="https://search4.nrel.gov/texis/search/"
+                                id="ThunderstoneSearchForm">
 
-              <input type="hidden" name="pr" value="metanrel" />
-              <div class="form-group">
-                <label for="query" class="sr-only">Search NREL.gov</label>
-                <input
-                  type="search"
-                  id="query" name="query"
-                  maxlength="2047"
-                  placeholder="Search NREL.gov"
-                  class="form-control"
-                  aria-label="Search NREL.gov">
-                <button type="submit" class="btn btn-default">Search</button>
-              </div>
-            </form>
-          </div>
-        </nav>
-      </div>
+                            <input type="hidden" name="pr" value="metanrel" />
+                            <div class="form-group">
+                                <label for="query" class="sr-only">Search NREL.gov</label>
+                                <input
+                                        type="search"
+                                        id="query" name="query"
+                                        maxlength="2047"
+                                        placeholder="Search NREL.gov"
+                                        class="form-control"
+                                        aria-label="Search NREL.gov">
+                                <button type="submit" class="btn btn-default">Search</button>
+                            </div>
+                        </form>
+                    </div>
+                </nav>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
 <!-- End collapsible site search bar -->
 <!--startindex-->
 <div id="page-wrapper" class="program-header">
-  <div id="page" class="container">
-    <header id="header" class="header" role="banner" aria-label="{{ 'Site header'|t}}">
-      {% block head %}
-        {% if page.secondary_menu or page.top_header or page.top_header_form %}
-          <nav{{ navbar_top_attributes }}>
-            {% if container_navbar %}
-            <div class="container">
-              {% endif %}
-              {{ page.secondary_menu }}
-              {{ page.top_header }}
-              {% if page.top_header_form %}
-                <div class="form-inline navbar-form ml-auto">
-                  {{ page.top_header_form }}
-                </div>
-              {% endif %}
-              {% if container_navbar %}
-            </div>
-            {% endif %}
-          </nav>
-        {% endif %}
-        <nav{{ navbar_attributes }}>
-          {% if container_navbar %}
-          <div class="container">
-            {% endif %}
-            {{ page.header }}
-            {% if page.primary_menu or page.header_form %}
-              <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#CollapsingNavbar" aria-controls="CollapsingNavbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-              <div class="collapse navbar-collapse justify-content-end" id="CollapsingNavbar">
-                {{ page.primary_menu }}
-                {% if page.header_form %}
-                  <div class="form-inline navbar-form justify-content-end">
-                    {{ page.header_form }}
-                  </div>
+    <div id="page" class="container">
+        <header id="header" class="header" role="banner" aria-label="{{ 'Site header'|t}}">
+            {% block head %}
+                {% if page.secondary_menu or page.top_header or page.top_header_form %}
+                    <nav{{ navbar_top_attributes }}>
+                        {% if container_navbar %}
+                        <div class="container">
+                            {% endif %}
+                            {{ page.secondary_menu }}
+                            {{ page.top_header }}
+                            {% if page.top_header_form %}
+                                <div class="form-inline navbar-form ml-auto">
+                                    {{ page.top_header_form }}
+                                </div>
+                            {% endif %}
+                            {% if container_navbar %}
+                        </div>
+                        {% endif %}
+                    </nav>
                 {% endif %}
-              </div>
-            {% endif %}
-            {% if sidebar_collapse %}
-              <button class="navbar-toggler navbar-toggler-left collapsed" type="button" data-toggle="collapse" data-target="#CollapsingLeft" aria-controls="CollapsingLeft" aria-expanded="false" aria-label="Toggle navigation"></button>
-            {% endif %}
-            {% if container_navbar %}
-          </div>
-          {% endif %}
-        </nav>
-      {% endblock %}
-    </header>
-    <div id="main-wrapper" class="layout-main-wrapper clearfix">
-      {% block content %}
-        <div id="main" class="{{ container }}">
-          {{ page.breadcrumb }}
-          <div class="row row-offcanvas row-offcanvas-left clearfix">
-              <main{{ content_attributes }}>
-                <section class="section">
-                  <a id="main-content" tabindex="-1"></a>
-                  {{ page.content }}
-                </section>
-              </main>
-            {% if page.sidebar_first %}
-              <div{{ sidebar_first_attributes }}>
-                <aside class="section" role="complementary">
-                  {{ page.sidebar_first }}
-                </aside>
-              </div>
-            {% endif %}
-            {% if page.sidebar_second %}
-              <div{{ sidebar_second_attributes }}>
-                <aside class="section" role="complementary">
-                  {{ page.sidebar_second }}
-                </aside>
-              </div>
-            {% endif %}
-          </div>
+                <nav{{ navbar_attributes }}>
+                    {% if container_navbar %}
+                    <div class="container">
+                        {% endif %}
+                        {{ page.header }}
+                        {% if page.primary_menu or page.header_form %}
+                            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#CollapsingNavbar" aria-controls="CollapsingNavbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                            <div class="collapse navbar-collapse justify-content-end" id="CollapsingNavbar">
+                                {{ page.primary_menu }}
+                                {% if page.header_form %}
+                                    <div class="form-inline navbar-form justify-content-end">
+                                        {{ page.header_form }}
+                                    </div>
+                                {% endif %}
+                            </div>
+                        {% endif %}
+                        {% if sidebar_collapse %}
+                            <button class="navbar-toggler navbar-toggler-left collapsed" type="button" data-toggle="collapse" data-target="#CollapsingLeft" aria-controls="CollapsingLeft" aria-expanded="false" aria-label="Toggle navigation"></button>
+                        {% endif %}
+                        {% if container_navbar %}
+                    </div>
+                    {% endif %}
+                </nav>
+            {% endblock %}
+        </header>
+        <div id="main-wrapper" class="layout-main-wrapper clearfix">
+            {% block content %}
+                <div id="main" class="{{ container }}">
+                    {{ page.breadcrumb }}
+                    <div class="row row-offcanvas row-offcanvas-left clearfix">
+                        <main{{ content_attributes }}>
+                            <section class="section">
+                                <a id="main-content" tabindex="-1"></a>
+                                {{ page.content }}
+                            </section>
+                        </main>
+                        {% if page.sidebar_first %}
+                            <div{{ sidebar_first_attributes }}>
+                                <aside class="section" role="complementary">
+                                    {{ page.sidebar_first }}
+                                </aside>
+                            </div>
+                        {% endif %}
+                        {% if page.sidebar_second %}
+                            <div{{ sidebar_second_attributes }}>
+                                <aside class="section" role="complementary">
+                                    {{ page.sidebar_second }}
+                                </aside>
+                            </div>
+                        {% endif %}
+                    </div>
+                </div>
+            {% endblock %}
         </div>
-      {% endblock %}
+        {% if page.featured_bottom_first or page.featured_bottom_second or page.featured_bottom_third %}
+            <div class="featured-bottom">
+                <aside class="{{ container }} clearfix" role="complementary">
+                    {{ page.featured_bottom_first }}
+                    {{ page.featured_bottom_second }}
+                    {{ page.featured_bottom_third }}
+                </aside>
+            </div>
+        {% endif %}
+        <footer class="site-footer">
+            {% block footer %}
+                <div class="{{ container }}">
+                    {% if page.footer_first or page.footer_second or page.footer_third or page.footer_fourth %}
+                        <div class="site-footer__top clearfix">
+                            {{ page.footer_first }}
+                            {{ page.footer_second }}
+                            {{ page.footer_third }}
+                            {{ page.footer_fourth }}
+                        </div>
+                    {% endif %}
+                    {% if page.footer_fifth %}
+                        <div class="site-footer__bottom">
+                            {{ page.footer_fifth }}
+                        </div>
+                    {% endif %}
+                </div>
+            {% endblock %}
+        </footer>
     </div>
-    {% if page.featured_bottom_first or page.featured_bottom_second or page.featured_bottom_third %}
-      <div class="featured-bottom">
-        <aside class="{{ container }} clearfix" role="complementary">
-          {{ page.featured_bottom_first }}
-          {{ page.featured_bottom_second }}
-          {{ page.featured_bottom_third }}
-        </aside>
-      </div>
-    {% endif %}
-    <footer class="site-footer">
-      {% block footer %}
-        <div class="{{ container }}">
-          {% if page.footer_first or page.footer_second or page.footer_third or page.footer_fourth %}
-            <div class="site-footer__top clearfix">
-              {{ page.footer_first }}
-              {{ page.footer_second }}
-              {{ page.footer_third }}
-              {{ page.footer_fourth }}
-            </div>
-          {% endif %}
-          {% if page.footer_fifth %}
-            <div class="site-footer__bottom">
-              {{ page.footer_fifth }}
-            </div>
-          {% endif %}
-        </div>
-      {% endblock %}
-    </footer>
-  </div>
 </div>
