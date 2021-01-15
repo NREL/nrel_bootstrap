@@ -1,0 +1,67 @@
+{#
+/**
+ * @file
+ * Bootstrap Barrio's theme implementation for a branding block.
+ *
+ * Each branding element variable (logo, name, slogan) is only available if
+ * enabled in the block configuration.
+ *
+ * Available variables:
+ * - site_logo: Logo for site as defined in Appearance or theme settings.
+ * - site_name: Name for site as defined in Site information settings.
+ * - site_slogan: Slogan for site as defined in Site information settings.
+ */
+#}
+{% set attributes = attributes.addClass('site-branding') %}
+<header id="banner" class="header" role="banner" aria-label="{{ 'Site header'|t}}">
+  <div class="banner-logo">
+    <div class="container app">
+      <div class="row">
+
+        <div class="col-md-6 col-xl-4 order-md-2">
+          <a href="http://www.nrel.gov"><div class="logo"></div></a>
+        </div>
+
+        <div class="col-12 d-md-none">
+          <!-- Start MOBILE collapsible site search bar -->
+          <div class="site-search-bar">
+            <div class="container">
+              <div class="row">
+                <div class="col d-flex justify-content-center mb-1">
+                  <nav class="navbar navbar-light">
+                    <div class="navbar-collapse collapse" id="searchbar-collapse-mobile">
+                      <form
+                        method="get"
+                        class="site-searchbar-form form-inline ThunderstoneForm"
+                        action="https://search4.nrel.gov/texis/search/"
+                        id="ThunderstoneSearchForm">
+
+                        <input type="hidden" name="pr" value="metanrel" />
+                        <div class="form-group">
+                          <label for="query" class="sr-only">Search NREL.gov</label>
+                          <input
+                            type="search"
+                            id="query" name="query"
+                            maxlength="2047"
+                            placeholder="Search NREL.gov"
+                            class="form-control"
+                            aria-label="Search NREL.gov">
+                          <button type="submit" class="btn btn-default">Search</button>
+                        </div>
+                      </form>
+                    </div>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End MOBILE collapsible site search bar -->
+        </div>
+        <div class="col-md-6 col-xl-8 order-md-1">
+          <a href="{{ path('<front>') }}" class="app-name">{{ site_name }}</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</header>

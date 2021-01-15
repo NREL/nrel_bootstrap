@@ -1,0 +1,23 @@
+name: NREL Bootstrap
+type: theme
+description: 'NREL Bootstrap Barrio SubTheme.'
+core: 8.x
+core_version_requirement: ^8 || ^9
+base theme: bootstrap_barrio
+
+libraries:
+  - nrel_bootstrap/bootstrap_cdn
+  - nrel_bootstrap/global-styling
+  - nrel_bootstrap/nrel_complete
+  - nrel_bootstrap/nrel_application
+
+regions:
+  primary_menu: 'Primary menu'
+  secondary_menu: 'Secondary menu'
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+  breadcrumb: Breadcrumb
+  content: Content
+  sidebar_first: 'Sidebar first'
+  sidebar_second: 'Sidebar second'
+  footer: Footer

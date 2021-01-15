@@ -12,3 +12,7 @@ npm-debug.log
 .libraries
 lib
 starterkits/*/bootstrap
+
+#ignore composer installed files
+vendor
+build
