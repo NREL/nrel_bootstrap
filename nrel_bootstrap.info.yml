@@ -8,10 +8,9 @@ base theme: bootstrap_barrio
 libraries:
   - nrel_bootstrap/bootstrap_cdn
   - nrel_bootstrap/global-styling
-  - nrel_bootstrap/nrel_complete
-  - nrel_bootstrap/nrel_application
 
 regions:
+  header: Header
   primary_menu: 'Primary menu'
   secondary_menu: 'Secondary menu'
   page_top: 'Page top'

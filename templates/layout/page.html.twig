@@ -67,126 +67,93 @@
  * @see html.html.twig
  */
 #}
-<!-- TOP NAVIGATION -->
-<!--stopindex-->
-<div class="program-header">
-    <div class="container">
-        <nav class="navbar navbar-expand-md navbar-light">
+{% set container = theme.settings.fluid_container ? 'container-fluid' : 'container' %}
+<div id="page-wrapper">
+    <div id="page">
 
-            <div id="program-menu" class="mr-auto">
-                <button class="custom-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#topnav-collapse" aria-controls="topnav-collapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                    <span class="navbar-toggle-label">Menu</span>
-                </button>
-            </div>
+        {# Header #}
+        {% if page.header %}
+            {% block header %}
 
-            <!-- Navigation -->
-            {% if page.primary_menu or page.secondary_menu %}
-                <div class="navbar-collapse collapse" id="topnav-collapse">
-                    {% if page.primary_menu %}
-                        <div class="nav navbar-nav">
-                            {{ page.primary_menu }}
-                        </div>
-                    {% endif %}
-                    {% if page.secondary_menu %}
-                        <div class="nav navbar-nav ml-auto">
-                            {{ page.secondary_menu }}
-                        </div>
-                    {% endif %}
-                    <!-- desktop search button -->
-                    <button type="button" class="custom-toggler site-navbar-toggler site-searchbar-toggle d-none d-md-inline" data-toggle="collapse" data-target="#searchbar-collapse" aria-expanded="false" aria-label="Toggle Search">
-                        <span class="fa fa-search" aria-hidden="true"></span>
-                    </button>
-                </div>
-            {% endif %}
-        </nav>
-    </div><!--program-header-->
-</div><!--container-->
-<!-- mobile search button -->
-<button type="button" class="custom-toggler site-navbar-toggler site-searchbar-toggle d-md-none" data-toggle="collapse" data-target="#searchbar-collapse-mobile" aria-expanded="false" aria-label="Toggle Search">
-    <span class="fa fa-search" aria-hidden="true"></span>
-</button>
-<!-- Start collapsible site search bar -->
-<div class="site-search-bar">
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <nav class="navbar navbar-light">
-                    <div class="navbar-collapse collapse" id="searchbar-collapse">
-                        <form
-                                method="get"
-                                class="site-searchbar-form form-inline ThunderstoneForm"
-                                action="https://search4.nrel.gov/texis/search/"
-                                id="ThunderstoneSearchForm">
+                {{ page.header }}
 
-                            <input type="hidden" name="pr" value="metanrel" />
-                            <div class="form-group">
-                                <label for="query" class="sr-only">Search NREL.gov</label>
-                                <input
-                                        type="search"
-                                        id="query" name="query"
-                                        maxlength="2047"
-                                        placeholder="Search NREL.gov"
-                                        class="form-control"
-                                        aria-label="Search NREL.gov">
-                                <button type="submit" class="btn btn-default">Search</button>
-                            </div>
-                        </form>
+            {% endblock %}
+        {% endif %}
+
+        <!-- TOP NAVIGATION -->
+        <!--stopindex-->
+        <div class="program-header">
+            <div class="container">
+                <nav class="navbar navbar-expand-md navbar-light">
+
+                    <div id="program-menu" class="mr-auto">
+                        <button class="custom-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#topnav-collapse" aria-controls="topnav-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                            <span class="navbar-toggle-label">Menu</span>
+                        </button>
                     </div>
-                </nav>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- End collapsible site search bar -->
-<!--startindex-->
-<div id="page-wrapper" class="program-header">
-    <div id="page" class="container">
-        <header id="header" class="header" role="banner" aria-label="{{ 'Site header'|t}}">
-            {% block head %}
-                {% if page.secondary_menu or page.top_header or page.top_header_form %}
-                    <nav{{ navbar_top_attributes }}>
-                        {% if container_navbar %}
-                        <div class="container">
-                            {% endif %}
-                            {{ page.secondary_menu }}
-                            {{ page.top_header }}
-                            {% if page.top_header_form %}
-                                <div class="form-inline navbar-form ml-auto">
-                                    {{ page.top_header_form }}
+
+                    <!-- Navigation -->
+                    {% if page.primary_menu or page.secondary_menu %}
+                        <div class="navbar-collapse collapse" id="topnav-collapse">
+                            {% if page.primary_menu %}
+                                <div class="nav navbar-nav">
+                                    {{ page.primary_menu }}
                                 </div>
                             {% endif %}
-                            {% if container_navbar %}
+                            {% if page.secondary_menu %}
+                                <div class="nav navbar-nav ml-auto">
+                                    {{ page.secondary_menu }}
+                                </div>
+                            {% endif %}
+                            <!-- desktop search button -->
+                            <button type="button" class="custom-toggler site-navbar-toggler site-searchbar-toggle d-none d-md-inline" data-toggle="collapse" data-target="#searchbar-collapse" aria-expanded="false" aria-label="Toggle Search">
+                                <span class="fa fa-search" aria-hidden="true"></span>
+                            </button>
                         </div>
-                        {% endif %}
-                    </nav>
-                {% endif %}
-                <nav{{ navbar_attributes }}>
-                    {% if container_navbar %}
-                    <div class="container">
-                        {% endif %}
-                        {{ page.header }}
-                        {% if page.primary_menu or page.header_form %}
-                            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#CollapsingNavbar" aria-controls="CollapsingNavbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                            <div class="collapse navbar-collapse justify-content-end" id="CollapsingNavbar">
-                                {{ page.primary_menu }}
-                                {% if page.header_form %}
-                                    <div class="form-inline navbar-form justify-content-end">
-                                        {{ page.header_form }}
-                                    </div>
-                                {% endif %}
-                            </div>
-                        {% endif %}
-                        {% if sidebar_collapse %}
-                            <button class="navbar-toggler navbar-toggler-left collapsed" type="button" data-toggle="collapse" data-target="#CollapsingLeft" aria-controls="CollapsingLeft" aria-expanded="false" aria-label="Toggle navigation"></button>
-                        {% endif %}
-                        {% if container_navbar %}
-                    </div>
                     {% endif %}
                 </nav>
-            {% endblock %}
-        </header>
-        <div id="main-wrapper" class="layout-main-wrapper clearfix">
+            </div><!--program-header-->
+        </div><!--container-->
+        <!-- mobile search button -->
+        <button type="button" class="custom-toggler site-navbar-toggler site-searchbar-toggle d-md-none" data-toggle="collapse" data-target="#searchbar-collapse-mobile" aria-expanded="false" aria-label="Toggle Search">
+            <span class="fa fa-search" aria-hidden="true"></span>
+        </button>
+        <!-- Start collapsible site search bar -->
+        <div class="site-search-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <nav class="navbar navbar-light">
+                            <div class="navbar-collapse collapse" id="searchbar-collapse">
+                                <form
+                                        method="get"
+                                        class="site-searchbar-form form-inline ThunderstoneForm"
+                                        action="https://search4.nrel.gov/texis/search/"
+                                        id="ThunderstoneSearchForm">
+
+                                    <input type="hidden" name="pr" value="metanrel" />
+                                    <div class="form-group">
+                                        <label for="query" class="sr-only">Search NREL.gov</label>
+                                        <input
+                                                type="search"
+                                                id="query" name="query"
+                                                maxlength="2047"
+                                                placeholder="Search NREL.gov"
+                                                class="form-control"
+                                                aria-label="Search NREL.gov">
+                                        <button type="submit" class="btn btn-default">Search</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End collapsible site search bar -->
+        <!--startindex-->
+        <div id="content" class="container">
             {% block content %}
                 <div id="main" class="{{ container }}">
                     {{ page.breadcrumb }}
@@ -198,6 +165,8 @@
                             </section>
                         </main>
                         {% if page.sidebar_first %}
+                            <!-- Site left navigation -->
+                            <!--stopindex-->
                             <div{{ sidebar_first_attributes }}>
                                 <aside class="section" role="complementary">
                                     {{ page.sidebar_first }}
@@ -215,33 +184,106 @@
                 </div>
             {% endblock %}
         </div>
-        {% if page.featured_bottom_first or page.featured_bottom_second or page.featured_bottom_third %}
-            <div class="featured-bottom">
-                <aside class="{{ container }} clearfix" role="complementary">
-                    {{ page.featured_bottom_first }}
-                    {{ page.featured_bottom_second }}
-                    {{ page.featured_bottom_third }}
-                </aside>
-            </div>
-        {% endif %}
-        <footer class="site-footer">
-            {% block footer %}
-                <div class="{{ container }}">
-                    {% if page.footer_first or page.footer_second or page.footer_third or page.footer_fourth %}
-                        <div class="site-footer__top clearfix">
-                            {{ page.footer_first }}
-                            {{ page.footer_second }}
-                            {{ page.footer_third }}
-                            {{ page.footer_fourth }}
+        <!-- == APPLICATION FOOTER == -->
+        <!--stopindex-->
+        <footer id="footer" class="hidden-print">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 order-md-2">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <p class="header"><a href="https://www.nrel.gov/index.html">Home </a>
+                                </p>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <p class="header"><a href="https://www.nrel.gov/research/">Research </a>
+                                        </p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <ul>
+                                            <li><a href="https://www.nrel.gov/manufacturing/">Advanced Manufacturing</a></li>
+                                            <li><a href="https://www.nrel.gov/bioenergy/">Bioenergy</a></li>
+                                            <li><a href="https://www.nrel.gov/buildings/">Buildings</a></li>
+                                            <li><a href="https://www.nrel.gov/chemistry-nanoscience/">Chemistry and Nanoscience</a></li>
+                                            <li><a href="https://www.nrel.gov/computational-science/">Computational Science</a></li>
+                                            <li><a href="https://www.nrel.gov/analysis/">Energy Analysis</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <ul>
+                                            <li><a href="https://www.nrel.gov/storage/index.html">Energy Storage</a></li>
+                                            <li><a href="https://www.nrel.gov/esif/">Energy Systems Integration Facility</a></li>
+                                            <li><a href="https://www.nrel.gov/geothermal/">Geothermal</a></li>
+                                            <li><a href="https://www.nrel.gov/grid/">Grid Modernization</a></li>
+                                            <li><a href="https://www.nrel.gov/hydrogen/">Hydrogen and Fuel Cells</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <ul>
+                                            <li><a href="https://www.nrel.gov/materials-science/">Materials Science</a></li>
+                                            <li><a href="https://www.nrel.gov/solar/">Solar</a></li>
+                                            <li><a href="https://www.nrel.gov/transportation/">Transportation</a></li>
+                                            <li><a href="https://www.nrel.gov/water/">Water</a></li>
+                                            <li><a href="https://www.nrel.gov/wind/">Wind</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Follow -->
+                            <div class="col-md-2">
+                                <p class="header">Follow NREL</p>
+                                <ul class="social-links list-inline">
+                                    <li class="list-inline-item"><a href="https://www.facebook.com/nationalrenewableenergylab" aria-label="Follow NREL on Facebook"><span class="fa fa-facebook-square"><!--facebook--></span></a>
+                                    </li>
+                                    <li class="list-inline-item"><a href="https://www.nrel.gov/news/subscribe.html" aria-label="Subscribe to news"><span class="fa fa-envelope"><!--subscribe--></span></a>
+                                    </li>
+                                    <li class="list-inline-item"><a href="https://twitter.com/nrel/" aria-label="Follow NREL on Twitter"><span class="fa fa-twitter"><!--twitter--></span></a>
+                                    </li>
+                                    <li class="list-inline-item"><a href="https://www.linkedin.com/company/national-renewable-energy-laboratory" aria-label="Follow NREL on Linked In"><span class="fa fa-linkedin-square"><!--Linked In--></span></a>
+                                    </li>
+                                    <li class="list-inline-item"><a href="https://www.youtube.com/user/NRELPR/" aria-label="Follow NREL on YouTube"><span class="fa fa-youtube"><!--You Tube--></span></a>
+                                    </li>
+                                    <li class="list-inline-item"><a href="https://www.instagram.com/nationalrenewableenergylab/" aria-label="Follow NREL on Instagram"><span class="fa fa-instagram"><!--Instagram--></span></a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                    {% endif %}
-                    {% if page.footer_fifth %}
-                        <div class="site-footer__bottom">
-                            {{ page.footer_fifth }}
+                    </div>
+                    <!-- NREL is... -->
+                    <div class="col-md-2 order-md-1 ft-border-right">
+                        <div class="row">
+                            <div class="col-md-12 only-nrel">
+                                <p class="nrel-attr">The National Renewable Energy Laboratory is a national laboratory of the <a href="https://energy.gov/">U.S. Department of Energy</a>, <a href="https://energy.gov/eere/office-energy-efficiency-renewable-energy">Office of Energy Efficiency and Renewable Energy</a>, operated by the <a href="https://www.allianceforsustainableenergy.org/">Alliance for Sustainable Energy, LLC</a>.</p>
+                            </div>
+                            <div class="col-lg-6">
+                                <ul>
+                                    <li><a href="https://www.nrel.gov/security.html">Security &amp; Privacy Policy</a></li>
+                                    <li><a href="https://www.nrel.gov/accessibility.html">Accessibility</a></li>
+                                    <li><a href="https://www.nrel.gov/disclaimer.html">Disclaimer</a></li>
+                                    <li><a id="contact-link" href="https://www.nrel.gov/webmaster.html">Contact Us</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-6">
+                                <ul>
+                                    <li><a href="https://www.nrel.gov/careers/index.html">Apply for a Job</a></li>
+                                    <li><a href="https://developer.nrel.gov/">Developers</a></li>
+                                    <li><a href="https://images.nrel.gov/">Image Gallery</a></li>
+                                </ul>
+                            </div>
                         </div>
-                    {% endif %}
+                    </div>
                 </div>
-            {% endblock %}
+                <div class="row">
+                    <div class="col-md-2 ft-border-right">
+                        <a href="https://energy.gov"><img class="logo" src="/themes/contrib/nrel_bootstrap/client/img/logo-doe-footer.png" alt="U.S. Department of Energy"></a>
+                    </div>
+                </div>
+            </div>
         </footer>
+        <!--startindex-->
+        <!-- == END APPLICATION FOOTER == -->
+
     </div>
 </div>
