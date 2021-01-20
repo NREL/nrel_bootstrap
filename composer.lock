@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9dec43dd7fb23b24ac026e39af66c379",
+    "content-hash": "21dd30932a015652cc6fb5cbf46bee95",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -18,7 +18,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/asm89/stack-cors/zipball/b9c31def6a83f84b4d4a40d35996d375755f0e08",
                 "reference": "b9c31def6a83f84b4d4a40d35996d375755f0e08",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "php": ">=5.5.9",
@@ -56,7 +62,45 @@
                 "cors",
                 "stack"
             ],
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2019-12-24T22:41:47+00:00"
+        },
+        {
+            "name": "bower-asset/nrel-iconomatic",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/NREL/nrel-iconomatic.git",
+                "reference": "3846634c3a6ba1fe34f1a8f376c218bb3c48136d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/NREL/nrel-iconomatic/zipball/3846634c3a6ba1fe34f1a8f376c218bb3c48136d",
+                "reference": "3846634c3a6ba1fe34f1a8f376c218bb3c48136d",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "type": "bower-asset",
+            "notification-url": "https://asset-packagist.nrel.gov/nrel/drupal7/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
+            "time": "2018-11-26T19:58:47+00:00"
         },
         {
             "name": "composer/semver",
@@ -70,7 +114,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/composer/semver/zipball/647490bbcaf7fc4891c58f47b825eb99d19c377a",
                 "reference": "647490bbcaf7fc4891c58f47b825eb99d19c377a",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "php": "^5.3.2 || ^7.0 || ^8.0"
@@ -131,6 +181,12 @@
                     "type": "tidelift"
                 }
             ],
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2020-12-03T15:47:16+00:00"
         },
         {
@@ -145,7 +201,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/doctrine/annotations/zipball/ce77a7ba1770462cd705a91a151b6c3746f9c6ad",
                 "reference": "ce77a7ba1770462cd705a91a151b6c3746f9c6ad",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "doctrine/lexer": "1.*",
@@ -202,6 +264,12 @@
                 "docblock",
                 "parser"
             ],
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2020-10-26T10:28:16+00:00"
         },
         {
@@ -216,7 +284,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/doctrine/cache/zipball/13e3381b25847283a91948d04640543941309727",
                 "reference": "13e3381b25847283a91948d04640543941309727",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "php": "~7.1 || ^8.0"
@@ -298,6 +372,12 @@
                     "type": "tidelift"
                 }
             ],
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2020-07-07T18:54:01+00:00"
         },
         {
@@ -312,7 +392,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/doctrine/collections/zipball/55f8b799269a1a472457bd1a41b4f379d4cfba4a",
                 "reference": "55f8b799269a1a472457bd1a41b4f379d4cfba4a",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "php": "^7.1.3 || ^8.0"
@@ -363,6 +449,12 @@
                 "iterators",
                 "php"
             ],
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2020-07-27T17:53:49+00:00"
         },
         {
@@ -377,7 +469,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/doctrine/common/zipball/f3812c026e557892c34ef37f6ab808a6b567da7f",
                 "reference": "f3812c026e557892c34ef37f6ab808a6b567da7f",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "doctrine/annotations": "^1.0",
@@ -460,6 +558,12 @@
                     "type": "tidelift"
                 }
             ],
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2020-06-05T16:46:05+00:00"
         },
         {
@@ -474,7 +578,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/doctrine/event-manager/zipball/41370af6a30faa9dc0368c4a6814d596e81aba7f",
                 "reference": "41370af6a30faa9dc0368c4a6814d596e81aba7f",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "php": "^7.1 || ^8.0"
@@ -550,6 +660,12 @@
                     "type": "tidelift"
                 }
             ],
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2020-05-29T18:28:51+00:00"
         },
         {
@@ -564,7 +680,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/doctrine/inflector/zipball/4650c8b30c753a76bf44fb2ed00117d6f367490c",
                 "reference": "4650c8b30c753a76bf44fb2ed00117d6f367490c",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "php": "^7.2 || ^8.0"
@@ -642,6 +764,12 @@
                     "type": "tidelift"
                 }
             ],
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2020-05-29T07:19:59+00:00"
         },
         {
@@ -656,7 +784,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/doctrine/lexer/zipball/e864bbf5904cb8f5bb334f99209b48018522f042",
                 "reference": "e864bbf5904cb8f5bb334f99209b48018522f042",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "php": "^7.2 || ^8.0"
@@ -718,6 +852,12 @@
                     "type": "tidelift"
                 }
             ],
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2020-05-25T17:44:05+00:00"
         },
         {
@@ -732,7 +872,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/doctrine/persistence/zipball/7a6eac9fb6f61bba91328f15aa7547f4806ca288",
                 "reference": "7a6eac9fb6f61bba91328f15aa7547f4806ca288",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "doctrine/annotations": "^1.0",
@@ -816,6 +962,12 @@
                     "type": "tidelift"
                 }
             ],
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2020-06-20T12:56:16+00:00"
         },
         {
@@ -830,7 +982,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/doctrine/reflection/zipball/fa587178be682efe90d005e3a322590d6ebb59a5",
                 "reference": "fa587178be682efe90d005e3a322590d6ebb59a5",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "doctrine/annotations": "^1.0",
@@ -894,7 +1052,12 @@
                 "reflection",
                 "static"
             ],
-            "abandoned": "roave/better-reflection",
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2020-10-27T21:46:55+00:00"
         },
         {
@@ -909,7 +1072,13 @@
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/bootstrap-8.x-3.23.zip",
                 "reference": "8.x-3.23",
-                "shasum": "9849be667cc678a91ad29f77c2baea2cf16878bc"
+                "shasum": "9849be667cc678a91ad29f77c2baea2cf16878bc",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "drupal/core": "^8 || ^9"
@@ -953,6 +1122,12 @@
                 "docs": "https://drupal-bootstrap.org",
                 "issues": "https://www.drupal.org/project/issues/bootstrap",
                 "irc": "irc://irc.freenode.org/drupal-bootstrap"
+            },
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
             }
         },
         {
@@ -1069,7 +1244,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/drupal/core/zipball/ec7ac2bd2b7fa7f06df654c637b7f29f019d356f",
                 "reference": "ec7ac2bd2b7fa7f06df654c637b7f29f019d356f",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "asm89/stack-cors": "^1.1",
@@ -1289,6 +1470,12 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2021-01-06T23:44:11+00:00"
         },
         {
@@ -1303,7 +1490,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/easyrdf/easyrdf/zipball/acd09dfe0555fbcfa254291e433c45fdd4652566",
                 "reference": "acd09dfe0555fbcfa254291e433c45fdd4652566",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "ext-mbstring": "*",
@@ -1351,6 +1544,12 @@
                 "rdfa",
                 "sparql"
             ],
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2015-02-27T09:45:49+00:00"
         },
         {
@@ -1365,7 +1564,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/0dbf5d78455d4d6a41d186da50adc1122ec066f4",
                 "reference": "0dbf5d78455d4d6a41d186da50adc1122ec066f4",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "doctrine/lexer": "^1.0.1",
@@ -1415,6 +1620,12 @@
                     "type": "github"
                 }
             ],
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2020-12-29T14:50:06+00:00"
         },
         {
@@ -1429,7 +1640,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/guzzle/guzzle/zipball/9d4290de1cfd701f38099ef7e183b64b4b7b0c5e",
                 "reference": "9d4290de1cfd701f38099ef7e183b64b4b7b0c5e",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "ext-json": "*",
@@ -1482,6 +1699,12 @@
                 "rest",
                 "web service"
             ],
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2020-06-16T21:01:06+00:00"
         },
         {
@@ -1496,7 +1719,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/guzzle/promises/zipball/60d379c243457e073cff02bc323a2a86cb355631",
                 "reference": "60d379c243457e073cff02bc323a2a86cb355631",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "php": ">=5.5"
@@ -1533,6 +1762,12 @@
             "keywords": [
                 "promise"
             ],
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2020-09-30T07:37:28+00:00"
         },
         {
@@ -1547,7 +1782,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/guzzle/psr7/zipball/53330f47520498c0ae1f61f7e2c90f55690c06a3",
                 "reference": "53330f47520498c0ae1f61f7e2c90f55690c06a3",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "php": ">=5.4.0",
@@ -1604,6 +1845,12 @@
                 "uri",
                 "url"
             ],
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2020-09-30T07:37:11+00:00"
         },
         {
@@ -1618,7 +1865,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/laminas/laminas-diactoros/zipball/6991c1af7c8d2c8efee81b22ba97024781824aaa",
                 "reference": "6991c1af7c8d2c8efee81b22ba97024781824aaa",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "laminas/laminas-zendframework-bridge": "^1.0",
@@ -1679,6 +1932,12 @@
                 "psr",
                 "psr-7"
             ],
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2020-03-23T15:28:28+00:00"
         },
         {
@@ -1693,7 +1952,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/laminas/laminas-escaper/zipball/5e04bc5ae5990b17159d79d331055e2c645e5cc5",
                 "reference": "5e04bc5ae5990b17159d79d331055e2c645e5cc5",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "laminas/laminas-zendframework-bridge": "^1.0",
@@ -1734,6 +1999,12 @@
                     "type": "community_bridge"
                 }
             ],
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2020-11-17T21:26:43+00:00"
         },
         {
@@ -1748,7 +2019,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/laminas/laminas-feed/zipball/45d36702d09afd5d8ca01192ecd3b5afaf37126b",
                 "reference": "45d36702d09afd5d8ca01192ecd3b5afaf37126b",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "ext-dom": "*",
@@ -1806,6 +2083,12 @@
                     "type": "community_bridge"
                 }
             ],
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2021-01-04T19:20:24+00:00"
         },
         {
@@ -1820,7 +2103,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/laminas/laminas-stdlib/zipball/d81c7ffe602ed0e6ecb18691019111c0f4bf1efe",
                 "reference": "d81c7ffe602ed0e6ecb18691019111c0f4bf1efe",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "laminas/laminas-zendframework-bridge": "^1.0",
@@ -1856,6 +2145,12 @@
                     "type": "community_bridge"
                 }
             ],
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2020-11-19T20:18:59+00:00"
         },
         {
@@ -1870,7 +2165,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/laminas/laminas-zendframework-bridge/zipball/6ede70583e101030bcace4dcddd648f760ddf642",
                 "reference": "6ede70583e101030bcace4dcddd648f760ddf642",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "php": "^5.6 || ^7.0 || ^8.0"
@@ -1910,6 +2211,12 @@
                     "type": "community_bridge"
                 }
             ],
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2020-09-14T14:23:00+00:00"
         },
         {
@@ -1924,7 +2231,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/Masterminds/html5-php/zipball/9227822783c75406cfe400984b2f095cdf03d417",
                 "reference": "9227822783c75406cfe400984b2f095cdf03d417",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "ext-ctype": "*",
@@ -1975,7 +2288,59 @@
                 "serializer",
                 "xml"
             ],
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2020-10-01T13:52:52+00:00"
+        },
+        {
+            "name": "nrel/nrel_app_template_bootstrap4",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:NREL/nrel-app-template-bootstrap4.git",
+                "reference": "937b02c416fde70a00f388fe73921ccebc684320"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/NREL/nrel-app-template-bootstrap4/zipball/937b02c416fde70a00f388fe73921ccebc684320",
+                "reference": "937b02c416fde70a00f388fe73921ccebc684320",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "type": "library",
+            "notification-url": "https://asset-packagist.nrel.gov/nrel/drupal7/downloads/",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Amy Glickson (aglickso)",
+                    "email": "Amy.Glickson@nrel.gov",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "NREL.gov App branded theme for Bootstrap 4",
+            "homepage": "https://github.com/NREL/nrel-app-template-bootstrap4",
+            "support": {
+                "issues": "https://github.com/NREL/nrel-app-template-bootstrap4/issues",
+                "source": "https://github.com/NREL/nrel-app-template-bootstrap4/tree/master"
+            },
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
+            "time": "2021-01-20T16:28:43+00:00"
         },
         {
             "name": "nrel/nrel_bootstrap_module",
@@ -2016,6 +2381,64 @@
             "time": "2021-01-14T15:24:26+00:00"
         },
         {
+            "name": "nrel/nrel_iconomatic",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/NREL/nrel_iconomatic.git",
+                "reference": "14af25532e28215f3feaee8936ee04b23af09d98"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/NREL/nrel_iconomatic/zipball/14af25532e28215f3feaee8936ee04b23af09d98",
+                "reference": "14af25532e28215f3feaee8936ee04b23af09d98",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "bower-asset/nrel-iconomatic": "dev-master"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "installer-types": [
+                    "bower-asset",
+                    "npm-asset"
+                ],
+                "installer-paths": {
+                    "web/sites/all/libraries/{$name}": [
+                        "type:drupal-library",
+                        "type:bower-asset",
+                        "type:npm-asset",
+                        "type:component"
+                    ]
+                },
+                "composer-exit-on-patch-failure": true,
+                "patches": [],
+                "enable-patching": true
+            },
+            "notification-url": "https://asset-packagist.nrel.gov/nrel/drupal7/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "NREL module to enable nrel_iconomatic javascript library",
+            "support": {
+                "source": "https://github.com/NREL/nrel_iconomatic/tree/master",
+                "issues": "https://github.com/NREL/nrel_iconomatic/issues"
+            },
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
+            "time": "2020-07-17T21:20:04+00:00"
+        },
+        {
             "name": "pear/archive_tar",
             "version": "1.4.11",
             "source": {
@@ -2027,7 +2450,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/pear/Archive_Tar/zipball/17d355cb7d3c4ff08e5729f29cd7660145208d9d",
                 "reference": "17d355cb7d3c4ff08e5729f29cd7660145208d9d",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "pear/pear-core-minimal": "^1.10.0alpha2",
@@ -2079,6 +2508,12 @@
                 "archive",
                 "tar"
             ],
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2020-11-19T22:10:24+00:00"
         },
         {
@@ -2093,7 +2528,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/pear/Console_Getopt/zipball/a41f8d3e668987609178c7c4a9fe48fecac53fa0",
                 "reference": "a41f8d3e668987609178c7c4a9fe48fecac53fa0",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "type": "library",
             "autoload": {
@@ -2126,6 +2567,12 @@
                 }
             ],
             "description": "More info available on: http://pear.php.net/package/Console_Getopt",
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2019-11-20T18:27:48+00:00"
         },
         {
@@ -2140,7 +2587,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/pear/pear-core-minimal/zipball/625a3c429d9b2c1546438679074cac1b089116a7",
                 "reference": "625a3c429d9b2c1546438679074cac1b089116a7",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "pear/console_getopt": "~1.4",
@@ -2170,6 +2623,12 @@
                 }
             ],
             "description": "Minimal set of PEAR core files to be used as composer dependency",
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2019-11-19T19:00:24+00:00"
         },
         {
@@ -2184,7 +2643,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/pear/PEAR_Exception/zipball/dbb42a5a0e45f3adcf99babfb2a1ba77b8ac36a7",
                 "reference": "dbb42a5a0e45f3adcf99babfb2a1ba77b8ac36a7",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "php": ">=4.4.0"
@@ -2225,6 +2690,12 @@
             "keywords": [
                 "exception"
             ],
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2019-12-10T10:24:42+00:00"
         },
         {
@@ -2239,7 +2710,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/php-fig/container/zipball/b7ce3b176482dbbc1245ebf52b181af44c2cf55f",
                 "reference": "b7ce3b176482dbbc1245ebf52b181af44c2cf55f",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "php": ">=5.3.0"
@@ -2274,6 +2751,12 @@
                 "container-interop",
                 "psr"
             ],
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2017-02-14T16:28:37+00:00"
         },
         {
@@ -2288,7 +2771,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/php-fig/http-message/zipball/f6561bf28d520154e4b0ec72be95418abe6d9363",
                 "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "php": ">=5.3.0"
@@ -2324,6 +2813,12 @@
                 "request",
                 "response"
             ],
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2016-08-06T14:39:51+00:00"
         },
         {
@@ -2338,7 +2833,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/php-fig/log/zipball/0f73288fd15629204f9d42b7055f72dacbe811fc",
                 "reference": "0f73288fd15629204f9d42b7055f72dacbe811fc",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "php": ">=5.3.0"
@@ -2371,6 +2872,12 @@
                 "psr",
                 "psr-3"
             ],
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2020-03-23T09:12:05+00:00"
         },
         {
@@ -2385,7 +2892,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/ralouphie/getallheaders/zipball/120b605dfeb996808c31b6477290a714d356e822",
                 "reference": "120b605dfeb996808c31b6477290a714d356e822",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "php": ">=5.6"
@@ -2411,6 +2924,12 @@
                 }
             ],
             "description": "A polyfill for getallheaders.",
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2019-03-08T08:55:37+00:00"
         },
         {
@@ -2425,7 +2944,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/stackphp/builder/zipball/a4faaa6f532c6086bc66c29e1bc6c29593e1ca7c",
                 "reference": "a4faaa6f532c6086bc66c29e1bc6c29593e1ca7c",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "php": ">=7.2.0",
@@ -2461,6 +2986,12 @@
             "keywords": [
                 "stack"
             ],
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2020-01-30T12:17:27+00:00"
         },
         {
@@ -2475,7 +3006,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony-cmf/routing/zipball/fb1e7f85ff8c6866238b7e73a490a0a0243ae8ac",
                 "reference": "fb1e7f85ff8c6866238b7e73a490a0a0243ae8ac",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "php": "^5.3.9|^7.0",
@@ -2520,6 +3057,12 @@
                 "database",
                 "routing"
             ],
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2017-05-09T08:10:41+00:00"
         },
         {
@@ -2534,7 +3077,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/class-loader/zipball/a22265a9f3511c0212bf79f54910ca5a77c0e92c",
                 "reference": "a22265a9f3511c0212bf79f54910ca5a77c0e92c",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "php": "^5.5.9|>=7.0.8"
@@ -2585,6 +3134,12 @@
                     "type": "tidelift"
                 }
             ],
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2020-10-24T10:57:07+00:00"
         },
         {
@@ -2599,7 +3154,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/console/zipball/a10b1da6fc93080c180bba7219b5ff5b7518fe81",
                 "reference": "a10b1da6fc93080c180bba7219b5ff5b7518fe81",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "php": "^5.5.9|>=7.0.8",
@@ -2666,6 +3227,12 @@
                     "type": "tidelift"
                 }
             ],
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2020-10-24T10:57:07+00:00"
         },
         {
@@ -2680,7 +3247,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/debug/zipball/5dfc7825f3bfe9bb74b23d8b8ce0e0894e32b544",
                 "reference": "5dfc7825f3bfe9bb74b23d8b8ce0e0894e32b544",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "php": ">=7.1.3",
@@ -2732,6 +3305,12 @@
                     "type": "tidelift"
                 }
             ],
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2020-12-10T16:34:26+00:00"
         },
         {
@@ -2746,7 +3325,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/dependency-injection/zipball/51d2a2708c6ceadad84393f8581df1dcf9e5e84b",
                 "reference": "51d2a2708c6ceadad84393f8581df1dcf9e5e84b",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "php": "^5.5.9|>=7.0.8",
@@ -2812,6 +3397,12 @@
                     "type": "tidelift"
                 }
             ],
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2020-10-24T10:57:07+00:00"
         },
         {
@@ -2826,7 +3417,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/31fde73757b6bad247c54597beef974919ec6860",
                 "reference": "31fde73757b6bad247c54597beef974919ec6860",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "php": "^5.5.9|>=7.0.8"
@@ -2885,6 +3482,12 @@
                     "type": "tidelift"
                 }
             ],
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2020-10-24T10:57:07+00:00"
         },
         {
@@ -2899,7 +3502,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/http-foundation/zipball/b9885fcce6fe494201da4f70a9309770e9d13dc8",
                 "reference": "b9885fcce6fe494201da4f70a9309770e9d13dc8",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "php": "^5.5.9|>=7.0.8",
@@ -2948,6 +3557,12 @@
                     "type": "tidelift"
                 }
             ],
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2020-10-24T10:57:07+00:00"
         },
         {
@@ -2962,7 +3577,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/http-kernel/zipball/a98a4c30089e6a2d52a9fa236f718159b539f6f5",
                 "reference": "a98a4c30089e6a2d52a9fa236f718159b539f6f5",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "php": "^5.5.9|>=7.0.8",
@@ -3047,6 +3668,12 @@
                     "type": "tidelift"
                 }
             ],
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2020-11-27T08:42:42+00:00"
         },
         {
@@ -3061,7 +3688,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/c6c942b1ac76c82448322025e084cadc56048b4e",
                 "reference": "c6c942b1ac76c82448322025e084cadc56048b4e",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "php": ">=7.1"
@@ -3123,6 +3756,12 @@
                     "type": "tidelift"
                 }
             ],
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2021-01-07T16:49:33+00:00"
         },
         {
@@ -3137,7 +3776,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/polyfill-iconv/zipball/b34bfb8c4c22650ac080d2662ae3502e5f2f4ae6",
                 "reference": "b34bfb8c4c22650ac080d2662ae3502e5f2f4ae6",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "php": ">=7.1"
@@ -3200,6 +3845,12 @@
                     "type": "tidelift"
                 }
             ],
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2021-01-07T16:49:33+00:00"
         },
         {
@@ -3214,7 +3865,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/polyfill-intl-idn/zipball/0eb8293dbbcd6ef6bf81404c9ce7d95bcdf34f44",
                 "reference": "0eb8293dbbcd6ef6bf81404c9ce7d95bcdf34f44",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "php": ">=7.1",
@@ -3284,6 +3941,12 @@
                     "type": "tidelift"
                 }
             ],
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2021-01-07T16:49:33+00:00"
         },
         {
@@ -3298,7 +3961,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/polyfill-intl-normalizer/zipball/6e971c891537eb617a00bb07a43d182a6915faba",
                 "reference": "6e971c891537eb617a00bb07a43d182a6915faba",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "php": ">=7.1"
@@ -3365,6 +4034,12 @@
                     "type": "tidelift"
                 }
             ],
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2021-01-07T17:09:11+00:00"
         },
         {
@@ -3379,7 +4054,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/f377a3dd1fde44d37b9831d68dc8dea3ffd28e13",
                 "reference": "f377a3dd1fde44d37b9831d68dc8dea3ffd28e13",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "php": ">=7.1"
@@ -3442,6 +4123,12 @@
                     "type": "tidelift"
                 }
             ],
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2021-01-07T16:49:33+00:00"
         },
         {
@@ -3456,7 +4143,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/polyfill-php56/zipball/54b8cd7e6c1643d78d011f3be89f3ef1f9f4c675",
                 "reference": "54b8cd7e6c1643d78d011f3be89f3ef1f9f4c675",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "php": ">=7.1"
@@ -3507,6 +4200,12 @@
                     "type": "tidelift"
                 }
             ],
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2020-10-23T14:02:19+00:00"
         },
         {
@@ -3521,7 +4220,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/polyfill-php70/zipball/5f03a781d984aae42cebd18e7912fa80f02ee644",
                 "reference": "5f03a781d984aae42cebd18e7912fa80f02ee644",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "php": ">=7.1"
@@ -3572,6 +4277,12 @@
                     "type": "tidelift"
                 }
             ],
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2020-10-23T14:02:19+00:00"
         },
         {
@@ -3586,7 +4297,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/polyfill-php72/zipball/cc6e6f9b39fe8075b3dabfbaf5b5f645ae1340c9",
                 "reference": "cc6e6f9b39fe8075b3dabfbaf5b5f645ae1340c9",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "php": ">=7.1"
@@ -3645,6 +4362,12 @@
                     "type": "tidelift"
                 }
             ],
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2021-01-07T16:49:33+00:00"
         },
         {
@@ -3659,7 +4382,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/polyfill-php80/zipball/dc3063ba22c2a1fd2f45ed856374d79114998f91",
                 "reference": "dc3063ba22c2a1fd2f45ed856374d79114998f91",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "php": ">=7.1"
@@ -3725,6 +4454,12 @@
                     "type": "tidelift"
                 }
             ],
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2021-01-07T16:49:33+00:00"
         },
         {
@@ -3739,7 +4474,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/process/zipball/b8648cf1d5af12a44a51d07ef9bf980921f15fca",
                 "reference": "b8648cf1d5af12a44a51d07ef9bf980921f15fca",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "php": "^5.5.9|>=7.0.8"
@@ -3783,6 +4524,12 @@
                     "type": "tidelift"
                 }
             ],
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2020-10-24T10:57:07+00:00"
         },
         {
@@ -3797,7 +4544,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/psr-http-message-bridge/zipball/9ab9d71f97d5c7d35a121a7fb69f74fee95cd0ad",
                 "reference": "9ab9d71f97d5c7d35a121a7fb69f74fee95cd0ad",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "php": "^7.1",
@@ -3848,6 +4601,12 @@
                 "psr-17",
                 "psr-7"
             ],
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2019-03-11T18:22:33+00:00"
         },
         {
@@ -3862,7 +4621,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/routing/zipball/3e522ac69cadffd8131cc2b22157fa7662331a6c",
                 "reference": "3e522ac69cadffd8131cc2b22157fa7662331a6c",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "php": "^5.5.9|>=7.0.8"
@@ -3933,6 +4698,12 @@
                     "type": "tidelift"
                 }
             ],
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2020-10-24T10:57:07+00:00"
         },
         {
@@ -3947,7 +4718,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/serializer/zipball/6d69ccc1dcfb64c1e9c9444588643e98718d1849",
                 "reference": "6d69ccc1dcfb64c1e9c9444588643e98718d1849",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "php": "^5.5.9|>=7.0.8",
@@ -4021,6 +4798,12 @@
                     "type": "tidelift"
                 }
             ],
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2020-10-24T10:57:07+00:00"
         },
         {
@@ -4035,7 +4818,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/translation/zipball/be83ee6c065cb32becdb306ba61160d598b1ce88",
                 "reference": "be83ee6c065cb32becdb306ba61160d598b1ce88",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "php": "^5.5.9|>=7.0.8",
@@ -4100,6 +4889,12 @@
                     "type": "tidelift"
                 }
             ],
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2020-10-24T10:57:07+00:00"
         },
         {
@@ -4114,7 +4909,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/validator/zipball/d25ceea5c99022aecf37adf157c76c31fc5dcbed",
                 "reference": "d25ceea5c99022aecf37adf157c76c31fc5dcbed",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "php": "^5.5.9|>=7.0.8",
@@ -4195,6 +4996,12 @@
                     "type": "tidelift"
                 }
             ],
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2020-10-28T05:23:51+00:00"
         },
         {
@@ -4209,7 +5016,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/yaml/zipball/88289caa3c166321883f67fe5130188ebbb47094",
                 "reference": "88289caa3c166321883f67fe5130188ebbb47094",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "php": "^5.5.9|>=7.0.8",
@@ -4263,6 +5076,12 @@
                     "type": "tidelift"
                 }
             ],
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2020-10-24T10:57:07+00:00"
         },
         {
@@ -4277,7 +5096,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/twbs/bootstrap/zipball/a716fb03f965dc0846df479e14388b1b4b93d7ce",
                 "reference": "a716fb03f965dc0846df479e14388b1b4b93d7ce",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "replace": {
                 "twitter/bootstrap": "self.version"
@@ -4320,6 +5145,12 @@
                     "type": "open_collective"
                 }
             ],
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2020-10-13T15:38:30+00:00"
         },
         {
@@ -4334,7 +5165,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/twigphp/Twig/zipball/138c493c5b8ee7cff3821f80b8896d371366b5fe",
                 "reference": "138c493c5b8ee7cff3821f80b8896d371366b5fe",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "php": ">=7.2.5",
@@ -4394,6 +5231,12 @@
                     "type": "tidelift"
                 }
             ],
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2021-01-05T10:10:05+00:00"
         },
         {
@@ -4408,7 +5251,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/TYPO3/phar-stream-wrapper/zipball/60131cb573a1e478cfecd34e4ea38e3b31505f75",
                 "reference": "60131cb573a1e478cfecd34e4ea38e3b31505f75",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "ext-json": "*",
@@ -4445,6 +5294,12 @@
                 "security",
                 "stream-wrapper"
             ],
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2020-11-07T09:06:16+00:00"
         }
     ],
@@ -4461,7 +5316,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/alchemy-fr/Zippy/zipball/59fbeefb9a249122867ef25e53addfcce31850d7",
                 "reference": "59fbeefb9a249122867ef25e53addfcce31850d7",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "doctrine/collections": "~1.0",
@@ -4511,6 +5372,12 @@
                 "tar",
                 "zip"
             ],
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2018-02-22T13:58:36+00:00"
         },
         {
@@ -4525,7 +5392,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/Chi-teck/drupal-code-generator/zipball/5f814e980b6f9cf1ca8c74cc9385c3d81090d388",
                 "reference": "5f814e980b6f9cf1ca8c74cc9385c3d81090d388",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "ext-json": "*",
@@ -4559,6 +5432,12 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Drupal code generator",
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2020-12-05T05:59:11+00:00"
         },
         {
@@ -4573,7 +5452,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/composer/installers/zipball/1a0357fccad9d1cc1ea0c9a05b8847fbccccb78d",
                 "reference": "1a0357fccad9d1cc1ea0c9a05b8847fbccccb78d",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "composer-plugin-api": "^1.0 || ^2.0"
@@ -4703,6 +5588,12 @@
                     "type": "tidelift"
                 }
             ],
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2021-01-14T11:07:16+00:00"
         },
         {
@@ -4717,7 +5608,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/consolidation/annotated-command/zipball/0ee361762df2274f360c085e3239784a53f850b5",
                 "reference": "0ee361762df2274f360c085e3239784a53f850b5",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "consolidation/output-formatters": "^3.5.1",
@@ -4809,6 +5706,12 @@
                 }
             ],
             "description": "Initialize Symfony Console commands from annotated command class methods.",
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2020-10-11T04:30:03+00:00"
         },
         {
@@ -4823,7 +5726,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/consolidation/config/zipball/cac1279bae7efb5c7fb2ca4c3ba4b8eb741a96c1",
                 "reference": "cac1279bae7efb5c7fb2ca4c3ba4b8eb741a96c1",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "dflydev/dot-access-data": "^1.1.0",
@@ -4890,6 +5799,12 @@
                 }
             ],
             "description": "Provide configuration services for a commandline tool.",
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2019-03-03T19:37:04+00:00"
         },
         {
@@ -4904,7 +5819,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/consolidation/filter-via-dot-access-data/zipball/a53e96c6b9f7f042f5e085bf911f3493cea823c6",
                 "reference": "a53e96c6b9f7f042f5e085bf911f3493cea823c6",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "dflydev/dot-access-data": "^1.1.0",
@@ -4957,6 +5878,12 @@
                 }
             ],
             "description": "This project uses dflydev/dot-access-data to provide simple output filtering for applications built with annotated-command / Robo.",
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2019-01-18T06:05:07+00:00"
         },
         {
@@ -4971,7 +5898,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/consolidation/log/zipball/b2e887325ee90abc96b0a8b7b474cd9e7c896e3a",
                 "reference": "b2e887325ee90abc96b0a8b7b474cd9e7c896e3a",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "php": ">=5.4.5",
@@ -5047,6 +5980,12 @@
                 }
             ],
             "description": "Improved Psr-3 / Psr\\Log logger based on Symfony Console components.",
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2019-01-01T17:30:51+00:00"
         },
         {
@@ -5061,7 +6000,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/consolidation/output-formatters/zipball/0d38f13051ef05c223a2bb8e962d668e24785196",
                 "reference": "0d38f13051ef05c223a2bb8e962d668e24785196",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "dflydev/dot-access-data": "^1.1.0",
@@ -5158,6 +6103,12 @@
                 }
             ],
             "description": "Format text by applying transformations provided by plug-in formatters.",
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2020-10-11T04:15:32+00:00"
         },
         {
@@ -5172,7 +6123,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/consolidation/Robo/zipball/fd28dcca1b935950ece26e63541fbdeeb09f7343",
                 "reference": "fd28dcca1b935950ece26e63541fbdeeb09f7343",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "consolidation/annotated-command": "^2.12.1|^4.1",
@@ -5273,6 +6230,12 @@
                 }
             ],
             "description": "Modern task runner",
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2020-10-11T04:51:34+00:00"
         },
         {
@@ -5287,7 +6250,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/consolidation/self-update/zipball/dba6b2c0708f20fa3ba8008a2353b637578849b4",
                 "reference": "dba6b2c0708f20fa3ba8008a2353b637578849b4",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "php": ">=5.5.0",
@@ -5323,6 +6292,12 @@
                 }
             ],
             "description": "Provides a self:update command for Symfony Console applications.",
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2020-04-13T02:49:20+00:00"
         },
         {
@@ -5337,7 +6312,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/consolidation/site-alias/zipball/fd40a03f80f8fd4684b10bef8c8c4ec5a9a9bf26",
                 "reference": "fd40a03f80f8fd4684b10bef8c8c4ec5a9a9bf26",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "consolidation/config": "^1.2.1|^2",
@@ -5394,6 +6375,12 @@
                 }
             ],
             "description": "Manage alias records for local and remote sites.",
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2020-05-28T00:33:41+00:00"
         },
         {
@@ -5408,7 +6395,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/consolidation/site-process/zipball/f3211fa4c60671c6f068184221f06f932556e443",
                 "reference": "f3211fa4c60671c6f068184221f06f932556e443",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "consolidation/config": "^1.2.1",
@@ -5466,6 +6459,12 @@
                 }
             ],
             "description": "A thin wrapper around the Symfony Process Component that allows applications to use the Site Alias library to specify the target for a remote call.",
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2019-09-10T17:56:24+00:00"
         },
         {
@@ -5480,7 +6479,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/container-interop/container-interop/zipball/79cbf1341c22ec75643d841642dd5d6acd83bdb8",
                 "reference": "79cbf1341c22ec75643d841642dd5d6acd83bdb8",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "psr/container": "^1.0"
@@ -5497,7 +6502,12 @@
             ],
             "description": "Promoting the interoperability of container objects (DIC, SL, etc.)",
             "homepage": "https://github.com/container-interop/container-interop",
-            "abandoned": "psr/container",
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2017-02-14T19:40:03+00:00"
         },
         {
@@ -5512,7 +6522,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/cweagans/composer-patches/zipball/ae02121445ad75f4eaff800cc532b5e6233e2ddf",
                 "reference": "ae02121445ad75f4eaff800cc532b5e6233e2ddf",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "composer-plugin-api": "^1.0 || ^2.0",
@@ -5542,6 +6558,12 @@
                 }
             ],
             "description": "Provides a way to patch Composer packages.",
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2020-09-30T17:56:20+00:00"
         },
         {
@@ -5556,7 +6578,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/dflydev/dflydev-dot-access-configuration/zipball/2e6eb0c8b8830b26bb23defcfc38d4276508fc49",
                 "reference": "2e6eb0c8b8830b26bb23defcfc38d4276508fc49",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "dflydev/dot-access-data": "1.*",
@@ -5602,6 +6630,12 @@
                 "config",
                 "configuration"
             ],
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2018-09-08T23:00:17+00:00"
         },
         {
@@ -5616,7 +6650,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/dflydev/dflydev-dot-access-data/zipball/3fbd874921ab2c041e899d044585a2ab9795df8a",
                 "reference": "3fbd874921ab2c041e899d044585a2ab9795df8a",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "php": ">=5.3.2"
@@ -5661,6 +6701,12 @@
                 "dot",
                 "notation"
             ],
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2017-01-20T21:14:22+00:00"
         },
         {
@@ -5675,7 +6721,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/dflydev/dflydev-placeholder-resolver/zipball/c498d0cae91b1bb36cc7d60906dab8e62bb7c356",
                 "reference": "c498d0cae91b1bb36cc7d60906dab8e62bb7c356",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "php": ">=5.3.2"
@@ -5713,6 +6765,12 @@
                 "placeholder",
                 "resolver"
             ],
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2012-10-28T21:08:28+00:00"
         },
         {
@@ -5727,7 +6785,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/dnoegel/php-xdg-base-dir/zipball/8f8a6e48c5ecb0f991c2fdcf5f154a47d85f9ffd",
                 "reference": "8f8a6e48c5ecb0f991c2fdcf5f154a47d85f9ffd",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "php": ">=5.3.2"
@@ -5746,6 +6810,12 @@
                 "MIT"
             ],
             "description": "implementation of xdg base directory specification for php",
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2019-12-04T15:06:13+00:00"
         },
         {
@@ -5760,7 +6830,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/drupal-composer/drupal-scaffold/zipball/13c1ffc7dd4925cb03707759128b85c0cd6276f8",
                 "reference": "13c1ffc7dd4925cb03707759128b85c0cd6276f8",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "composer-plugin-api": "^1.0.0",
@@ -5790,7 +6866,12 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Composer Plugin for updating the Drupal scaffold files when using drupal/core",
-            "abandoned": "drupal/core-composer-scaffold",
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2019-03-30T10:41:38+00:00"
         },
         {
@@ -5805,7 +6886,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/hechoendrupal/drupal-console/zipball/90053d30f52427edb4e4941a9063acb65b5a2c1e",
                 "reference": "90053d30f52427edb4e4941a9063acb65b5a2c1e",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "alchemy/zippy": "~0.4",
@@ -5876,6 +6963,12 @@
                     "type": "open_collective"
                 }
             ],
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2020-11-30T02:09:53+00:00"
         },
         {
@@ -5890,7 +6983,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/hechoendrupal/drupal-console-core/zipball/ab3abc2631761c9588230ba88189d9ba4eb9ed63",
                 "reference": "ab3abc2631761c9588230ba88189d9ba4eb9ed63",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "dflydev/dot-access-configuration": "^1.0",
@@ -5958,6 +7057,12 @@
                 "drupal",
                 "symfony"
             ],
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2020-11-30T01:45:57+00:00"
         },
         {
@@ -5972,7 +7077,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/hechoendrupal/drupal-console-en/zipball/7594601fff153c2799a62bd678ff80749baeee0c",
                 "reference": "7594601fff153c2799a62bd678ff80749baeee0c",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "type": "library",
             "notification-url": "https://packagist.org/downloads/",
@@ -6012,6 +7123,12 @@
                 "drupal",
                 "symfony"
             ],
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2020-08-15T03:34:54+00:00"
         },
         {
@@ -6026,7 +7143,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/hechoendrupal/drupal-console-extend-plugin/zipball/eff6da99cfb5fe1fc60990672d2667c402eb3585",
                 "reference": "eff6da99cfb5fe1fc60990672d2667c402eb3585",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "composer-plugin-api": "^1.0 || ^2.0",
@@ -6054,6 +7177,12 @@
                 }
             ],
             "description": "Drupal Console Extend Plugin",
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2020-11-18T00:15:28+00:00"
         },
         {
@@ -6068,7 +7197,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/drush-ops/drush/zipball/fc985a95c6010e04891a2dbcf3f39984b8c9ef0a",
                 "reference": "fc985a95c6010e04891a2dbcf3f39984b8c9ef0a",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "chi-teck/drupal-code-generator": "^1.32.1",
@@ -6187,6 +7322,12 @@
                     "type": "github"
                 }
             ],
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2020-11-11T04:36:51+00:00"
         },
         {
@@ -6201,7 +7342,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/grasmash/expander/zipball/95d6037344a4be1dd5f8e0b0b2571a28c397578f",
                 "reference": "95d6037344a4be1dd5f8e0b0b2571a28c397578f",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "dflydev/dot-access-data": "^1.1.0",
@@ -6234,6 +7381,12 @@
                 }
             ],
             "description": "Expands internal property references in PHP arrays file.",
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2017-12-21T22:14:55+00:00"
         },
         {
@@ -6248,7 +7401,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/grasmash/yaml-expander/zipball/3f0f6001ae707a24f4d9733958d77d92bf9693b1",
                 "reference": "3f0f6001ae707a24f4d9733958d77d92bf9693b1",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "dflydev/dot-access-data": "^1.1.0",
@@ -6282,6 +7441,12 @@
                 }
             ],
             "description": "Expands internal property references in a yaml file.",
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2017-12-16T16:06:03+00:00"
         },
         {
@@ -6296,7 +7461,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/thephpleague/container/zipball/43f35abd03a12977a60ffd7095efd6a7808488c0",
                 "reference": "43f35abd03a12977a60ffd7095efd6a7808488c0",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "container-interop/container-interop": "^1.2",
@@ -6347,6 +7518,12 @@
                 "provider",
                 "service"
             ],
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2017-05-10T09:20:27+00:00"
         },
         {
@@ -6361,7 +7538,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/c6d052fc58cb876152f89f532b95a8d7907e7f0e",
                 "reference": "c6d052fc58cb876152f89f532b95a8d7907e7f0e",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "ext-tokenizer": "*",
@@ -6399,6 +7582,12 @@
                 "parser",
                 "php"
             ],
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2020-12-20T10:01:03+00:00"
         },
         {
@@ -6413,7 +7602,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/nuvoleweb/drupal-component-scaffold/zipball/a23f6883921daf153a3a4aec5aec7e1d46c7ee64",
                 "reference": "a23f6883921daf153a3a4aec5aec7e1d46c7ee64",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "composer-plugin-api": "^1.0.0",
@@ -6448,6 +7643,12 @@
                 }
             ],
             "description": "Scaffolding Composer plugin for Drupal modules and themes.",
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2017-10-09T20:31:14+00:00"
         },
         {
@@ -6462,7 +7663,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/bobthecow/psysh/zipball/7c710551d4a2653afa259c544508dc18a9098956",
                 "reference": "7c710551d4a2653afa259c544508dc18a9098956",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "dnoegel/php-xdg-base-dir": "0.1.*",
@@ -6520,6 +7727,12 @@
                 "interactive",
                 "shell"
             ],
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2020-12-04T02:51:30+00:00"
         },
         {
@@ -6534,7 +7747,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/stecman/symfony-console-completion/zipball/a9502dab59405e275a9f264536c4e1cb61fc3518",
                 "reference": "a9502dab59405e275a9f264536c4e1cb61fc3518",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "php": ">=5.3.2",
@@ -6565,6 +7784,12 @@
                 }
             ],
             "description": "Automatic BASH completion for Symfony Console Component based applications.",
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2019-11-24T17:03:06+00:00"
         },
         {
@@ -6579,7 +7804,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/config/zipball/e501c56d2fa70798075b9811d0eb4c27de491459",
                 "reference": "e501c56d2fa70798075b9811d0eb4c27de491459",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "php": ">=7.1.3",
@@ -6638,6 +7869,12 @@
                     "type": "tidelift"
                 }
             ],
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2020-12-09T08:58:17+00:00"
         },
         {
@@ -6652,7 +7889,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/css-selector/zipball/74bd82e75da256ad20851af6ded07823332216c7",
                 "reference": "74bd82e75da256ad20851af6ded07823332216c7",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "php": ">=7.1.3"
@@ -6700,6 +7943,12 @@
                     "type": "tidelift"
                 }
             ],
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2020-12-08T16:59:59+00:00"
         },
         {
@@ -6714,7 +7963,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/dom-crawler/zipball/d44fbb02b458fe18d00fea18f24c97cefb87577e",
                 "reference": "d44fbb02b458fe18d00fea18f24c97cefb87577e",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "php": ">=7.1.3",
@@ -6770,6 +8025,12 @@
                     "type": "tidelift"
                 }
             ],
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2020-12-18T07:41:31+00:00"
         },
         {
@@ -6784,7 +8045,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/filesystem/zipball/d99fbef7e0f69bf162ae6131b31132fa3cc4bcbe",
                 "reference": "d99fbef7e0f69bf162ae6131b31132fa3cc4bcbe",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "php": ">=7.1.3",
@@ -6829,6 +8096,12 @@
                     "type": "tidelift"
                 }
             ],
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2020-11-30T13:04:35+00:00"
         },
         {
@@ -6843,7 +8116,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/finder/zipball/ebd0965f2dc2d4e0f11487c16fbb041e50b5c09b",
                 "reference": "ebd0965f2dc2d4e0f11487c16fbb041e50b5c09b",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "php": ">=7.1.3"
@@ -6887,6 +8166,12 @@
                     "type": "tidelift"
                 }
             ],
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2020-12-08T16:59:59+00:00"
         },
         {
@@ -6901,7 +8186,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/var-dumper/zipball/4f31364bbc8177f2a6dbc125ac3851634ebe2a03",
                 "reference": "4f31364bbc8177f2a6dbc125ac3851634ebe2a03",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "php": ">=7.1.3",
@@ -6973,6 +8264,12 @@
                     "type": "tidelift"
                 }
             ],
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2020-12-08T16:59:59+00:00"
         },
         {
@@ -6987,7 +8284,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/webflo/drupal-finder/zipball/c8e5dbe65caef285fec8057a4c718a0d4138d1ee",
                 "reference": "c8e5dbe65caef285fec8057a4c718a0d4138d1ee",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "ext-json": "*"
@@ -7013,6 +8316,12 @@
                 }
             ],
             "description": "Helper class to locate a Drupal installation from a given path.",
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2020-10-27T09:42:17+00:00"
         },
         {
@@ -7027,7 +8336,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/webmozart/assert/zipball/bafc69caeb4d49c39fd0779086c03a3738cbb389",
                 "reference": "bafc69caeb4d49c39fd0779086c03a3738cbb389",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "php": "^5.3.3 || ^7.0 || ^8.0",
@@ -7062,6 +8377,12 @@
                 "check",
                 "validate"
             ],
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2020-07-08T17:02:28+00:00"
         },
         {
@@ -7076,7 +8397,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/webmozart/path-util/zipball/d939f7edc24c9a1bb9c0dee5cb05d8e859490725",
                 "reference": "d939f7edc24c9a1bb9c0dee5cb05d8e859490725",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "php": ">=5.3.3",
@@ -7108,13 +8435,21 @@
                 }
             ],
             "description": "A robust cross-platform utility for normalizing, comparing and modifying file paths.",
+            "transport-options": {
+                "ssl": {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            },
             "time": "2015-12-17T08:42:14+00:00"
         }
     ],
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "nrel/nrel_bootstrap_module": 20
+        "nrel/nrel_bootstrap_module": 20,
+        "nrel/nrel_iconomatic": 20,
+        "nrel/nrel_app_template_bootstrap4": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
