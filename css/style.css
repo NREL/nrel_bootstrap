@@ -2,3 +2,7 @@
  * @file
  * Subtheme specific CSS.
  */
+/* Override Bootstrap Barrio icons */
+a.nav-link--::before {
+    background-image: none;
+}

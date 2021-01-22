@@ -3,15 +3,14 @@ global-styling:
   js:
     js/global.js: {}
   css:
-    component:
+    theme:
       css/nrel_application.css: {}
       css/nrel_complete.css: {}
       css/style.css: {}
       css/colors.css: {}
 bootstrap:
   js:
-    /libraries/popper.js/dist/umd/popper.min.js: {}
-    /libraries/bootstrap/dist/js/bootstrap.min.js: {}
+    /libraries/bootstrap/dist/js/bootstrap.bundle.min.js: {}
   css:
     component:
       /libraries/bootstrap/dist/css/bootstrap.min.css: {}
