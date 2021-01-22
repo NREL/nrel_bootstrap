@@ -5,4 +5,13 @@
 /* Override Bootstrap Barrio icons */
 a.nav-link--::before {
     background-image: none;
+    width: 0px;
+}
+a.nav-link--user-logout::before {
+    background-image: none;
+    width: 0px;
+}
+a.nav-link--contact::before {
+    background-image: none;
+    width: 0px;
 }
