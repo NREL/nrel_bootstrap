@@ -1,5 +1,5 @@
 # Schema for the configuration files of the Bootstrap Barrio Subtheme.
 
 nrel_bootstrap.settings:
-  type: bootstrap_barrio.settings
-  label: 'Bootstrap Barrio settings'
+  type: theme_settings
+  label: 'NREL Bootstrap settings'

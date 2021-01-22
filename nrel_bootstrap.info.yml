@@ -6,7 +6,7 @@ core_version_requirement: ^8 || ^9
 base theme: bootstrap_barrio
 
 libraries:
-  - nrel_bootstrap/bootstrap_cdn
+  - nrel_bootstrap/bootstrap
   - nrel_bootstrap/global-styling
 
 regions:
