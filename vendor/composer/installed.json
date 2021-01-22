@@ -4757,58 +4757,6 @@
         }
     },
     {
-        "name": "nrel/nrel_bootstrap_module",
-        "version": "dev-8.x-5.1.4",
-        "version_normalized": "dev-8.x-5.1.4",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/NREL/nrel_bootstrap_module.git",
-            "reference": "459797335af6c395420f8ecb57e5dbdf5c73ca7b"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/NREL/nrel_bootstrap_module/zipball/459797335af6c395420f8ecb57e5dbdf5c73ca7b",
-            "reference": "459797335af6c395420f8ecb57e5dbdf5c73ca7b",
-            "shasum": "",
-            "mirrors": [
-                {
-                    "url": "https://asset-packagist.nrel.gov/nrel/drupal8/dists/%package%/%version%/%reference%.%type%",
-                    "preferred": true
-                }
-            ]
-        },
-        "require": {
-            "nrel/nrel_bootstrap": "dev-8.x-5.1.4"
-        },
-        "time": "2021-01-14T15:24:26+00:00",
-        "type": "drupal-module",
-        "installation-source": "source",
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "GPL-2.0"
-        ],
-        "authors": [
-            {
-                "name": "Shaun Laws (slaws)",
-                "email": "shaun.laws@nrel.gov",
-                "role": "Co-maintainer"
-            },
-            {
-                "name": "Chris Modern (cmodern)",
-                "email": "christian.modern@nrel.gov",
-                "role": "Co-maintainer"
-            }
-        ],
-        "description": "Companion module to the NREL Bootstrap theme.",
-        "homepage": "https://github.com/NREL/nrel_bootstrap_module",
-        "transport-options": {
-            "ssl": {
-                "verify_peer": false,
-                "allow_self_signed": true
-            }
-        }
-    },
-    {
         "name": "nrel/nrel_iconomatic",
         "version": "dev-master",
         "version_normalized": "9999999-dev",

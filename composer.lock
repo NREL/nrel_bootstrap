@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6e1ada56f111d118cbccba6cb0346ad9",
+    "content-hash": "8cd04e366de6771f9d5a817822ff7ca5",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2365,56 +2365,6 @@
                 }
             },
             "time": "2021-01-20T16:28:43+00:00"
-        },
-        {
-            "name": "nrel/nrel_bootstrap_module",
-            "version": "dev-8.x-5.1.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/NREL/nrel_bootstrap_module.git",
-                "reference": "459797335af6c395420f8ecb57e5dbdf5c73ca7b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/NREL/nrel_bootstrap_module/zipball/459797335af6c395420f8ecb57e5dbdf5c73ca7b",
-                "reference": "459797335af6c395420f8ecb57e5dbdf5c73ca7b",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://asset-packagist.nrel.gov/nrel/drupal8/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
-            },
-            "require": {
-                "nrel/nrel_bootstrap": "dev-8.x-5.1.4"
-            },
-            "type": "drupal-module",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0"
-            ],
-            "authors": [
-                {
-                    "name": "Shaun Laws (slaws)",
-                    "email": "shaun.laws@nrel.gov",
-                    "role": "Co-maintainer"
-                },
-                {
-                    "name": "Chris Modern (cmodern)",
-                    "email": "christian.modern@nrel.gov",
-                    "role": "Co-maintainer"
-                }
-            ],
-            "description": "Companion module to the NREL Bootstrap theme.",
-            "homepage": "https://github.com/NREL/nrel_bootstrap_module",
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
-            },
-            "time": "2021-01-14T15:24:26+00:00"
         },
         {
             "name": "nrel/nrel_iconomatic",
@@ -5349,7 +5299,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal8/dists/%package%/%version%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -5425,7 +5375,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal8/dists/%package%/%version%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -5485,7 +5435,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal8/dists/%package%/%version%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -5641,7 +5591,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal8/dists/%package%/%version%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -5759,7 +5709,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal8/dists/%package%/%version%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -5852,7 +5802,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal8/dists/%package%/%version%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -5931,7 +5881,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal8/dists/%package%/%version%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -6033,7 +5983,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal8/dists/%package%/%version%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -6156,7 +6106,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal8/dists/%package%/%version%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -6283,7 +6233,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal8/dists/%package%/%version%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -6345,7 +6295,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal8/dists/%package%/%version%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -6428,7 +6378,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal8/dists/%package%/%version%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -6512,7 +6462,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal8/dists/%package%/%version%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -6555,7 +6505,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal8/dists/%package%/%version%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -6611,7 +6561,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal8/dists/%package%/%version%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -6683,7 +6633,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal8/dists/%package%/%version%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -6754,7 +6704,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal8/dists/%package%/%version%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -6818,7 +6768,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal8/dists/%package%/%version%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -6863,7 +6813,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal8/dists/%package%/%version%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -6919,7 +6869,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal8/dists/%package%/%version%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -7016,7 +6966,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal8/dists/%package%/%version%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -7110,7 +7060,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal8/dists/%package%/%version%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -7176,7 +7126,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal8/dists/%package%/%version%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -7230,7 +7180,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal8/dists/%package%/%version%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -7375,7 +7325,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal8/dists/%package%/%version%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -7434,7 +7384,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal8/dists/%package%/%version%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -7494,7 +7444,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal8/dists/%package%/%version%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -7571,7 +7521,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal8/dists/%package%/%version%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -7635,7 +7585,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal8/dists/%package%/%version%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -7780,7 +7730,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal8/dists/%package%/%version%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -7837,7 +7787,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal8/dists/%package%/%version%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -7922,7 +7872,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal8/dists/%package%/%version%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -7996,7 +7946,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal8/dists/%package%/%version%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -8078,7 +8028,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal8/dists/%package%/%version%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -8149,7 +8099,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal8/dists/%package%/%version%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -8219,7 +8169,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal8/dists/%package%/%version%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -8317,7 +8267,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal8/dists/%package%/%version%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -8359,17 +8309,17 @@
             "version": "1.9.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/webmozart/assert.git",
+                "url": "https://github.com/webmozarts/assert.git",
                 "reference": "bafc69caeb4d49c39fd0779086c03a3738cbb389"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webmozart/assert/zipball/bafc69caeb4d49c39fd0779086c03a3738cbb389",
+                "url": "https://api.github.com/repos/webmozarts/assert/zipball/bafc69caeb4d49c39fd0779086c03a3738cbb389",
                 "reference": "bafc69caeb4d49c39fd0779086c03a3738cbb389",
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal8/dists/%package%/%version%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -8430,7 +8380,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://asset-packagist.nrel.gov/nrel/drupal7/dists/%package%/%version%/%reference%.%type%",
+                        "url": "https://asset-packagist.nrel.gov/nrel/drupal8/dists/%package%/%version%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -8477,7 +8427,6 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "nrel/nrel_bootstrap_module": 20,
         "nrel/nrel_iconomatic": 20,
         "nrel/nrel_app_template_bootstrap4": 20
     },
