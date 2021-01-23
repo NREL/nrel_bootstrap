@@ -32,4 +32,52 @@ function nrel_bootstrap_preprocess_page(&$variables)
     if ($icons) {
         $variables['#attached']['library'][] = ( $icons == 'fontawesome_4' ? 'nrel_bootstrap' : 'bootstrap_barrio' ) . '/' . $icons;
     }
+
+    // Barrio uses order-first and order-last classes for the content and sidebars. The NREL App template uses
+    // order-md-first and order-md-last. Unset the elements containing the order-first and order-last classes and
+    // add order-md-first and order-md-last classes instead.
+    switch (theme_get_setting('bootstrap_barrio_sidebar_position')) {
+
+        case 'left':
+            $order_first_key = array_search('order-first', $variables['sidebar_first_attributes']['class']->value());
+            if (false !== $order_first_key) {
+                unset($variables['sidebar_first_attributes']['class'][$order_first_key]);
+            }
+            $order_last_key = array_search('order-last', $variables['content_attributes']['class']->value());
+            if (false !== $order_last_key) {
+                unset($variables['content_attributes']['class'][$order_last_key]);
+            }
+            $variables['sidebar_first_attributes']['class'][] = 'order-md-first';
+            $variables['content_attributes']['class'][] = 'order-md-last';
+            break;
+
+        case 'both':
+            $order_first_key = array_search('order-first', $variables['sidebar_first_attributes']['class']->value());
+            if (false !== $order_first_key) {
+                unset($variables['sidebar_first_attributes']['class'][$order_first_key]);
+            }
+            $order_last_key = array_search('order-last', $variables['sidebar_second_attributes']['class']->value());
+            if (false !== $order_last_key) {
+                unset($variables['sidebar_second_attributes']['class'][$order_last_key]);
+            }
+            $variables['sidebar_first_attributes']['class'][] = 'order-md-first';
+            $variables['sidebar_second_attributes']['class'][] = 'order-md-last';
+            break;
+
+        case 'right':
+            $order_first_key = array_search('order-first', $variables['content_attributes']['class'])->value();
+            if (false !== $order_first_key) {
+                unset($variables['content_attributes']['class'][$order_first_key]);
+            }
+            $order_last_key = array_search('order-last', $variables['sidebar_second_attributes']['class']->value());
+            if (false !== $order_last_key) {
+                unset($variables['sidebar_second_attributes']['class'][$order_last_key]);
+            }
+            $variables['content_attributes']['class'][] = 'order-md-first';
+            $variables['sidebar_second_attributes']['class'][] = 'order-md-last';
+            break;
+
+        default:
+            break;
+    }
 }
