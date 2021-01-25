@@ -15,3 +15,45 @@ a.nav-link--contact::before {
     background-image: none;
     width: 0px;
 }
+/* Override Bootstrap Barrio table styles */
+table {
+    font-size: inherit;
+}
+table tr {
+    background-color: rgba(0, 0, 0, 0);
+}
+table.table tr td {
+    border-left: none;
+    border-right: none;
+}
+
+table.table tr th {
+    background-color: rgba(0, 0, 0, 0);
+    color: #333;
+    border: none;
+}
+.page-item.active .page-link {
+    cursor: default;
+    background-color: #337ab7;
+    border-color: #337ab7;
+}
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
+    cursor: default;
+    background-color: #337ab7;
+    border-color: #337ab7;
+}
+.pagination > li > a,
+.pagination > li > span {
+    color: #337ab7;
+}
+.pagination > li > a:hover,
+.pagination > li > span:hover,
+.pagination > li > a:focus,
+.pagination > li > span:focus {
+    color: #23527c;
+}

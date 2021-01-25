@@ -40,7 +40,7 @@
  * - page.highlighted: Items for the highlighted region.
  * - page.primary_menu: Items for the primary menu region.
  * - page.secondary_menu: Items for the secondary menu region.
- * - page.featured_top: Items for the featured top region.
+ * - page.help: Items for the help region.
  * - page.content: The main content of the current page.
  * - page.sidebar_first: Items for the first sidebar.
  * - page.sidebar_second: Items for the second sidebar.
@@ -152,6 +152,22 @@
             </div>
         </div>
         <!-- End collapsible site search bar -->
+        {% if page.highlighted %}
+            <div class="highlighted">
+                <aside class="{{ container }} section clearfix" role="complementary">
+                    {{ page.highlighted }}
+                </aside>
+            </div>
+        {% endif %}
+        {% if page.help %}
+            {% block help %}
+                <div class="help">
+                    <aside class="help__inner section {{ container }} clearfix" role="complementary">
+                        {{ page.help }}
+                    </aside>
+                </div>
+            {% endblock %}
+        {% endif %}
         <!--startindex-->
         <div id="content" class="container">
             {% block content %}
