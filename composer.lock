@@ -2326,12 +2326,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:NREL/nrel-app-template-bootstrap4.git",
-                "reference": "937b02c416fde70a00f388fe73921ccebc684320"
+                "reference": "2cb9686dc9715e801d67cc7815e4b0b04f2d8fa8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NREL/nrel-app-template-bootstrap4/zipball/937b02c416fde70a00f388fe73921ccebc684320",
-                "reference": "937b02c416fde70a00f388fe73921ccebc684320",
+                "url": "https://api.github.com/repos/NREL/nrel-app-template-bootstrap4/zipball/2cb9686dc9715e801d67cc7815e4b0b04f2d8fa8",
+                "reference": "2cb9686dc9715e801d67cc7815e4b0b04f2d8fa8",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -2341,7 +2341,7 @@
                 ]
             },
             "type": "library",
-            "notification-url": "https://asset-packagist.nrel.gov/nrel/drupal7/downloads/",
+            "notification-url": "https://asset-packagist.nrel.gov/nrel/drupal8/downloads/",
             "license": [
                 "GPL-2.0"
             ],
@@ -2364,7 +2364,7 @@
                     "allow_self_signed": true
                 }
             },
-            "time": "2021-01-20T16:28:43+00:00"
+            "time": "2021-01-26T16:26:11+00:00"
         },
         {
             "name": "nrel/nrel_iconomatic",
