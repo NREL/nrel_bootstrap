@@ -35,8 +35,9 @@
 <!DOCTYPE html>
 <html{{ html_attributes }}>
 <head>
-  <head-placeholder token="{{ placeholder_token|raw }}">
+    <head-placeholder token="{{ placeholder_token|raw }}">
     <title>{{ head_title|safe_join(' | ') }}</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <css-placeholder token="{{ placeholder_token|raw }}">
       <js-placeholder token="{{ placeholder_token|raw }}">
 
