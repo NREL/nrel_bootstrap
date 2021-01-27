@@ -43,11 +43,8 @@ fontawesome_4:
       //use.fontawesome.com/83c5c68c25.css: {}
   js:
     //use.fontawesome.com/83c5c68c25.js: {}
-# libraries-extend
-fontawesome:
-  css:
-    //use.fontawesome.com/releases/v5.13.0/css/all.css: false
 # libraries-override
-nrel_fontawesome:
+fontawesome:
+  header: true
   js:
-    https://kit.fontawesome.com/36ddb5b453.js: {}
+    //kit.fontawesome.com/36ddb5b453.js: {}

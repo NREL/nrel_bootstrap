@@ -9,12 +9,8 @@ libraries:
   - nrel_bootstrap/bootstrap
   - nrel_bootstrap/global-styling
 
-libraries-extend:
-  bootstrap_barrio/fontawesome:
-    - nrel_bootstrap/fontawesome
-
 libraries-override:
-  bootstrap_barrio/fontawesome: nrel_bootstrap/nrel_fontawesome
+  bootstrap_barrio/fontawesome: nrel_bootstrap/fontawesome
 
 regions:
   header: Header

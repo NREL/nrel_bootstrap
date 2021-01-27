@@ -21,7 +21,7 @@ function nrel_bootstrap_form_system_theme_settings_alter(&$form, FormStateInterf
     // Add Font Awesome 4 so that we can downgrade from Barrio default of FA5.
     $form['fonts']['icons']['bootstrap_barrio_icons']['#options']['fontawesome_4'] = 'Font Awesome 4';
     // Add NREL Fontawesome so that we can use NREL's Pro version.
-    $form['fonts']['icons']['bootstrap_barrio_icons']['#options']['nrel_fontawesome'] = 'NREL Font Awesome';
+    $form['fonts']['icons']['bootstrap_barrio_icons']['#options']['fontawesome'] = 'NREL Font Awesome';
 }
 
 function nrel_bootstrap_preprocess_page(&$variables)
