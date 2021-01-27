@@ -30,12 +30,12 @@ color.preview:
     color/preview.js: {}
   dependencies:
     - color/drupal.color
-roboto_noto:
+nrel_roboto:
   version: VERSION
   css:
     component:
-      fonts/roboto_noto.css: {}
-      //fonts.googleapis.com/css?family=Noto+Serif:400,400i,700,700i|Roboto:300,400,700: {}
+      fonts/nrel_roboto.css: {}
+      //fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap: {}
 fontawesome_4:
   version: VERSION
   css:
