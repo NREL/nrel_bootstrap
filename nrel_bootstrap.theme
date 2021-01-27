@@ -17,7 +17,7 @@ use Drupal\Core\Form\FormStateInterface;
 function nrel_bootstrap_form_system_theme_settings_alter(&$form, FormStateInterface $form_state)
 {
     // Add NREL App font combo
-    $form['fonts']['fonts']['bootstrap_barrio_google_fonts']['#options']['roboto_noto'] = 'Roboto, Noto';
+    $form['fonts']['fonts']['bootstrap_barrio_google_fonts']['#options']['nrel_roboto'] = 'NREL Roboto';
     // Add Font Awesome 4 so that we can downgrade from Barrio default of FA5.
     $form['fonts']['icons']['bootstrap_barrio_icons']['#options']['fontawesome_4'] = 'Font Awesome 4';
 }
@@ -26,7 +26,7 @@ function nrel_bootstrap_preprocess_page(&$variables)
 {
     $fonts = theme_get_setting('bootstrap_barrio_google_fonts');
     if ($fonts) {
-        $variables['#attached']['library'][] = (in_array($fonts, ['roboto_noto']) ? 'nrel_bootstrap' : 'bootstrap_barrio') . '/' . $fonts;
+        $variables['#attached']['library'][] = (in_array($fonts, ['nrel_roboto']) ? 'nrel_bootstrap' : 'bootstrap_barrio') . '/' . $fonts;
     }
     $icons = theme_get_setting('bootstrap_barrio_icons');
     if ($icons) {
