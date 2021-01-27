@@ -4,8 +4,8 @@ global-styling:
     js/global.js: {}
   css:
     theme:
-      css/nrel_complete.css: {}
-      css/nrel_application.css: {}
+      css/nrel.complete.css: {}
+      css/nrel.application.css: {}
       css/style.css: {}
       css/colors.css: {}
 bootstrap:
