@@ -2326,12 +2326,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:NREL/nrel-app-template-bootstrap4.git",
-                "reference": "2cb9686dc9715e801d67cc7815e4b0b04f2d8fa8"
+                "reference": "dfd29d62428af8f7d1d888eea6db028f0c2414b2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NREL/nrel-app-template-bootstrap4/zipball/2cb9686dc9715e801d67cc7815e4b0b04f2d8fa8",
-                "reference": "2cb9686dc9715e801d67cc7815e4b0b04f2d8fa8",
+                "url": "https://api.github.com/repos/NREL/nrel-app-template-bootstrap4/zipball/dfd29d62428af8f7d1d888eea6db028f0c2414b2",
+                "reference": "dfd29d62428af8f7d1d888eea6db028f0c2414b2",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -2364,7 +2364,7 @@
                     "allow_self_signed": true
                 }
             },
-            "time": "2021-01-26T16:26:11+00:00"
+            "time": "2021-01-28T14:37:46+00:00"
         },
         {
             "name": "nrel/nrel_iconomatic",
