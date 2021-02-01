@@ -6,6 +6,7 @@
  */
 
 use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Template\Attribute;
 
 /**
  * Implements hook_form_system_theme_settings_alter() for settings form.
@@ -22,6 +23,18 @@ function nrel_bootstrap_form_system_theme_settings_alter(&$form, FormStateInterf
     $form['fonts']['icons']['bootstrap_barrio_icons']['#options']['fontawesome_4'] = 'Font Awesome 4';
     // Add NREL Fontawesome so that we can use NREL's Pro version.
     $form['fonts']['icons']['bootstrap_barrio_icons']['#options']['fontawesome'] = 'NREL Font Awesome';
+}
+
+/**
+ *
+ * @param $variables
+ */
+function nrel_bootstrap_preprocess_nrel_bootstrap_modal(&$variables) {
+    foreach ($variables as $name => $value) {
+        if (strpos($name, 'attributes') !== FALSE && is_array($value)) {
+            $variables[$name] = new Attribute($value);
+        }
+    }
 }
 
 function nrel_bootstrap_preprocess_page(&$variables)
@@ -83,3 +96,29 @@ function nrel_bootstrap_preprocess_page(&$variables)
             break;
     }
 }
+
+function nrel_bootstrap_theme() {
+    $hooks['nrel_bootstrap_modal'] = [
+        'variables' => [
+            'attributes' => [],
+            'body' => '',
+            'body_attributes' => [],
+            'close_button' => TRUE,
+            'content_attributes' => [],
+            'description' => NULL,
+            'description_display' => 'before',
+            'dialog_attributes' => [],
+            'footer' => '',
+            'footer_attributes' => [],
+            'header_attributes' => [],
+            'id' => NULL,
+            'size' => NULL,
+            'title' => '',
+            'title_attributes' => [],
+        ],
+        'template' => 'bootstrap/nrel-bootstrap-modal',
+    ];
+
+    return $hooks;
+}
+

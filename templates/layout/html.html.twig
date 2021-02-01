@@ -25,42 +25,42 @@
  */
 #}
 {%
-  set body_classes = [
-  logged_in ? 'user-logged-in',
-  not root_path ? 'path-frontpage' : 'path-' ~ root_path|clean_class,
-  node_type ? 'node--type-' ~ node_type|clean_class,
-  db_offline ? 'db-offline',
+    set body_classes = [
+    logged_in ? 'user-logged-in',
+    not root_path ? 'path-frontpage' : 'path-' ~ root_path|clean_class,
+    node_type ? 'node--type-' ~ node_type|clean_class,
+    db_offline ? 'db-offline',
 ]
 %}
 <!DOCTYPE html>
 <html{{ html_attributes }}>
 <head>
     <head-placeholder token="{{ placeholder_token|raw }}">
-    <title>{{ head_title|safe_join(' | ') }}</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <css-placeholder token="{{ placeholder_token|raw }}">
-      <js-placeholder token="{{ placeholder_token|raw }}">
+        <title>{{ head_title|safe_join(' | ') }}</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <css-placeholder token="{{ placeholder_token|raw }}">
+            <js-placeholder token="{{ placeholder_token|raw }}">
 
-        <!-- == APPLICATION HEAD == -->
-        <!-- Search engine code -->
-        <!--#config timefmt="%Y-%m-%d@%H:%M:%S %Z" -->
+                <!-- == APPLICATION HEAD == -->
+                <!-- Search engine code -->
+                <!--#config timefmt="%Y-%m-%d@%H:%M:%S %Z" -->
 
-        <!-- Favicon -->
-        <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+                <!-- Favicon -->
+                <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
 
-        <!-- iOS icons -->
-        <link rel="apple-touch-icon" href="/themes/contrib/nrel_bootstrap/img/touch-icon-iphone.png">
-        <link rel="apple-touch-icon" sizes="72x72"   href="/themes/contrib/nrel_bootstrap/img/touch-icon-ipad.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="/themes/contrib/nrel_bootstrap/img/touch-icon-iphone-retina.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="/themes/contrib/nrel_bootstrap/img/touch-icon-ipad-retina.png">
+                <!-- iOS icons -->
+                <link rel="apple-touch-icon" href="/themes/contrib/nrel_bootstrap/img/touch-icon-iphone.png">
+                <link rel="apple-touch-icon" sizes="72x72"   href="/themes/contrib/nrel_bootstrap/img/touch-icon-ipad.png">
+                <link rel="apple-touch-icon" sizes="114x114" href="/themes/contrib/nrel_bootstrap/img/touch-icon-iphone-retina.png">
+                <link rel="apple-touch-icon" sizes="144x144" href="/themes/contrib/nrel_bootstrap/img/touch-icon-ipad-retina.png">
 
-        <!-- == END APPLICATION HEAD == -->
+                <!-- == END APPLICATION HEAD == -->
 
-        </head>
+                </head>
 <body{{ attributes.addClass(body_classes) }}>
 <!--stopindex-->
 <a href="#main-content" class="visually-hidden focusable skip-link sr-only app">
-  {{ 'Skip to main content'|t }}
+    {{ 'Skip to main content'|t }}
 </a>
 {{ page_top }}
 <!--startindex-->

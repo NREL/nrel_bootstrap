@@ -59,6 +59,7 @@
             "cp -R ../../../../vendor/twbs/bootstrap/dist ../../../../docroot/libraries/bootstrap",
             "cp ./favicon.ico ../../../../docroot/",
             "cp ../../../../vendor/nrel/nrel_app_template_bootstrap4/client/css/* ./css/",
+            "cp ../../../../vendor/nrel/nrel_app_template_bootstrap4/client/img/* ./img/",
             "cp ../../../../vendor/nrel/nrel_app_template_bootstrap4/client/js/*.js ./js/"
         ],
         "post-update-cmd": [
@@ -66,6 +67,7 @@
             "cp -R ../../../../vendor/twbs/bootstrap/dist ../../../../docroot/libraries/bootstrap",
             "cp ./favicon.ico ../../../../docroot/",
             "cp ../../../../vendor/nrel/nrel_app_template_bootstrap4/client/css/* ./css/",
+            "cp ../../../../vendor/nrel/nrel_app_template_bootstrap4/client/img/* ./img/",
             "cp ../../../../vendor/nrel/nrel_app_template_bootstrap4/client/js/*.js ./js/"
         ]
     },
