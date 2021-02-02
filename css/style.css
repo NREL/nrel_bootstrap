@@ -69,3 +69,9 @@ label {
 input.form-submit {
     width: auto;
 }
+
+/* Remove border from Bootstrap Barrio sidebar block */
+.sidebar .block {
+    border: none;
+    padding: 15px 0px;
+}
