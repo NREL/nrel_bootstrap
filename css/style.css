@@ -59,11 +59,15 @@ table.table tr th {
 }
 
 h2 .block-title {
- margin-top: 20px;
+    margin-top: 20px;
 }
 
 label {
     font-weight: 700;
+}
+
+label[class$="-label"] {
+    font-weight: 400;
 }
 
 input.form-submit {
@@ -73,5 +77,26 @@ input.form-submit {
 /* Remove border from Bootstrap Barrio sidebar block */
 .sidebar .block {
     border: none;
-    padding: 15px 0px;
+}
+
+/* Make drag handle and changed symbol appear correctly */
+abbr[data-original-title], abbr[title] {
+    margin-left: 10px;
+}
+
+.js .field--widget-entity-reference-paragraphs .tabledrag-handle .handle,
+.js .field--widget-paragraphs .tabledrag-handle .handle {
+    height: 22px;
+    width: 20px;
+}
+
+#node-dataset-edit-form .card {
+    margin-bottom: 20px;
+}
+
+.card-body .card-header h2, .card-body h4.label {
+    color: #333;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
 }

@@ -26,6 +26,125 @@ function nrel_bootstrap_form_system_theme_settings_alter(&$form, FormStateInterf
 }
 
 /**
+ * Implements hook_preprocess_fieldset() for rendering as a Bootstrap card.
+ */
+function nrel_bootstrap_preprocess_nrel_bootstrap_card(&$variables) {
+    if (isset($variables['element'])) {
+        $element = $variables['element'];
+        $map = [
+            '#id' => 'id',
+            '#attributes' => 'attributes',
+            '#body_attributes' => 'body_attributes',
+            '#content_attributes' => 'body_attributes',
+            '#description' => 'description',
+            '#description_attributes' => 'description_attributes',
+            '#description_display' => 'description_display',
+            '#errors' => 'errors',
+            '#footer' => 'footer',
+            '#required' => 'required',
+            '#title' => 'heading',
+            '#title_attributes' => 'heading_attributes',
+        ];
+        foreach ($map as $element_property => $variable_property) {
+            if (strpos($element_property, 'attributes')) {
+                $variables[$variable_property] = [];
+            }
+            if (isset($element[$element_property])) {
+                $variables[$variable_property] = $element[$element_property];
+            }
+        }
+
+        // Add necessary classes.
+        if (!isset($variables['attributes']['class'])) {
+            $variables['attributes']['class'] = [];
+        }
+        $variables['attributes']['class'][] = 'form-item';
+        $variables['attributes']['class'][] = 'js-form-item';
+        $variables['attributes']['class'][] = 'form-wrapper';
+        $variables['attributes']['class'][] = 'js-form-wrapper';
+
+        // Merge all possible content from the element into a single render array.
+        $body = [];
+        $properties = ['#field_prefix', '#body', '#children', ];
+
+        // Only add the #value property if it's a "details" or "fieldset" element
+        // type. Some form elements may use "CompositeFormElementTrait" which
+        // will inadvertently and eventually become preprocessed here and #value
+        // may actually be the element's value instead of a renderable element.
+        if ('details' == $element['#type'] || 'fieldset' == $element['#type']) {
+            $properties[] = '#value';
+        }
+
+        // Add the "#field_suffix" property.
+        $properties[] = '#field_suffix';
+        foreach ($properties as $property) {
+            if (isset($element[$property])) {
+                $body[$property] = $element[$property];
+            }
+        }
+        $variables['body'] = array_filter($body);
+
+        // Handle specific "details" elements.
+        if ('details' == $element['#type']) {
+            // Details are always collapsible per the HTML5 spec.
+            // @see https://www.drupal.org/node/1852020
+            $variables['collapsible'] = TRUE;
+
+            // Determine the collapsed state.
+            $variables['collapsed'] = !$element['#open'];
+
+            // Remove the unnecessary details attribute.
+            unset($element['#open']);
+        }
+        // Handle specific "fieldset" elements.
+        else if ('fieldset' == $element['#type']) {
+            // Override variables to mimic the default "fieldset" element info.
+            // They will be mapped below if they exist on the element.
+            unset($variables['collapsible'], $variables['collapsed']);
+            $variables['collapsed'] = 'collapsed';
+            //$variables['collapsible'] = 'collapsible';
+        }
+
+
+        // Retrieve the ID, generating one if needed.
+        $id = isset($variables['id']) ? $variables['id'] : Html::getUniqueId('bootstrap-card');
+        if (!isset($variables['attributes']['id'])) {
+            $variables['attributes']['id'] = $id;
+        }
+
+        // Handle collapsible state.
+        if (!isset($variables['heading_attributes']['class'])) {
+            $variables['heading_attributes']['class'] = [];
+        }
+        if (isset($variables['heading']) && isset($variables['collapsible'])) {
+            // Retrieve the body ID attribute.
+            if ($body_id = isset($variables['body_attributes']['id']) ? $variables['body_attributes']['id'] : "$id--content") {
+                // Ensure the target is set.
+                if ($variables['target'] = isset($variables['target']) ? $variables['target'] : "#$body_id") {
+                    // Set additional necessary attributes to the heading.
+                    $variables['heading_attributes']['aria-controls'] =  preg_replace('/^#/', '', $variables['target']);
+                    $variables['heading_attributes']['aria-expanded'] = !$variables['collapsed'] ? 'true' : 'false';
+                    $variables['heading_attributes']['aria-pressed'] = !$variables['collapsed'] ? 'true' : 'false';
+                    $variables['heading_attributes']['data-toggle'] = 'collapse';
+                    $variables['heading_attributes']['role'] = 'button';
+                }
+            }
+        }
+
+        // Ensure we render HTML from heading.
+        $heading = $variables['heading'];
+        if ($heading && (is_string($heading) || ($heading instanceof MarkupInterface))) {
+            $variables['heading'] = ['#markup' => $heading];
+        }
+    }
+    foreach ($variables as $name => $value) {
+        if (strpos($name, 'attributes') !== FALSE && is_array($value)) {
+            $variables[$name] = new Attribute($value);
+        }
+    }
+}
+
+/**
  *
  * @param $variables
  */
@@ -118,7 +237,26 @@ function nrel_bootstrap_theme() {
         ],
         'template' => 'bootstrap/nrel-bootstrap-modal',
     ];
-
+    $hooks['nrel_bootstrap_card'] = [
+        'variables' => [
+            'attributes' => [],
+            'body' => [],
+            'body_attributes' => [],
+            'collapsible' => FALSE,
+            'collapsed' => FALSE,
+            'description' => NULL,
+            'description_display' => 'before',
+            'footer' => NULL,
+            'footer_attributes' => [],
+            'heading' => NULL,
+            'heading_attributes' => [],
+            'id' => NULL,
+        ],
+        'template' => 'bootstrap/nrel-bootstrap-card',
+    ];
     return $hooks;
 }
 
+function nrel_bootstrap_theme_suggestions_fieldset_alter(&$suggestions, &$vars, $hook) {
+    $suggestions[] = 'nrel_bootstrap_card';
+}
