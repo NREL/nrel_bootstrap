@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8cd04e366de6771f9d5a817822ff7ca5",
+    "content-hash": "c1b2148d258e98f4438bc8772d3bae73",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -69,38 +69,6 @@
                 }
             },
             "time": "2019-12-24T22:41:47+00:00"
-        },
-        {
-            "name": "bower-asset/nrel-iconomatic",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/NREL/nrel-iconomatic.git",
-                "reference": "3846634c3a6ba1fe34f1a8f376c218bb3c48136d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/NREL/nrel-iconomatic/zipball/3846634c3a6ba1fe34f1a8f376c218bb3c48136d",
-                "reference": "3846634c3a6ba1fe34f1a8f376c218bb3c48136d",
-                "mirrors": [
-                    {
-                        "url": "https://asset-packagist.nrel.gov/nrel/drupal8/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
-            },
-            "type": "bower-asset",
-            "notification-url": "https://asset-packagist.nrel.gov/nrel/drupal7/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
-            },
-            "time": "2018-11-26T19:58:47+00:00"
         },
         {
             "name": "composer/semver",
@@ -2326,12 +2294,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:NREL/nrel-app-template-bootstrap4.git",
-                "reference": "ec51e653b92f072f3eee9e908fbd92728e9c81e6"
+                "reference": "0661550656770c2d69d3beae88b9e17b3846eb46"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NREL/nrel-app-template-bootstrap4/zipball/ec51e653b92f072f3eee9e908fbd92728e9c81e6",
-                "reference": "ec51e653b92f072f3eee9e908fbd92728e9c81e6",
+                "url": "https://api.github.com/repos/NREL/nrel-app-template-bootstrap4/zipball/0661550656770c2d69d3beae88b9e17b3846eb46",
+                "reference": "0661550656770c2d69d3beae88b9e17b3846eb46",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -2364,65 +2332,7 @@
                     "allow_self_signed": true
                 }
             },
-            "time": "2021-01-28T17:04:30+00:00"
-        },
-        {
-            "name": "nrel/nrel_iconomatic",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/NREL/nrel_iconomatic.git",
-                "reference": "14af25532e28215f3feaee8936ee04b23af09d98"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/NREL/nrel_iconomatic/zipball/14af25532e28215f3feaee8936ee04b23af09d98",
-                "reference": "14af25532e28215f3feaee8936ee04b23af09d98",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://asset-packagist.nrel.gov/nrel/drupal8/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
-            },
-            "require": {
-                "bower-asset/nrel-iconomatic": "dev-master"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "installer-types": [
-                    "bower-asset",
-                    "npm-asset"
-                ],
-                "installer-paths": {
-                    "web/sites/all/libraries/{$name}": [
-                        "type:drupal-library",
-                        "type:bower-asset",
-                        "type:npm-asset",
-                        "type:component"
-                    ]
-                },
-                "composer-exit-on-patch-failure": true,
-                "patches": [],
-                "enable-patching": true
-            },
-            "notification-url": "https://asset-packagist.nrel.gov/nrel/drupal7/downloads/",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "description": "NREL module to enable nrel_iconomatic javascript library",
-            "support": {
-                "source": "https://github.com/NREL/nrel_iconomatic/tree/master",
-                "issues": "https://github.com/NREL/nrel_iconomatic/issues"
-            },
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
-            },
-            "time": "2020-07-17T21:20:04+00:00"
+            "time": "2021-05-04T14:38:30+00:00"
         },
         {
             "name": "pear/archive_tar",
@@ -6491,62 +6401,6 @@
             "time": "2017-02-14T19:40:03+00:00"
         },
         {
-            "name": "cweagans/composer-patches",
-            "version": "1.7.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/cweagans/composer-patches.git",
-                "reference": "ae02121445ad75f4eaff800cc532b5e6233e2ddf"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/cweagans/composer-patches/zipball/ae02121445ad75f4eaff800cc532b5e6233e2ddf",
-                "reference": "ae02121445ad75f4eaff800cc532b5e6233e2ddf",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://asset-packagist.nrel.gov/nrel/drupal8/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
-            },
-            "require": {
-                "composer-plugin-api": "^1.0 || ^2.0",
-                "php": ">=5.3.0"
-            },
-            "require-dev": {
-                "composer/composer": "~1.0 || ~2.0",
-                "phpunit/phpunit": "~4.6"
-            },
-            "type": "composer-plugin",
-            "extra": {
-                "class": "cweagans\\Composer\\Patches"
-            },
-            "autoload": {
-                "psr-4": {
-                    "cweagans\\Composer\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Cameron Eagans",
-                    "email": "me@cweagans.net"
-                }
-            ],
-            "description": "Provides a way to patch Composer packages.",
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
-            },
-            "time": "2020-09-30T17:56:20+00:00"
-        },
-        {
             "name": "dflydev/dot-access-configuration",
             "version": "v1.0.3",
             "source": {
@@ -6797,62 +6651,6 @@
                 }
             },
             "time": "2019-12-04T15:06:13+00:00"
-        },
-        {
-            "name": "drupal-composer/drupal-scaffold",
-            "version": "2.6.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/drupal-composer/drupal-scaffold.git",
-                "reference": "13c1ffc7dd4925cb03707759128b85c0cd6276f8"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/drupal-composer/drupal-scaffold/zipball/13c1ffc7dd4925cb03707759128b85c0cd6276f8",
-                "reference": "13c1ffc7dd4925cb03707759128b85c0cd6276f8",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://asset-packagist.nrel.gov/nrel/drupal8/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
-            },
-            "require": {
-                "composer-plugin-api": "^1.0.0",
-                "composer/semver": "^1.4",
-                "php": "^5.5.9|>=7.0.8"
-            },
-            "require-dev": {
-                "composer/composer": "dev-master",
-                "g1a/composer-test-scenarios": "^2.1.0",
-                "phpunit/phpunit": "^6",
-                "squizlabs/php_codesniffer": "^2.8"
-            },
-            "type": "composer-plugin",
-            "extra": {
-                "class": "DrupalComposer\\DrupalScaffold\\Plugin",
-                "branch-alias": {
-                    "dev-master": "2.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "DrupalComposer\\DrupalScaffold\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "description": "Composer Plugin for updating the Drupal scaffold files when using drupal/core",
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
-            },
-            "time": "2019-03-30T10:41:38+00:00"
         },
         {
             "name": "drupal/console",
@@ -7569,67 +7367,6 @@
                 }
             },
             "time": "2020-12-20T10:01:03+00:00"
-        },
-        {
-            "name": "nuvoleweb/drupal-component-scaffold",
-            "version": "0.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/nuvoleweb/drupal-component-scaffold.git",
-                "reference": "a23f6883921daf153a3a4aec5aec7e1d46c7ee64"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/nuvoleweb/drupal-component-scaffold/zipball/a23f6883921daf153a3a4aec5aec7e1d46c7ee64",
-                "reference": "a23f6883921daf153a3a4aec5aec7e1d46c7ee64",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://asset-packagist.nrel.gov/nrel/drupal8/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
-            },
-            "require": {
-                "composer-plugin-api": "^1.0.0",
-                "composer/installers": "^1.2",
-                "cweagans/composer-patches": "~1.0",
-                "drupal-composer/drupal-scaffold": "^2.3",
-                "php": ">=5.6"
-            },
-            "require-dev": {
-                "composer/composer": "dev-master",
-                "drupal/coder": "^8.2",
-                "phpro/grumphp": "^0.11.3",
-                "phpunit/phpunit": "~5"
-            },
-            "type": "composer-plugin",
-            "extra": {
-                "class": "NuvoleWeb\\DrupalComponentScaffold\\Plugin"
-            },
-            "autoload": {
-                "psr-4": {
-                    "NuvoleWeb\\DrupalComponentScaffold\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Nuvole Web",
-                    "email": "info@nuvole.org"
-                }
-            ],
-            "description": "Scaffolding Composer plugin for Drupal modules and themes.",
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
-            },
-            "time": "2017-10-09T20:31:14+00:00"
         },
         {
             "name": "psy/psysh",
@@ -8427,12 +8164,11 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "nrel/nrel_iconomatic": 20,
         "nrel/nrel_app_template_bootstrap4": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "1.1.0"
+    "plugin-api-version": "2.0.0"
 }

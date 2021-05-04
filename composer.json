@@ -30,11 +30,9 @@
         "drupal/bootstrap_barrio": "^5",
         "drupal/bootstrap": "~3.13",
         "drupal/bootstrap_layouts": "^5.1",
-        "nrel/nrel_iconomatic": "dev-master",
         "nrel/nrel_app_template_bootstrap4": "dev-master"
     },
     "require-dev": {
-        "nuvoleweb/drupal-component-scaffold": "*",
         "drupal/console": "~1",
         "drush/drush": "*",
         "drupal/core": "~8"
