@@ -8,7 +8,7 @@ The Drupal 8 version of the theme is a sub-theme of [Bootstrap](https://www.drup
 
 For Drupal, we prefer developers use the [package](https://packagist.org/packages/nrel/nrel_bootstrap) rather that going directly to github.  This is because using the package will guarantee that developers are using a stable version (with version numbers) rather than something that is unstable.  In addition the packages will automatically stay up to date for such things as security remediations.
 
-To install the nrel_bootstrap package:
+To install the nrel/nrel_bootstrap package:
 
 ### Drupal 9
 @see https://github.com/NREL/nrel_bootstrap/blob/8.x-4.5.3/README.md.
