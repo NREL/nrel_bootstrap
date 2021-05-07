@@ -1,4 +1,4 @@
-#NREL Bootstrap
+# NREL Bootstrap
 
 NREL Bootstrap is a Bootstrap-based theme that implements the NREL Application standard theme.
 
@@ -10,7 +10,7 @@ For Drupal, we prefer developers use the [package](https://packagist.org/package
 
 To install the nrel_bootstrap package:
 
-###Drupal 9
+### Drupal 9
 @see https://github.com/NREL/nrel_bootstrap/blob/8.x-4.5.3/README.md.
 
 Run the NREL Bootstrap post install commands from the root project to copy the Bootstrap library and the JS, CSS and images used in the NREL Application theme to the correct places for use in NREL Bootstrap.
@@ -18,12 +18,12 @@ Run the NREL Bootstrap post install commands from the root project to copy the B
 composer require nrel/nrel_bootstrap:dev-8.x-4.5.3<br>
 composer run-script post-install-cmd -d ./docroot/themes/contrib/nrel_bootstrap
 
-###Drupal 8
+### Drupal 8
 @see https://github.com/NREL/nrel_bootstrap/blob/2.0.0/README.md
 
 composer require nrel/nrel_bootstrap:~2.0.0-dev<br>
 
-###For Drupal 7
+### For Drupal 7
 @see https://github.com/NREL/nrel_bootstrap/blob/d7/README.md
 
 composer require nrel/nrel_bootstrap "dev-d7"
