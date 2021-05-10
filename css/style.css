@@ -2,6 +2,16 @@
  * @file
  * Subtheme specific CSS.
  */
+/* Override Bootstrap Barrio main container styles */
+#main {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+/* Override Bootstrap Barrio main content styles */
+#main {
+    margin-top: 0px;
+}
+
 /* Override Bootstrap Barrio icons */
 a.nav-link--::before {
     background-image: none;
@@ -77,6 +87,19 @@ input.form-submit {
 /* Remove border from Bootstrap Barrio sidebar block */
 .sidebar .block {
     border: none;
+    padding-top: 0px;
+    margin
+}
+
+/* Override Bootstrap Barrio sidebar_first styles */
+#sidebar_first {
+    padding-top: 0px;
+    padding-right: 15px;
+    margin: 0.6em 0;
+}
+
+#sidebar_first .nav-link {
+    padding: .5rem 1rem;
 }
 
 /* Make drag handle and changed symbol appear correctly */
