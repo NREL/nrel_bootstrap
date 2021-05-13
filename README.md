@@ -1,6 +1,8 @@
 # NREL Bootstrap
 
-NREL Bootstrap is a Bootstrap-based theme that implements the NREL Application standard theme.
+NREL Bootstrap is a Bootstrap-based theme that implements the NREL Application standard theme - NREL ://github.com/NREL/nrel-app-template-bootstrap4.
+
+NREL Boostrap has a dependency on https://github.com/NREL/nrel-app-template-bootstrap4 to ease the update process when the base theme changes.
 
 Find out more about the standards at https://www.nrel.gov/comm-standards/web/application.html and view the demo at https://www.nrel.gov/comm-standards/web/app-template/index.html.
 
