@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c1b2148d258e98f4438bc8772d3bae73",
+    "content-hash": "fcaf24b70cf128a34d75d2109025131b",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2287,52 +2287,6 @@
                 }
             },
             "time": "2020-10-01T13:52:52+00:00"
-        },
-        {
-            "name": "nrel/nrel_app_template_bootstrap4",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "git@github.com:NREL/nrel-app-template-bootstrap4.git",
-                "reference": "0661550656770c2d69d3beae88b9e17b3846eb46"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/NREL/nrel-app-template-bootstrap4/zipball/0661550656770c2d69d3beae88b9e17b3846eb46",
-                "reference": "0661550656770c2d69d3beae88b9e17b3846eb46",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://asset-packagist.nrel.gov/nrel/drupal8/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
-            },
-            "type": "library",
-            "notification-url": "https://asset-packagist.nrel.gov/nrel/drupal8/downloads/",
-            "license": [
-                "GPL-2.0"
-            ],
-            "authors": [
-                {
-                    "name": "Amy Glickson (aglickso)",
-                    "email": "Amy.Glickson@nrel.gov",
-                    "role": "Maintainer"
-                }
-            ],
-            "description": "NREL.gov App branded theme for Bootstrap 4",
-            "homepage": "https://github.com/NREL/nrel-app-template-bootstrap4",
-            "support": {
-                "issues": "https://github.com/NREL/nrel-app-template-bootstrap4/issues",
-                "source": "https://github.com/NREL/nrel-app-template-bootstrap4/tree/master"
-            },
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
-            },
-            "time": "2021-05-04T14:38:30+00:00"
         },
         {
             "name": "pear/archive_tar",
@@ -8163,9 +8117,7 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "nrel/nrel_app_template_bootstrap4": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],

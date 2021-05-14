@@ -29,8 +29,7 @@
     "require": {
         "drupal/bootstrap_barrio": "^5",
         "drupal/bootstrap": "~3.13",
-        "drupal/bootstrap_layouts": "^5.1",
-        "nrel/nrel_app_template_bootstrap4": "dev-master"
+        "drupal/bootstrap_layouts": "^5.1"
     },
     "require-dev": {
         "drupal/console": "~1",
@@ -55,18 +54,12 @@
         "post-install-cmd": [
             "mkdir -p ../../../../docroot/libraries/bootstrap",
             "cp -R ../../../../vendor/twbs/bootstrap/dist ../../../../docroot/libraries/bootstrap",
-            "cp ./favicon.ico ../../../../docroot/",
-            "cp ../../../../vendor/nrel/nrel_app_template_bootstrap4/client/css/* ./css/",
-            "cp ../../../../vendor/nrel/nrel_app_template_bootstrap4/client/img/* ./img/",
-            "cp ../../../../vendor/nrel/nrel_app_template_bootstrap4/client/js/*.js ./js/"
+            "cp ./favicon.ico ../../../../docroot/"
         ],
         "post-update-cmd": [
             "mkdir -p ../../../../docroot/libraries/bootstrap",
             "cp -R ../../../../vendor/twbs/bootstrap/dist ../../../../docroot/libraries/bootstrap",
-            "cp ./favicon.ico ../../../../docroot/",
-            "cp ../../../../vendor/nrel/nrel_app_template_bootstrap4/client/css/* ./css/",
-            "cp ../../../../vendor/nrel/nrel_app_template_bootstrap4/client/img/* ./img/",
-            "cp ../../../../vendor/nrel/nrel_app_template_bootstrap4/client/js/*.js ./js/"
+            "cp ./favicon.ico ../../../../docroot/"
         ]
     },
     "support": {
