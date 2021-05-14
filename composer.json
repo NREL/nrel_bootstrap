@@ -37,18 +37,14 @@
         "drupal/core": "~8"
     },
     "repositories": {
-        "assets" : {
+        "drupal": {
             "type": "composer",
-            "url": "https://asset-packagist.nrel.gov/nrel/drupal8/",
-            "options" : {
-                "ssl" : {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
-            }
+            "url": "https://packages.drupal.org/8"
         },
-        "packagist.org": false,
-        "packages.drupal.org": false
+        "assets": {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
     },
     "scripts": {
         "post-install-cmd": [
