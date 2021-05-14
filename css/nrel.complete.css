@@ -548,7 +548,7 @@ content: "\f055";
 .accordion .card-header .btn[aria-expanded="true"] {
 	background-color: #0079C2;
 	color: #fff;
-	background-image: url(client/img/icon_minus.svg);
+	background-image: url(/themes/contrib/nrel_bootstrap/img/icon_minus.svg);
 	background-repeat: no-repeat;
 	background-position: 1% center;
 	background-size: 25px 25px;
@@ -560,7 +560,7 @@ content: "\f055";
 .accordion .card-header .btn[aria-expanded="false"] {
 	background-color: #fff;
 	color: #0079C2;
-	background-image: url(client/img/icon_plus_blue.svg);
+	background-image: url(/themes/contrib/nrel_bootstrap/img/icon_plus_blue.svg);
 	background-repeat: no-repeat;
 	background-position: 1% center;
 	background-size: 25px 25px;
@@ -745,13 +745,13 @@ h2 .fa, h3 .fa, h4 .fa, h5 .fa, h6 .fa, .header .fa {
 	color:#fff;
 }
 .panel-heading > .panel-title > .accordion-toggle {
-	background-image: url("client/img/icon_minus.svg");
+	background-image: url("/themes/contrib/nrel_bootstrap/img/icon_minus.svg");
 	background-repeat: no-repeat;
 	background-position: 1% center;
 	background-size: 25px 25px;
 }
 .panel-heading > .panel-title > .accordion-toggle.collapsed {
-	background-image: url("client/img/icon_plus_blue.svg");
+	background-image: url("/themes/contrib/nrel_bootstrap/img/icon_plus_blue.svg");
 }
 .panel-group .panel {
 	margin-bottom: 12px;
@@ -2245,7 +2245,7 @@ ul.dropdown-menu {
 	min-height:60px;
 }
 header .logo {
-	background: url("client/img/nrel-logo-web.svg") no-repeat center;
+	background: url("/themes/contrib/nrel_bootstrap/img/nrel-logo-web.svg") no-repeat center;
 	height: 75px;
 	background-size: 160px;
 	margin: 0 0 10px 0;
@@ -2270,7 +2270,7 @@ header .logo {
 @media (min-width: 768px) {
 	header .logo {
 		/* background: url("{{f:75212}}") no-repeat left; */
-		background: url("client/img/nrel-logo-web.svg") no-repeat left;
+		background: url("/themes/contrib/nrel_bootstrap/img/nrel-logo-web.svg") no-repeat left;
 		height:130px;
 		background-size: 277px;
 	}
