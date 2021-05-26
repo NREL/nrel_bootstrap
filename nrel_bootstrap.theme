@@ -7,6 +7,7 @@
 
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Template\Attribute;
+use Drupal\block\Entity\Block;
 
 /**
  * Implements hook_form_system_theme_settings_alter() for settings form.
@@ -30,7 +31,10 @@ function nrel_bootstrap_form_system_theme_settings_alter(&$form, FormStateInterf
  */
 function nrel_bootstrap_preprocess_block(&$variables) {
     if (($variables['base_plugin_id'] == 'system_menu_block') && ($variables['derivative_plugin_id'] == 'main')) {
-        $variables['attributes']['class'][] = 'sidenav';
+        $block = Block::load($variables['elements']['#id']);
+        if ($block->getRegion() == 'sidebar_first') {
+            $variables['attributes']['class'][] = 'sidenav';
+        }
     }
 }
 
