@@ -27,7 +27,7 @@
         }
     },
     "require": {
-        "drupal/bootstrap_barrio": "^5",
+        "drupal/bootstrap_barrio": "^5.1",
         "drupal/bootstrap": "~3.13",
         "drupal/bootstrap_layouts": "^5.1"
     },
