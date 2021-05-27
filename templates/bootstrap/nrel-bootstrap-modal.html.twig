@@ -51,10 +51,10 @@
           {% set header_classes = ['modal-header'] -%}
           {% set title_classes = ['modal-title'] -%}
           <div{{ header_attributes.addClass(header_classes) }}>
+            <h4{{ title_attributes.addClass(title_classes) }}>{{ title }}</h4>
             {% if close_button -%}
               <button type="button" class="close" data-dismiss="modal" aria-label="{{ 'Close'|t }}"><span aria-hidden="true">&times;</span></button>
             {% endif -%}
-            <h4{{ title_attributes.addClass(title_classes) }}>{{ title }}</h4>
           </div>
         {% endblock -%}
       {% endif -%}
