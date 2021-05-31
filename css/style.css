@@ -125,3 +125,7 @@ abbr[data-original-title], abbr[title] {
     font-weight: 700;
     line-height: 26px;
 }
+
+.navbar-nav > section {
+    flex-direction: column;
+}
