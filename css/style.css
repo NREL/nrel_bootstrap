@@ -129,3 +129,46 @@ abbr[data-original-title], abbr[title] {
 .navbar-nav > section {
     flex-direction: column;
 }
+
+.address-container-inline fieldset {
+    display: inline-block;
+    margin-right: 1em;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+details summary {
+    display: none;
+}
+
+form .card {
+    border: none;
+}
+form .card .card-header {
+    border-bottom: 1px solid #e5e5e5;
+    padding: 0;
+    margin-bottom: 5px;
+}
+form .card .card-header h2 {
+    color: #333;
+    font-size: 21px;
+}
+form .card .card-body {
+    padding: 0;
+}
+form label.form-required:after, form h2.form-required:after {
+     content: "(Required)";
+     width: auto;
+     height: auto;
+     margin: 0 0.3em;
+     color: black;
+     font-weight: normal;
+     font-size: 16px;
+     vertical-align: initial;
+     background-image: none;
+     display: inline-block;
+     line-height: 1;
+     color: #333;
+}
