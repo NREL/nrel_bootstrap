@@ -36,8 +36,11 @@ nrel_roboto:
     component:
       fonts/nrel_roboto.css: {}
       //fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap: {
-        integrity: sha512-JVAlXtfJv5gNEw38QKhj5MFrJajWI6qnSeO6foJwEGv6LEmkZqDedLCgwqRFvYQYh2DIIqeg7+8mJYzyS217Bg==,
-        crossorigin: anonymous
+        type: external,
+        attributes: {
+          integrity: sha512-JVAlXtfJv5gNEw38QKhj5MFrJajWI6qnSeO6foJwEGv6LEmkZqDedLCgwqRFvYQYh2DIIqeg7+8mJYzyS217Bg==,
+          crossorigin: anonymous
+        }
       }
 fontawesome_4:
   version: VERSION
@@ -51,6 +54,9 @@ fontawesome:
   header: true
   js:
     //kit.fontawesome.com/32f532493a.js: {
-      integrity: sha512-pgIQ7dkb0xIIReGMQbOPfNarRh8zRj+mALAxjyoZMlfbBytl2I4EvOjWHYvl08YpBLNI0ABGW6TiV9yuzitACQ==,
-      crossorigin: anonymous
+      type: external,
+      attributes: {
+        integrity: sha512-pgIQ7dkb0xIIReGMQbOPfNarRh8zRj+mALAxjyoZMlfbBytl2I4EvOjWHYvl08YpBLNI0ABGW6TiV9yuzitACQ==,
+        crossorigin: anonymous
+      }
     }
