@@ -29,7 +29,8 @@
     "require": {
         "drupal/bootstrap": "~3.13",
         "drupal/bootstrap_layouts": "^5.1",
-        "drupal/bootstrap_barrio": "~5.1.0"
+        "drupal/bootstrap_barrio": "~5.1.0",
+        "nrel/nrel_app_template_bootstrap4": "dev-master"
     },
     "require-dev": {
         "drupal/console": "~1",
@@ -41,22 +42,16 @@
             "type": "composer",
             "url": "https://packages.drupal.org/8"
         },
-        "assets": {
+        "assets" : {
             "type": "composer",
-            "url": "https://asset-packagist.org"
+            "url": "https://asset-packagist.nrel.gov/nrel/drupal8/",
+            "options" : {
+                "ssl" : {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            }
         }
-    },
-    "scripts": {
-        "post-install-cmd": [
-            "mkdir -p ../../../../docroot/libraries/bootstrap",
-            "cp -R ../../../../vendor/twbs/bootstrap/dist ../../../../docroot/libraries/bootstrap",
-            "cp ./favicon.ico ../../../../docroot/"
-        ],
-        "post-update-cmd": [
-            "mkdir -p ../../../../docroot/libraries/bootstrap",
-            "cp -R ../../../../vendor/twbs/bootstrap/dist ../../../../docroot/libraries/bootstrap",
-            "cp ./favicon.ico ../../../../docroot/"
-        ]
     },
     "support": {
         "issues": "https://github.com/NREL/nrel_bootstrap/issues"
