@@ -47,6 +47,18 @@
             "url": "https://packages.drupal.org/8"
         }
     },
+    "scripts": {
+        "post-install-cmd": [
+            "mkdir -p ../../../../docroot/libraries/bootstrap",
+            "cp -R ../../../../vendor/twbs/bootstrap/dist ../../../../docroot/libraries/bootstrap",
+            "cp ./favicon.ico ../../../../docroot/"
+        ],
+        "post-update-cmd": [
+            "mkdir -p ../../../../docroot/libraries/bootstrap",
+            "cp -R ../../../../vendor/twbs/bootstrap/dist ../../../../docroot/libraries/bootstrap",
+            "cp ./favicon.ico ../../../../docroot/"
+        ]
+    },
     "support": {
         "issues": "https://github.com/NREL/nrel_bootstrap/issues"
     }
