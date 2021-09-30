@@ -38,13 +38,19 @@
         "drupal/core": "~8"
     },
     "repositories": {
-        "nrel_app_template_bootstrap4": {
-            "type": "vcs",
-            "url": "https://github.com/NREL/drupal-nrel-app-template-bootstrap4"
-        },
         "drupal": {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
+        },
+        "assets": {
+            "type": "composer",
+            "url": "https://asset-packagist.nrel.gov/nrel/drupal8/",
+            "options" : {
+                "ssl" : {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            }
         }
     },
     "scripts": {
