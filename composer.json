@@ -51,6 +51,10 @@
                     "allow_self_signed": true
                 }
             }
+        },
+        "nrel_app_template_bootstrap4": {
+            "type": "vcs",
+            "url": "https://github.com/NREL/nrel-app-template-bootstrap4"
         }
     },
     "scripts": {
