@@ -172,3 +172,12 @@ form label.form-required:after, form h2.form-required:after {
      line-height: 1;
      color: #333;
 }
+header .logo {
+    background: url("../img/nrel-logo-web.svg") no-repeat center;
+}
+@media (min-width: 768px) {
+    header .logo {
+        /* background: url("{{f:75212}}") no-repeat left; */
+        background: url("../img/nrel-logo-web.svg") no-repeat left;
+    }
+}
