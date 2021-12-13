@@ -56,7 +56,7 @@ fontawesome:
     //kit.fontawesome.com/32f532493a.js: {
       type: external,
       attributes: {
-        integrity: sha256-Uj3Dr+qoi1XrAJOXkYaP7+neKeQqqKEEwJEyL0S4FvQ=,
+        integrity: sha384-dahZwxjA7/wgqj+shg5DO7qd43+s3gOXQBugwYKmEQ/9rsSeYTyUKYvC/SUDW7V4,
         crossorigin: anonymous
       }
     }
