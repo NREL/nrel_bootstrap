@@ -18,7 +18,7 @@ To install the nrel/nrel_bootstrap package:
 Run the NREL Bootstrap post install commands from the root project to copy the Bootstrap library and the JS, CSS and images used in the NREL Application theme to the correct places for use in NREL Bootstrap.
 
 * composer require nrel/nrel_bootstrap:dev-8.x-4.5.3<br>
-* composer run-script post-install-cmd -d ./docroot/themes/contrib/nrel_bootstrap
+* composer run-script post-install-cmd -d ./web/themes/contrib/nrel_bootstrap
 
 ### Drupal 8
 @see https://github.com/NREL/nrel_bootstrap/blob/2.0.0/README.md
