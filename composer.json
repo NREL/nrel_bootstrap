@@ -21,11 +21,6 @@
     "support": {
         "issues": "https://github.com/NREL/nrel_bootstrap/issues"
     },
-    "require-dev": {
-        "drupal/console": "~1",
-        "drush/drush": "*",
-        "drupal/core": "~8"
-    },
     "require": {
         "drupal/bootstrap": "~3.13",
         "drupal/bootstrap_layouts": "^5.1",
