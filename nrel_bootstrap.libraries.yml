@@ -38,7 +38,7 @@ nrel_roboto:
       https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap: {
         type: external,
         attributes: {
-          integrity: sha384-WLbKwakUc66aWQaEbCXfPGY4j6DodarhN/JayJt5CP5viKActKHcfx0ap9Efl7Ai,
+          integrity: sha384-8Y75BEOA9MmGHFNg6NJF6OmbbCeMgXe/S60ynTlzp/tnFpTWkLIevQ3jf+fikfQ3,
           crossorigin: anonymous
         }
       }
