@@ -73,5 +73,11 @@
     },
     "support": {
         "issues": "https://github.com/NREL/nrel_bootstrap/issues"
+    },
+    "config": {
+        "allow-plugins": {
+            "composer/installers": true,
+            "drupal/console-extend-plugin": true
+        }
     }
 }
