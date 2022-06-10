@@ -34,8 +34,7 @@
     },
     "require-dev": {
         "drupal/console": "~1",
-        "drush/drush": "*",
-        "drupal/core": "~8"
+        "drush/drush": "*"
     },
     "repositories": {
         "drupal": {
