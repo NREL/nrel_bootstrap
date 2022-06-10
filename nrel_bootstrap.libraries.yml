@@ -31,5 +31,30 @@ fonts:
     name: SIL Open Font License, 1.1
     url: http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL
   css:
-    theme:
-      //fonts.googleapis.com/css?family=Droid+Serif:400,400italic,700%7CRoboto:200,300,400,700: { type: external }
+    component:
+      fonts/nrel_roboto.css: {}
+      https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap: {
+        type: external,
+        attributes: {
+          integrity: sha384-8Y75BEOA9MmGHFNg6NJF6OmbbCeMgXe/S60ynTlzp/tnFpTWkLIevQ3jf+fikfQ3,
+          crossorigin: anonymous
+        }
+      }
+fontawesome_4:
+  version: VERSION
+  css:
+    component:
+      //use.fontawesome.com/83c5c68c25.css: {}
+  js:
+    //use.fontawesome.com/83c5c68c25.js: {}
+# libraries-override
+fontawesome:
+  header: true
+  js:
+    https://kit.fontawesome.com/32f532493a.js: {
+      type: external,
+      attributes: {
+        integrity: sha384-dahZwxjA7/wgqj+shg5DO7qd43+s3gOXQBugwYKmEQ/9rsSeYTyUKYvC/SUDW7V4,
+        crossorigin: anonymous
+      }
+    }

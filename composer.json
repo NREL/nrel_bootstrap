@@ -1,6 +1,6 @@
 {
     "name": "nrel/nrel_bootstrap",
-    "description": "NREL.gov APP branded theme for Bootstrap 3",
+    "description": "NREL.gov APP branded theme for Bootstrap 3 and 4",
     "type": "drupal-theme",
     "license": "GPL-2.0",
     "prefer-stable": true,
@@ -18,13 +18,24 @@
             "role": "Co-maintainer"
         }
     ],
-    "support": {
-        "issues": "https://github.com/NREL/nrel_bootstrap/issues"
+    "extra": {
+        "installer-paths": {
+            "build/core": ["type:drupal-core"],
+            "build/modules/contrib/{$name}": ["type:drupal-module"],
+            "build/profiles/contrib/{$name}": ["type:drupal-profile"],
+            "build/themes/contrib/{$name}": ["type:drupal-theme"]
+        }
     },
     "require": {
         "drupal/bootstrap": "~3.13",
         "drupal/bootstrap_layouts": "^5.1",
-        "nrel/nrel_bootstrap_module": "dev-master"
+        "drupal/bootstrap_barrio": "~5.1.0",
+        "nrel/nrel_app_template_bootstrap4": "dev-master"
+    },
+    "require-dev": {
+        "drupal/console": "~1",
+        "drush/drush": "*",
+        "drupal/core": "~8"
     },
     "repositories": {
         "drupal": {
@@ -33,16 +44,40 @@
         },
         "assets": {
             "type": "composer",
-            "url": "https://asset-packagist.org"
-        },
-        "packages.drupal.org": false
+            "url": "https://asset-packagist.nrel.gov/nrel/drupal8/",
+            "options" : {
+                "ssl" : {
+                    "verify_peer": false,
+                    "allow_self_signed": true
+                }
+            }
+        }
     },
-    "extra": {
-        "installer-paths": {
-            "build/core": ["type:drupal-core"],
-            "build/modules/contrib/{$name}": ["type:drupal-module"],
-            "build/profiles/contrib/{$name}": ["type:drupal-profile"],
-            "build/themes/contrib/{$name}": ["type:drupal-theme"]
+    "scripts": {
+        "post-install-cmd": [
+            "mkdir -p ../../../../web/libraries/bootstrap",
+            "cp -R ../../../../vendor/twbs/bootstrap/dist ../../../../web/libraries/bootstrap",
+            "cp ./favicon.ico ../../../../web/",
+            "cp ../../../../vendor/nrel/nrel_app_template_bootstrap4/client/css/* ./css/",
+            "cp ../../../../vendor/nrel/nrel_app_template_bootstrap4/client/img/* ./img/",
+            "cp ../../../../vendor/nrel/nrel_app_template_bootstrap4/client/js/*.js ./js/"
+        ],
+        "post-update-cmd": [
+            "mkdir -p ../../../../web/libraries/bootstrap",
+            "cp -R ../../../../vendor/twbs/bootstrap/dist ../../../../web/libraries/bootstrap",
+            "cp ./favicon.ico ../../../../web/",
+            "cp ../../../../vendor/nrel/nrel_app_template_bootstrap4/client/css/* ./css/",
+            "cp ../../../../vendor/nrel/nrel_app_template_bootstrap4/client/img/* ./img/",
+            "cp ../../../../vendor/nrel/nrel_app_template_bootstrap4/client/js/*.js ./js/"
+        ]
+    },
+    "support": {
+        "issues": "https://github.com/NREL/nrel_bootstrap/issues"
+    },
+    "config": {
+        "allow-plugins": {
+            "composer/installers": true,
+            "drupal/console-extend-plugin": true
         }
     }
 }
