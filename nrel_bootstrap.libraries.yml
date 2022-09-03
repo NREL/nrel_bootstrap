@@ -39,7 +39,6 @@ fonts:
           integrity: sha384-vl4RMMTRSwpIpSHWXliSG91Y3LNSIrVsZLiw4DI7nfKu8yQ8dT83qhwvvb4o1Xzb,
           crossorigin: anonymous
         }
-      }
 fontawesome_4:
   version: VERSION
   css:
