@@ -1,183 +1,279 @@
 <?php
 
-use Drupal\block\Entity\Block;
-use \Drupal\Core\Field\FieldFilteredMarkup;
-use \Drupal\Core\Form\FormStateInterface;
-
 /**
  * @file
- * Bootstrap sub-theme.
+ * Functions to support theming in the SASS Starterkit subtheme.
+ */
+
+use Drupal\block\Entity\Block;
+use Drupal\Component\Render\MarkupInterface;
+use Drupal\Component\Utility\Html;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Template\Attribute;
+
+/**
+ * Implements hook_form_system_theme_settings_alter() for settings form.
  *
- * Place your custom PHP code in this file.
- */
-
-/**
- * Implements hook_preprocess_HOOK() for html.html.twig.
- */
-function nrel_bootstrap_preprocess_html(array &$variables) {
-  /* Add class to html tag */
-  //$variables['html_attributes']->addClass('no-js');
-
-  // Don't display the site name twice on the front page (and potentially others)
-  /*if (isset($variables['head_title_array']['title']) && isset($variables['head_title_array']['name']) && ($variables['head_title_array']['title'] == $variables['head_title_array']['name'])) {
-    $variables['head_title'] = $variables['head_title_array']['name'];
-  }*/
-}
-
-/**
- * Implements hook_page_attachments_alter().
- */
-function nrel_bootstrap_page_attachments_alter(array &$page) {
-  // Tell IE to use latest rendering engine (not to use compatibility mode).
-  /*$ie_edge = [
-    '#type' => 'html_tag',
-    '#tag' => 'meta',
-    '#attributes' => [
-    'http-equiv' => 'X-UA-Compatible',
-    'content' => 'IE=edge',
-    ],
-  ];
-  $page['#attached']['html_head'][] = [$ie_edge, 'ie_edge'];*/
-}
-
-/**
- * Implements hook_preprocess_page() for page.html.twig.
- */
-function nrel_bootstrap_preprocess_page(array &$variables) {
-
-  $variables['page']['show_navbar'] = 1;
-}
-
-/**
- * Implements hook_theme_suggestions_page_alter().
- */
-function nrel_bootstrap_theme_suggestions_page_alter(array &$suggestions, array $variables) {
-
-}
-
-/**
- * Implements hook_theme_suggestions_node_alter().
- */
-function nrel_bootstrap_theme_suggestions_node_alter(array &$suggestions, array $variables) {
-  /*$node = $variables['elements']['#node'];
-
-  if ($variables['elements']['#view_mode'] == "full") {
-
-  }*/
-}
-
-/**
- * Implements hook_theme_suggestions_field_alter().
- */
-function nrel_bootstrap_theme_suggestions_field_alter(array &$suggestions, array $variables) {
-  /*$element = $variables['element'];
-  $suggestions[] = 'field__' . $element['#view_mode'];
-  $suggestions[] = 'field__' . $element['#view_mode'] . '__' . $element['#field_name'];*/
-}
-
-/**
- * Implements hook_theme_suggestions_field_alter().
- */
-function nrel_bootstrap_theme_suggestions_fieldset_alter(array &$suggestions, array $variables) {
-  /*$element = $variables['element'];
-  if (isset($element['#attributes']['class']) && in_array('form-composite', $element['#attributes']['class'])) {
-    $suggestions[] = 'fieldset__form_composite';
-  }*/
-}
-
-/**
- * Implements hook_preprocess_node().
- */
-function nrel_bootstrap_preprocess_node(array &$variables) {
-  // Default to turning off byline/submitted.
-  //$variables['display_submitted'] = FALSE;
-}
-
-/**
- * Implements hook_theme_suggestions_views_view_alter().
- */
-function nrel_bootstrap_theme_suggestions_views_view_alter(array &$suggestions, array $variables) {
-
-}
-
-/**
- * Implements hook_preprocess_form().
- */
-function nrel_bootstrap_preprocess_form(array &$variables) {
-  //$variables['attributes']['novalidate'] = 'novalidate';
-}
-
-/**
- * Implements hook_preprocess_select().
- */
-function nrel_bootstrap_preprocess_select(array &$variables) {
-  //$variables['attributes']['class'][] = 'select-chosen';
-}
-
-/**
- * Implements hook_preprocess_field().
- */
-function nrel_bootstrap_preprocess_field(array &$variables, $hook) {
-  /*switch ($variables['element']['#field_name']) {
-  }*/
-}
-
-/**
- * Implements hook_preprocess_details().
- */
-function nrel_bootstrap_preprocess_details(array &$variables) {
-  /*$variables['attributes']['class'][] = 'details';
-  $variables['summary_attributes']['class'] = 'summary';*/
-}
-
-/**
- * Implements hook_theme_suggestions_details_alter().
- */
-function nrel_bootstrap_theme_suggestions_details_alter(array &$suggestions, array $variables) {
-
-}
-
-/**
- * Implements hook_preprocess_menu_local_task().
- */
-function nrel_bootstrap_preprocess_menu_local_task(array &$variables) {
-  //$variables['element']['#link']['url']->setOption('attributes', ['class'=>'rounded']);
-}
-
-/**
- * Implements hook__suggestions_HOOK_alter().
- */
-function nrel_bootstrap_theme_suggestions_block_alter(array &$suggestions, array $variables) {
-
-  // Add theme suggestions to blocks based on region.
-  if (!empty($variables['elements']['#id'])) {
-    $block = Drupal\block\Entity\Block::load($variables['elements']['#id']);
-    $suggestions[] = 'block__' . $block->getRegion();
-    $suggestions[] = 'block__' . $block->getRegion() . '__' . $variables['elements']['#id'];
-  }
-  return $suggestions;
-}
-
-/**
- * Implements hook_preprocess_HOOK().
+ * Replace Barrio setting options with subtheme ones.
  *
- * Pass block region value to content so this can be used in
- * MYTHEME_theme_suggestions_menu_alter.
+ * Example on how to alter theme settings form
+ */
+function nrel_bootstrap_form_system_theme_settings_alter(&$form, FormStateInterface $form_state)
+{
+    // Add NREL App font combo
+    $form['fonts']['fonts']['bootstrap_barrio_google_fonts']['#options']['nrel_roboto'] = 'NREL Roboto';
+    // Add Font Awesome 4 so that we can downgrade from Barrio default of FA5.
+    $form['fonts']['icons']['bootstrap_barrio_icons']['#options']['fontawesome_4'] = 'Font Awesome 4';
+    // Add NREL Fontawesome so that we can use NREL's Pro version.
+    $form['fonts']['icons']['bootstrap_barrio_icons']['#options']['fontawesome'] = 'NREL Font Awesome';
+}
+
+/**
+ * Implements hook_preprocess_HOOK() for block.html.twig.
  */
 function nrel_bootstrap_preprocess_block(&$variables) {
-  if (isset($variables['elements']['#id'])) {
-    $region = Block::load($variables['elements']['#id'])->getRegion();
-    $variables['content']['#attributes']['region'] = $region;
-  }
+    if (($variables['base_plugin_id'] == 'system_menu_block') && ($variables['derivative_plugin_id'] == 'main')) {
+        $block = Block::load($variables['elements']['#id']);
+        if ($block->getRegion() == 'sidebar_first') {
+            $variables['attributes']['class'][] = 'sidenav';
+        }
+    }
 }
 
 /**
- * Implements hook_theme_suggestions_HOOK_alter().
- *
- * Provide region based menu suggestions.
+ * Implements hook_preprocess_fieldset() for rendering as a Bootstrap card.
  */
-function nrel_bootstrap_theme_suggestions_menu_alter(&$suggestions, array $variables) {
-  if (isset($variables['attributes']['region'])) {
-    $suggestions[] = 'menu__' . $variables['menu_name'] . '__' . $variables['attributes']['region'];
-  }
+function nrel_bootstrap_preprocess_nrel_bootstrap_card(&$variables) {
+    if (isset($variables['element'])) {
+        $element = $variables['element'];
+        $map = [
+            '#id' => 'id',
+            '#attributes' => 'attributes',
+            '#body_attributes' => 'body_attributes',
+            '#content_attributes' => 'body_attributes',
+            '#description' => 'description',
+            '#description_attributes' => 'description_attributes',
+            '#description_display' => 'description_display',
+            '#errors' => 'errors',
+            '#footer' => 'footer',
+            '#required' => 'required',
+            '#title' => 'heading',
+            '#title_attributes' => 'heading_attributes',
+        ];
+        foreach ($map as $element_property => $variable_property) {
+            if (strpos($element_property, 'attributes')) {
+                $variables[$variable_property] = [];
+            }
+            if (isset($element[$element_property])) {
+                $variables[$variable_property] = $element[$element_property];
+            }
+        }
+
+        // Add necessary classes.
+        if (!isset($variables['attributes']['class'])) {
+            $variables['attributes']['class'] = [];
+        }
+        $variables['attributes']['class'][] = 'form-item';
+        $variables['attributes']['class'][] = 'js-form-item';
+        $variables['attributes']['class'][] = 'form-wrapper';
+        $variables['attributes']['class'][] = 'js-form-wrapper';
+
+        // Merge all possible content from the element into a single render array.
+        $body = [];
+        $properties = ['#field_prefix', '#body', '#children', ];
+
+        // Only add the #value property if it's a "details" or "fieldset" element
+        // type. Some form elements may use "CompositeFormElementTrait" which
+        // will inadvertently and eventually become preprocessed here and #value
+        // may actually be the element's value instead of a renderable element.
+        if ('details' == $element['#type'] || 'fieldset' == $element['#type']) {
+            $properties[] = '#value';
+        }
+
+        // Add the "#field_suffix" property.
+        $properties[] = '#field_suffix';
+        foreach ($properties as $property) {
+            if (isset($element[$property])) {
+                $body[$property] = $element[$property];
+            }
+        }
+        $variables['body'] = array_filter($body);
+
+        // Handle specific "details" elements.
+        if ('details' == $element['#type']) {
+            // Details are always collapsible per the HTML5 spec.
+            // @see https://www.drupal.org/node/1852020
+            $variables['collapsible'] = TRUE;
+
+            // Determine the collapsed state.
+            $variables['collapsed'] = !$element['#open'];
+
+            // Remove the unnecessary details attribute.
+            unset($element['#open']);
+        }
+        // Handle specific "fieldset" elements.
+        else if ('fieldset' == $element['#type']) {
+            // Override variables to mimic the default "fieldset" element info.
+            // They will be mapped below if they exist on the element.
+            unset($variables['collapsible'], $variables['collapsed']);
+            $variables['collapsed'] = 'collapsed';
+            //$variables['collapsible'] = 'collapsible';
+        }
+
+
+        // Retrieve the ID, generating one if needed.
+        $id = isset($variables['id']) ? $variables['id'] : Html::getUniqueId('bootstrap-card');
+        if (!isset($variables['attributes']['id'])) {
+            $variables['attributes']['id'] = $id;
+        }
+
+        // Handle collapsible state.
+        if (!isset($variables['heading_attributes']['class'])) {
+            $variables['heading_attributes']['class'] = [];
+        }
+        if (isset($variables['heading']) && isset($variables['collapsible'])) {
+            // Retrieve the body ID attribute.
+            if ($body_id = isset($variables['body_attributes']['id']) ? $variables['body_attributes']['id'] : "$id--content") {
+                // Ensure the target is set.
+                if ($variables['target'] = isset($variables['target']) ? $variables['target'] : "#$body_id") {
+                    // Set additional necessary attributes to the heading.
+                    $variables['heading_attributes']['aria-controls'] =  preg_replace('/^#/', '', $variables['target']);
+                    $variables['heading_attributes']['aria-expanded'] = !$variables['collapsed'] ? 'true' : 'false';
+                    $variables['heading_attributes']['aria-pressed'] = !$variables['collapsed'] ? 'true' : 'false';
+                    $variables['heading_attributes']['data-toggle'] = 'collapse';
+                    $variables['heading_attributes']['role'] = 'button';
+                }
+            }
+        }
+
+        // Ensure we render HTML from heading.
+        $heading = $variables['heading'];
+        if ($heading && (is_string($heading) || ($heading instanceof MarkupInterface))) {
+            $variables['heading'] = ['#markup' => $heading];
+        }
+    }
+    foreach ($variables as $name => $value) {
+        if (strpos($name, 'attributes') !== FALSE && is_array($value)) {
+            $variables[$name] = new Attribute($value);
+        }
+    }
+}
+
+/**
+ *
+ * @param $variables
+ */
+function nrel_bootstrap_preprocess_nrel_bootstrap_modal(&$variables) {
+    foreach ($variables as $name => $value) {
+        if (strpos($name, 'attributes') !== FALSE && is_array($value)) {
+            $variables[$name] = new Attribute($value);
+        }
+    }
+}
+
+function nrel_bootstrap_preprocess_page(&$variables)
+{
+    $fonts = theme_get_setting('bootstrap_barrio_google_fonts');
+    if ($fonts) {
+        $variables['#attached']['library'][] = (in_array($fonts, ['nrel_roboto']) ? 'nrel_bootstrap' : 'bootstrap_barrio') . '/' . $fonts;
+    }
+    $icons = theme_get_setting('bootstrap_barrio_icons');
+    if ($icons) {
+        $variables['#attached']['library'][] = ( $icons == 'fontawesome_4' ? 'nrel_bootstrap' : 'bootstrap_barrio' ) . '/' . $icons;
+    }
+
+    // Barrio uses order-first and order-last classes for the content and sidebars. The NREL App template uses
+    // order-md-first and order-md-last. Unset the elements containing the order-first and order-last classes and
+    // add order-md-first and order-md-last classes instead.
+    switch (theme_get_setting('bootstrap_barrio_sidebar_position')) {
+
+        case 'left':
+            $order_first_key = array_search('order-first', $variables['sidebar_first_attributes']['class']->value());
+            if (false !== $order_first_key) {
+                unset($variables['sidebar_first_attributes']['class'][$order_first_key]);
+            }
+            $order_last_key = array_search('order-last', $variables['content_attributes']['class']->value());
+            if (false !== $order_last_key) {
+                unset($variables['content_attributes']['class'][$order_last_key]);
+            }
+            $variables['sidebar_first_attributes']['class'][] = 'order-md-first';
+            $variables['content_attributes']['class'][] = 'order-md-last';
+            break;
+
+        case 'both':
+            $order_first_key = array_search('order-first', $variables['sidebar_first_attributes']['class']->value());
+            if (false !== $order_first_key) {
+                unset($variables['sidebar_first_attributes']['class'][$order_first_key]);
+            }
+            $order_last_key = array_search('order-last', $variables['sidebar_second_attributes']['class']->value());
+            if (false !== $order_last_key) {
+                unset($variables['sidebar_second_attributes']['class'][$order_last_key]);
+            }
+            $variables['sidebar_first_attributes']['class'][] = 'order-md-first';
+            $variables['sidebar_second_attributes']['class'][] = 'order-md-last';
+            break;
+
+        case 'right':
+            $order_first_key = array_search('order-first', $variables['content_attributes']['class'])->value();
+            if (false !== $order_first_key) {
+                unset($variables['content_attributes']['class'][$order_first_key]);
+            }
+            $order_last_key = array_search('order-last', $variables['sidebar_second_attributes']['class']->value());
+            if (false !== $order_last_key) {
+                unset($variables['sidebar_second_attributes']['class'][$order_last_key]);
+            }
+            $variables['content_attributes']['class'][] = 'order-md-first';
+            $variables['sidebar_second_attributes']['class'][] = 'order-md-last';
+            break;
+
+        default:
+            break;
+    }
+    // Unset the id for the page (was 'content') because it conflicts with the id of the main container.
+    unset($variables['content_attributes']['id']);
+}
+
+function nrel_bootstrap_theme() {
+    $hooks['nrel_bootstrap_modal'] = [
+        'variables' => [
+            'attributes' => [],
+            'body' => '',
+            'body_attributes' => [],
+            'close_button' => TRUE,
+            'content_attributes' => [],
+            'description' => NULL,
+            'description_display' => 'before',
+            'dialog_attributes' => [],
+            'footer' => '',
+            'footer_attributes' => [],
+            'header_attributes' => [],
+            'id' => NULL,
+            'size' => NULL,
+            'title' => '',
+            'title_attributes' => [],
+        ],
+        'template' => 'bootstrap/nrel-bootstrap-modal',
+    ];
+    $hooks['nrel_bootstrap_card'] = [
+        'variables' => [
+            'attributes' => [],
+            'body' => [],
+            'body_attributes' => [],
+            'collapsible' => FALSE,
+            'collapsed' => FALSE,
+            'description' => NULL,
+            'description_display' => 'before',
+            'footer' => NULL,
+            'footer_attributes' => [],
+            'heading' => NULL,
+            'heading_attributes' => [],
+            'id' => NULL,
+        ],
+        'template' => 'bootstrap/nrel-bootstrap-card',
+    ];
+    return $hooks;
+}
+
+function nrel_bootstrap_theme_suggestions_fieldset_alter(&$suggestions, &$vars, $hook) {
+    $suggestions[] = 'nrel_bootstrap_card';
 }
