@@ -181,3 +181,17 @@ header .logo {
         background: url("../img/nrel-logo-web.svg") no-repeat left;
     }
 }
+
+/* Fix side-effects introduced by styling for media - https://www.drupal.org/project/bootstrap_barrio/issues/3296223 */
+.form-actions {
+    position: initial;
+    bottom: 0;
+    background: none;
+    padding: initial;
+}
+.js-form-item {
+    margin: initial;
+}
+form .form-type-textarea {
+    margin-bottom: 15px;
+}
