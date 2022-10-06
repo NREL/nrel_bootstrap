@@ -36,11 +36,7 @@ nrel_roboto:
     component:
       fonts/nrel_roboto.css: {}
       https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap: {
-        type: external,
-        attributes: {
-          integrity: sha384-8Y75BEOA9MmGHFNg6NJF6OmbbCeMgXe/S60ynTlzp/tnFpTWkLIevQ3jf+fikfQ3,
-          crossorigin: anonymous
-        }
+        type: external
       }
 fontawesome_4:
   version: VERSION
@@ -54,9 +50,5 @@ fontawesome:
   header: true
   js:
     https://kit.fontawesome.com/32f532493a.js: {
-      type: external,
-      attributes: {
-        integrity: sha384-dahZwxjA7/wgqj+shg5DO7qd43+s3gOXQBugwYKmEQ/9rsSeYTyUKYvC/SUDW7V4,
-        crossorigin: anonymous
-      }
+      type: external
     }
