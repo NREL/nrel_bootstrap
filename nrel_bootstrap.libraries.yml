@@ -33,12 +33,9 @@ fonts:
   css:
     component:
       fonts/nrel_roboto.css: {}
-      https://fonts.googleapis.com/css?family=Droid+Serif:400,400italic,700%7CRoboto:200,300,400,700:
-        type: external,
-        attributes: {
-          integrity: sha384-vl4RMMTRSwpIpSHWXliSG91Y3LNSIrVsZLiw4DI7nfKu8yQ8dT83qhwvvb4o1Xzb,
-          crossorigin: anonymous
-        }
+      https://fonts.googleapis.com/css?family=Droid+Serif:400,400italic,700%7CRoboto:200,300,400,700: {
+        type: external
+      }
 fontawesome_4:
   version: VERSION
   css:
@@ -51,9 +48,5 @@ fontawesome:
   header: true
   js:
     https://kit.fontawesome.com/32f532493a.js: {
-      type: external,
-      attributes: {
-        integrity: sha384-dahZwxjA7/wgqj+shg5DO7qd43+s3gOXQBugwYKmEQ/9rsSeYTyUKYvC/SUDW7V4,
-        crossorigin: anonymous
-      }
+      type: external
     }
