@@ -10096,26 +10096,33 @@ header .logo {
 .page-header {
   margin-top: 0;
 }
-.region-help > .glyphicon {
-  font-size: 18px;
-  float: left;
-  margin: -0.05em 0.5em 0 0;
+form .form-type-textarea {
+    margin-bottom: 15px;
 }
-.region-help .block {
-  overflow: hidden;
+
+/**
+ * @file
+ * Visual styles for fields.
+ */
+
+ .field--label {
+  font-weight: bold;
 }
-img {
-  max-width: 100%;
+.field--label-inline .field--label,
+.field--label-inline .field--items {
+  float: left; /*LTR*/
 }
-.help-block,
-.control-group .help-inline {
-  color: #777777;
-  font-size: 12px;
-  margin: 5px 0 10px;
-  padding: 0;
+.field--label-inline .field--label,
+.field--label-inline > .field--item,
+.field--label-inline .field--items {
+  padding-right: 0.5em;
 }
-.help-block:first-child,
-.control-group .help-inline:first-child {
-  margin-top: 0;
+[dir="rtl"] .field--label-inline .field--label,
+[dir="rtl"] .field--label-inline .field--items {
+  padding-left: 0.5em;
+  padding-right: 0;
+  float: right; /*RTL*/
 }
-/*# sourceMappingURL=style.css.map */
+.field--label-inline .field--label::after {
+  content: ':';
+}
