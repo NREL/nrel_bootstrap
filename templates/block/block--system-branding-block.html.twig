@@ -17,15 +17,48 @@
 #}
 {% block content %}
 
-  <div class="col-sm-6 col-sm-push-6">
-    {% if site_logo %}
-      <a href="http://www.nrel.gov" title="{{ 'NREL Home'|t }}" rel="home">
-          <img class="logo " src="{{ site_logo }}" alt="{{ 'NREL Home'|t }}" />
-      </a>
-    {% else %}
-      <a href="http://www.nrel.gov"><div class="logo"></div></a>
-    {% endif %}
-  </div>
+        <div class="col-md-6 col-xl-4 order-md-2">
+          <a href="https://www.nrel.gov"><div class="logo"><img src="/themes/contrib/nrel_bootstrap/img/nrel-logo-web.svg" class="sr-only" alt="National Renewable Energy Laboratory" /></div></a>
+        </div>
+
+        <div class="col-12 d-md-none">
+          <!-- Start MOBILE collapsible site search bar -->
+          <div class="site-search-bar">
+            <div class="container">
+              <div class="row">
+                <div class="col d-flex justify-content-center mb-1">
+                  <nav class="navbar navbar-light">
+                    <div class="navbar-collapse collapse" id="searchbar-collapse-mobile">
+                      <form
+                              method="get"
+                              class="site-searchbar-form form-inline ThunderstoneForm"
+                              action="https://search4.nrel.gov/texis/search/"
+                              id="ThunderstoneSearchForm">
+
+                        <input type="hidden" name="pr" value="metanrel" />
+                        <div class="form-group">
+                          <label for="query" class="sr-only">Search NREL.gov</label>
+                          <input
+                                  type="search"
+                                  id="query" name="query"
+                                  maxlength="2047"
+                                  placeholder="Search NREL.gov"
+                                  class="form-control"
+                                  aria-label="Search NREL.gov">
+                          <button type="submit" class="btn btn-default">Search</button>
+                        </div>
+                      </form>
+                    </div>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End MOBILE collapsible site search bar -->
+        </div>
+        <div class="col-md-6 col-xl-8 order-md-1">
+          <a href="{{ path('<front>') }}" class="app-name">{{ site_name }}</a>
+        </div>
 
   <div class="col-sm-6 col-sm-pull-6">
     {% if site_name %}
