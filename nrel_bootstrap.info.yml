@@ -1,12 +1,15 @@
-core_version_requirement: ^8 || ^9
+name: NREL Bootstrap
 type: theme
-base theme: bootstrap
-dependencies:
-  - nrel_bootstrap_module
-name: 'nrel_bootstrap'
-description: 'Uses the Bootstrap framework LESS source files and must be compiled (not for beginners).'
-package: 'communications'
-version: '8.x-2.0.2'
+description: 'NREL Bootstrap Barrio SubTheme.'
+core_version_requirement: ^9 || ^10
+base theme: bootstrap_barrio
+
+libraries:
+  - nrel_bootstrap/bootstrap
+  - nrel_bootstrap/global-styling
+
+libraries-override:
+  bootstrap_barrio/fontawesome: nrel_bootstrap/fontawesome
 
 regions:
   navigation: 'Navigation'
