@@ -86,7 +86,7 @@ function nrel_bootstrap_preprocess_nrel_bootstrap_card(&$variables) {
         // type. Some form elements may use "CompositeFormElementTrait" which
         // will inadvertently and eventually become preprocessed here and #value
         // may actually be the element's value instead of a renderable element.
-        if ('details' == $element['#type'] || 'fieldset' == $element['#type']) {
+        if (!empty($element['#type']) && ('details' == $element['#type'] || 'fieldset' == $element['#type'])) {
             $properties[] = '#value';
         }
 
@@ -100,24 +100,26 @@ function nrel_bootstrap_preprocess_nrel_bootstrap_card(&$variables) {
         $variables['body'] = array_filter($body);
 
         // Handle specific "details" elements.
-        if ('details' == $element['#type']) {
-            // Details are always collapsible per the HTML5 spec.
-            // @see https://www.drupal.org/node/1852020
-            $variables['collapsible'] = TRUE;
+        if (!empty($element['#type'])) {
+            if ('details' == $element['#type']) {
+                // Details are always collapsible per the HTML5 spec.
+                // @see https://www.drupal.org/node/1852020
+                $variables['collapsible'] = TRUE;
 
-            // Determine the collapsed state.
-            $variables['collapsed'] = !$element['#open'];
+                // Determine the collapsed state.
+                $variables['collapsed'] = !$element['#open'];
 
-            // Remove the unnecessary details attribute.
-            unset($element['#open']);
-        }
-        // Handle specific "fieldset" elements.
-        else if ('fieldset' == $element['#type']) {
-            // Override variables to mimic the default "fieldset" element info.
-            // They will be mapped below if they exist on the element.
-            unset($variables['collapsible'], $variables['collapsed']);
-            $variables['collapsed'] = 'collapsed';
-            //$variables['collapsible'] = 'collapsible';
+                // Remove the unnecessary details attribute.
+                unset($element['#open']);
+            }
+            // Handle specific "fieldset" elements.
+            elseif ('fieldset' == $element['#type']) {
+                // Override variables to mimic the default "fieldset" element info.
+                // They will be mapped below if they exist on the element.
+                unset($variables['collapsible'], $variables['collapsed']);
+                $variables['collapsed'] = 'collapsed';
+                //$variables['collapsible'] = 'collapsible';
+            }
         }
 
 
