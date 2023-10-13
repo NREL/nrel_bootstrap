@@ -149,9 +149,11 @@ function nrel_bootstrap_preprocess_nrel_bootstrap_card(&$variables) {
         }
 
         // Ensure we render HTML from heading.
-        $heading = $variables['heading'];
-        if ($heading && (is_string($heading) || ($heading instanceof MarkupInterface))) {
-            $variables['heading'] = ['#markup' => $heading];
+        if (!empty($variables['heading'])) {
+            $heading = $variables['heading'];
+            if ($heading && (is_string($heading) || ($heading instanceof MarkupInterface))) {
+                $variables['heading'] = ['#markup' => $heading];
+            }
         }
     }
     foreach ($variables as $name => $value) {
