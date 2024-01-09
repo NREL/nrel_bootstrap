@@ -40,6 +40,6 @@ fontawesome_4:
 fontawesome:
   header: true
   js:
-    https://kit.fontawesome.com/32f532493a.js: {
+    https://kit.fontawesome.com/064330cea8.js: {
       type: external
     }
