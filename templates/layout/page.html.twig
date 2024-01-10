@@ -108,7 +108,7 @@
                             {% endif %}
                             <!-- desktop search button -->
                             <button type="button" class="custom-toggler site-navbar-toggler site-searchbar-toggle d-none d-md-inline" data-toggle="collapse" data-target="#searchbar-collapse" aria-expanded="false" aria-label="Toggle Search">
-                                <span class="fa fa-search" aria-hidden="true"></span>
+                                <span class="fas fa-search"></span><span class="sr-only">Toggle Search</span>
                             </button>
                         </div>
                     {% endif %}
@@ -117,7 +117,7 @@
         </div><!--program-header-->
         <!-- mobile search button -->
         <button type="button" class="custom-toggler site-navbar-toggler site-searchbar-toggle d-md-none" data-toggle="collapse" data-target="#searchbar-collapse-mobile" aria-expanded="false" aria-label="Toggle Search">
-            <span class="fa fa-search" aria-hidden="true"></span>
+            <span class="fas fa-search"></span><span class="sr-only">Toggle Search</span>
         </button>
         <!-- Start collapsible site search bar -->
         <div class="site-search-bar">
@@ -130,14 +130,14 @@
                                         method="get"
                                         class="site-searchbar-form form-inline ThunderstoneForm"
                                         action="https://search4.nrel.gov/texis/search/"
-                                        id="ThunderstoneSearchForm">
+                                        id="ThunderstoneSearchFormMobile">
 
                                     <input type="hidden" name="pr" value="metanrel" />
                                     <div class="form-group">
-                                        <label for="query" class="sr-only">Search NREL.gov</label>
+                                        <label for="querymobile" class="sr-only">Search NREL.gov</label>
                                         <input
                                                 type="search"
-                                                id="query" name="query"
+                                                id="querymobile" name="query"
                                                 maxlength="2047"
                                                 placeholder="Search NREL.gov"
                                                 class="form-control"
