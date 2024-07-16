@@ -138,11 +138,9 @@ abbr[data-original-title], abbr[title] {
 .form-group {
     margin-bottom: 15px;
 }
-
-details summary {
-    display: none;
+#filter-by-section-form details .details-wrapper {
+    display: block !important;
 }
-
 form .card {
     border: none;
 }
@@ -244,4 +242,36 @@ form .form-type-textarea {
   text-decoration: none;
   background-color: #337ab7;
   outline: 0;
+}
+
+/* Override Bootstrap Barrio nav */
+.nav-pills > li.active > a {
+    color: #fff;
+    background-color: #0079c2;
+}
+.nav-tabs > li {
+    margin-bottom: -2px;
+}
+.nav-tabs > li:has(> a.active) {
+    border-bottom: 1px solid #fff;
+}
+.nav-tabs li > a {
+    line-height: 1.42857143;
+    border-radius: 7px 7px 0 0;
+    margin-right: 0;
+}
+nav-tabs li > a.active {
+    color: #555555;
+    cursor: default;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-bottom-color: transparent;
+}
+nav-tabs li > a:hover {
+    text-decoration: none;
+}
+.nav > li > a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
 }
