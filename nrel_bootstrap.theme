@@ -118,8 +118,15 @@ function nrel_bootstrap_preprocess_nrel_bootstrap_card(&$variables) {
                 // They will be mapped below if they exist on the element.
                 unset($variables['collapsible'], $variables['collapsed']);
                 $variables['collapsed'] = 'collapsed';
-                //$variables['collapsible'] = 'collapsible';
+                $variables['collapsible'] = TRUE;
             }
+            // Handle specific "checkboxes" elements.
+            elseif ('checkboxes' == $element['#type']) {
+                unset($variables['collapsible'], $variables['collapsed']);
+                $variables['collapsed'] = 'collapsed';
+                $variables['collapsible'] = TRUE;
+            }
+        
         }
 
 
@@ -137,7 +144,7 @@ function nrel_bootstrap_preprocess_nrel_bootstrap_card(&$variables) {
             // Retrieve the body ID attribute.
             if ($body_id = isset($variables['body_attributes']['id']) ? $variables['body_attributes']['id'] : "$id--content") {
                 // Ensure the target is set.
-                if ($variables['target'] = isset($variables['target']) ? $variables['target'] : "#$body_id") {
+                if ($variables['target'] = isset($variables['target']) ? $variables['target'] : "$body_id") {
                     // Set additional necessary attributes to the heading.
                     $variables['heading_attributes']['aria-controls'] =  preg_replace('/^#/', '', $variables['target']);
                     $variables['heading_attributes']['aria-expanded'] = !$variables['collapsed'] ? 'true' : 'false';
