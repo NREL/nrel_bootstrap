@@ -28,7 +28,7 @@
     },
     "require": {
         "drupal/bootstrap_layouts": "^5.1",
-        "drupal/bootstrap_barrio": "~5.1.0",
+        "drupal/bootstrap_barrio": "5.1.10",
         "nrel/nrel_app_template_bootstrap4": "dev-master"
     },
     "require-dev": {
