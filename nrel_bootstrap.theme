@@ -118,7 +118,7 @@ function nrel_bootstrap_preprocess_nrel_bootstrap_card(&$variables) {
                 // They will be mapped below if they exist on the element.
                 unset($variables['collapsible'], $variables['collapsed']);
                 $variables['collapsed'] = 'collapsed';
-                $variables['collapsible'] = TRUE;
+                //$variables['collapsible'] = TRUE;
             }
             // Handle specific "checkboxes" elements.
             elseif ('checkboxes' == $element['#type']) {
