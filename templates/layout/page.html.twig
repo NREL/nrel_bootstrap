@@ -77,6 +77,10 @@
 
                 {{ page.header }}
 
+                <a href="#mobile-menu" id="toggle-mobile-menu">
+                <span class="lines"></span>
+                </a>
+
             {% endblock %}
         {% endif %}
 
@@ -112,6 +116,78 @@
                             </button>
                         </div>
                     {% endif %}
+                </nav>
+                <nav id="mobile-menu">
+                    <ul>
+
+                    {% for key,menu_data in main_menu_data|slice(0,1) %} {# just the first item #}
+                        <li class="main-menu main-menu-{{ key|clean_class }}">
+                        {% if menu_data.below is not empty %}
+                            <span>{{ menu_data.title }}</span>
+                            <ul>
+                            {% for item_below in menu_data.below %}
+                            <li>{{ link(item_below.title, item_below.url) }}
+                                {% endfor %}
+                            </ul>
+                        {% else %}
+                            {{ link(menu_data.title, menu_data.url) }}
+                        {% endif %}
+                        </li>
+                    {% endfor %}
+
+                    {% for key,menu_data in account_menu_data|slice(0,1) %} {# just the first item #}
+                        <li class="account-menu account-menu-{{ key|clean_class }}">
+                        {% if menu_data.below is not empty %}
+                            <span>{{ menu_data.title }}</span>
+                            <ul>
+                            {% for item_below in menu_data.below %}
+                            <li>{{ link(item_below.title, item_below.url) }}
+                                {% endfor %}
+                            </ul>
+                        {% else %}
+                            {{ link(menu_data.title, menu_data.url) }}
+                        {% endif %}
+                        </li>
+                    {% endfor %}
+
+                    {% if language_switcher_data is not empty  %}
+                        <li class="language-switcher-menu language-switcher-{{ key|clean_class }}">
+                        {% if language_switcher_data == 'en' %}
+                            <a href="/es">Español</a>
+                        {% else %}
+                            <a href="/">English</a>
+                        {% endif %}
+                        </li>
+                    {% endif %}
+                    {% apply spaceless %}
+                        {% for key,menu_data in mobile_menu_data %}
+                        <li><span> {{ menu_data.title  }}</span>
+                            {% if menu_data.topics is not empty  %}
+                            <ul>
+                                {% for topic_key,topic_content in menu_data.topics %}
+                                <li class="topic-menu">
+                                    <span>
+                                        <div class="topic-title"> {{ topic_content['title'] }}</div>
+                                        {% if topic_content.subtopics is not empty %}
+                                        {% for subtopic_key,subtopic_content in topic_content.subtopics %}
+                                            <div class="subtopic-title">
+                                            <a href="{{ path('entity.node.canonical', {'node': subtopic_key}) }}">{{ subtopic_content.title }}</a>
+                                            </div>
+                                        {% endfor %}
+                                        {% endif %}
+                                    </span>
+                                </li>
+                                {% endfor %}
+                            </ul>
+                            {% endif %}
+                        </li>
+                        {% endfor %}
+
+                        <li>
+                        <span id="mobile-appended-content"></span>
+                        </li>
+                    {% endapply %}
+                    </ul>
                 </nav>
             </div><!--container-->
         </div><!--program-header-->
