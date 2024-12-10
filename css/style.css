@@ -275,3 +275,93 @@ nav-tabs li > a:hover {
     display: block;
     padding: 10px 15px;
 }
+/*  Accordions - based on the styles from the source-template.html file, adapted for use with the lb_tabs accordions. */
+.ui-accordion .ui-accordion-header,
+.accordion .accordion-item {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-color: #127BBF;
+    font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-image: none;
+    background-color: white;
+    padding: 0px;
+    border-radius: 0px;
+    font-weight: 300;
+}
+.accordion .accordion-item h2.accordion-header {
+    margin-top: 0px;
+}
+.ui-accordion .ui-accordion-header {
+    margin-bottom: 12px;
+}
+.accordion .accordion-item {
+    margin-bottom: 12px;
+}
+.ui-accordion .ui-accordion-header span {
+    display: none;
+}
+.accordion .accordion-header .accordion-button {
+    padding: 0;
+}
+.accordion .accordion-header .accordion-button::after {
+    background-image: none;
+    width: 0;
+}
+.ui-accordion .ui-accordion-header a,
+.accordion .accordion-header a {
+    margin-left:0px;
+    padding: 10px 15px 10px 40px;
+    display: block;
+    width: 100%;
+    background-image: url(../images/icon_plus_blue.svg);
+    color:#127BBF;
+    background-repeat: no-repeat;
+    background-position: 1% center;
+    background-size: 25px 25px;
+}
+.ui-accordion .ui-accordion-header.ui-accordion-header-active,
+.accordion .accordion-header .accordion-button:not(.collapsed) {
+    margin-bottom: 0px;
+}
+.ui-accordion .ui-accordion-header.ui-accordion-header-active a,
+.accordion .accordion-header .accordion-button:not(.collapsed) a {
+    background-image: url('../images/icon_minus.svg');
+    color:#fff;
+    background-color: #127BBF;
+}
+.accordion .accordion-item:not(:first-of-type) {
+    border-top: 1px solid #127BBF;
+}
+.ui-accordion .ui-accordion-header:first-child,
+.accordion .accordion-item:first-child {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+.ui-accordion .ui-accordion-header:last-of-type,
+.accordion .accordion-item:last-of-type {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.ui-accordion .ui-accordion-header.ui-accordion-header-active {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.ui-accordion .ui-accordion-header[id^=accordion-faqs-beta],
+.ui-accordion .ui-accordion-header[id^=accordion-roles-and-responsibilities-beta],
+.ui-accordion .ui-accordion-header[id^=accordion-revision-history-beta],
+.ui-accordion .ui-accordion-header[id^=accordion-lessons-learned-beta] {
+    display: none;
+}
+.ui-accordion .ui-accordion-content {
+    margin-bottom: 12px;
+    border-color: #127BBF;
+    border-radius: 0px;
+    font-size: 16px;
+}
+.ui-accordion .ui-accordion-content a {
+    color:#127BBF;
+}
+.ui-accordion .ui-accordion-content.ui-accordion-content-active:last-of-type {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
