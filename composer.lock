@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "75ae214649a24635e260bd4675f25489",
+    "content-hash": "08641dbecd24c873fc33879b55580929",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -65,12 +65,6 @@
             "support": {
                 "issues": "https://github.com/asm89/stack-cors/issues",
                 "source": "https://github.com/asm89/stack-cors/tree/1.3.0"
-            },
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
             },
             "time": "2019-12-24T22:41:47+00:00"
         },
@@ -159,12 +153,6 @@
                     "type": "tidelift"
                 }
             ],
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
-            },
             "time": "2024-09-19T14:15:21+00:00"
         },
         {
@@ -247,26 +235,20 @@
                 "issues": "https://github.com/doctrine/annotations/issues",
                 "source": "https://github.com/doctrine/annotations/tree/1.14.4"
             },
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
-            },
             "time": "2024-09-05T10:15:52+00:00"
         },
         {
             "name": "doctrine/deprecations",
-            "version": "1.1.3",
+            "version": "1.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/deprecations.git",
-                "reference": "dfbaa3c2d2e9a9df1118213f3b8b0c597bb99fab"
+                "reference": "31610dbb31faa98e6b5447b62340826f54fbc4e9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/deprecations/zipball/dfbaa3c2d2e9a9df1118213f3b8b0c597bb99fab",
-                "reference": "dfbaa3c2d2e9a9df1118213f3b8b0c597bb99fab",
+                "url": "https://api.github.com/repos/doctrine/deprecations/zipball/31610dbb31faa98e6b5447b62340826f54fbc4e9",
+                "reference": "31610dbb31faa98e6b5447b62340826f54fbc4e9",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -279,13 +261,11 @@
                 "php": "^7.1 || ^8.0"
             },
             "require-dev": {
-                "doctrine/coding-standard": "^9",
-                "phpstan/phpstan": "1.4.10 || 1.10.15",
-                "phpstan/phpstan-phpunit": "^1.0",
+                "doctrine/coding-standard": "^9 || ^12",
+                "phpstan/phpstan": "1.4.10 || 2.0.3",
+                "phpstan/phpstan-phpunit": "^1.0 || ^2",
                 "phpunit/phpunit": "^7.5 || ^8.5 || ^9.5",
-                "psalm/plugin-phpunit": "0.18.4",
-                "psr/log": "^1 || ^2 || ^3",
-                "vimeo/psalm": "4.30.0 || 5.12.0"
+                "psr/log": "^1 || ^2 || ^3"
             },
             "suggest": {
                 "psr/log": "Allows logging deprecations via PSR-3 logger implementation"
@@ -293,7 +273,7 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "Doctrine\\Deprecations\\": "lib/Doctrine/Deprecations"
+                    "Doctrine\\Deprecations\\": "src"
                 }
             },
             "notification-url": "https://packagist-repo.nrel.gov/nrel/communications/downloads/",
@@ -304,15 +284,9 @@
             "homepage": "https://www.doctrine-project.org/",
             "support": {
                 "issues": "https://github.com/doctrine/deprecations/issues",
-                "source": "https://github.com/doctrine/deprecations/tree/1.1.3"
+                "source": "https://github.com/doctrine/deprecations/tree/1.1.4"
             },
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
-            },
-            "time": "2024-01-30T19:34:25+00:00"
+            "time": "2024-12-07T21:18:45+00:00"
         },
         {
             "name": "doctrine/lexer",
@@ -396,12 +370,6 @@
                     "type": "tidelift"
                 }
             ],
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
-            },
             "time": "2024-02-05T11:35:39+00:00"
         },
         {
@@ -486,37 +454,31 @@
                 "source": "https://github.com/doctrine/reflection/tree/1.2.4"
             },
             "abandoned": "roave/better-reflection",
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
-            },
             "time": "2023-07-27T18:11:59+00:00"
         },
         {
             "name": "drupal/bootstrap_barrio",
-            "version": "5.1.12",
+            "version": "5.5.16",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/bootstrap_barrio.git",
-                "reference": "5.1.12"
+                "reference": "5.5.16"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/bootstrap_barrio-5.1.12.zip",
-                "reference": "5.1.12",
-                "shasum": "4947be64e22053a0550b69f81408ec34ecc0eccc"
+                "url": "https://ftp.drupal.org/files/projects/bootstrap_barrio-5.5.16.zip",
+                "reference": "5.5.16",
+                "shasum": "c69cae4d197e7ae0c11acc276c9bd8a1ce1d31b7"
             },
             "require": {
-                "drupal/core": "^9.4 || ^10 || ^11",
-                "twbs/bootstrap": "^4.4.1"
+                "drupal/core": "^9.4 || ^10",
+                "twbs/bootstrap": "^5.0.0"
             },
             "type": "drupal-theme",
             "extra": {
                 "drupal": {
-                    "version": "5.1.12",
-                    "datestamp": "1725415203",
+                    "version": "5.5.16",
+                    "datestamp": "1701646126",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -542,7 +504,7 @@
                     "homepage": "https://www.drupal.org/user/2824325"
                 }
             ],
-            "description": "Bootstrap 4 base theme.",
+            "description": "Bootstrap 5 base theme.",
             "homepage": "https://www.drupal.org/project/bootstrap_barrio",
             "support": {
                 "source": "https://git.drupalcode.org/project/bootstrap_barrio"
@@ -771,12 +733,6 @@
             "support": {
                 "source": "https://github.com/drupal/core/tree/9.5.11"
             },
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
-            },
             "time": "2023-09-19T17:58:28+00:00"
         },
         {
@@ -850,12 +806,6 @@
                     "type": "github"
                 }
             ],
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
-            },
             "time": "2023-06-01T07:04:22+00:00"
         },
         {
@@ -988,26 +938,20 @@
                     "type": "tidelift"
                 }
             ],
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
-            },
             "time": "2024-07-24T11:22:20+00:00"
         },
         {
             "name": "guzzlehttp/promises",
-            "version": "2.0.3",
+            "version": "2.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/promises.git",
-                "reference": "6ea8dd08867a2a42619d65c3deb2c0fcbf81c8f8"
+                "reference": "f9c436286ab2892c7db7be8c8da4ef61ccf7b455"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/promises/zipball/6ea8dd08867a2a42619d65c3deb2c0fcbf81c8f8",
-                "reference": "6ea8dd08867a2a42619d65c3deb2c0fcbf81c8f8",
+                "url": "https://api.github.com/repos/guzzle/promises/zipball/f9c436286ab2892c7db7be8c8da4ef61ccf7b455",
+                "reference": "f9c436286ab2892c7db7be8c8da4ef61ccf7b455",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -1067,7 +1011,7 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/promises/issues",
-                "source": "https://github.com/guzzle/promises/tree/2.0.3"
+                "source": "https://github.com/guzzle/promises/tree/2.0.4"
             },
             "funding": [
                 {
@@ -1083,13 +1027,7 @@
                     "type": "tidelift"
                 }
             ],
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
-            },
-            "time": "2024-07-18T10:29:17+00:00"
+            "time": "2024-10-17T10:06:22+00:00"
         },
         {
             "name": "guzzlehttp/psr7",
@@ -1211,26 +1149,20 @@
                     "type": "tidelift"
                 }
             ],
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
-            },
             "time": "2024-07-18T11:15:46+00:00"
         },
         {
             "name": "laminas/laminas-escaper",
-            "version": "2.13.0",
+            "version": "2.14.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-escaper.git",
-                "reference": "af459883f4018d0f8a0c69c7a209daef3bf973ba"
+                "reference": "0f7cb975f4443cf22f33408925c231225cfba8cb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-escaper/zipball/af459883f4018d0f8a0c69c7a209daef3bf973ba",
-                "reference": "af459883f4018d0f8a0c69c7a209daef3bf973ba",
+                "url": "https://api.github.com/repos/laminas/laminas-escaper/zipball/0f7cb975f4443cf22f33408925c231225cfba8cb",
+                "reference": "0f7cb975f4443cf22f33408925c231225cfba8cb",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -1242,18 +1174,18 @@
             "require": {
                 "ext-ctype": "*",
                 "ext-mbstring": "*",
-                "php": "~8.1.0 || ~8.2.0 || ~8.3.0"
+                "php": "~8.1.0 || ~8.2.0 || ~8.3.0 || ~8.4.0"
             },
             "conflict": {
                 "zendframework/zend-escaper": "*"
             },
             "require-dev": {
-                "infection/infection": "^0.27.0",
-                "laminas/laminas-coding-standard": "~2.5.0",
+                "infection/infection": "^0.27.9",
+                "laminas/laminas-coding-standard": "~3.0.0",
                 "maglnet/composer-require-checker": "^3.8.0",
-                "phpunit/phpunit": "^9.6.7",
-                "psalm/plugin-phpunit": "^0.18.4",
-                "vimeo/psalm": "^5.9"
+                "phpunit/phpunit": "^9.6.16",
+                "psalm/plugin-phpunit": "^0.19.0",
+                "vimeo/psalm": "^5.21.1"
             },
             "type": "library",
             "autoload": {
@@ -1285,26 +1217,20 @@
                     "type": "community_bridge"
                 }
             ],
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
-            },
-            "time": "2023-10-10T08:35:13+00:00"
+            "time": "2024-10-24T10:12:53+00:00"
         },
         {
             "name": "laminas/laminas-feed",
-            "version": "2.22.0",
+            "version": "2.23.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-feed.git",
-                "reference": "669792b819fca7274698147ad7a2ecc1b0a9b141"
+                "reference": "23807e692b3174750b426143bd93572b71b6739a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-feed/zipball/669792b819fca7274698147ad7a2ecc1b0a9b141",
-                "reference": "669792b819fca7274698147ad7a2ecc1b0a9b141",
+                "url": "https://api.github.com/repos/laminas/laminas-feed/zipball/23807e692b3174750b426143bd93572b71b6739a",
+                "reference": "23807e692b3174750b426143bd93572b71b6739a",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -1318,24 +1244,24 @@
                 "ext-libxml": "*",
                 "laminas/laminas-escaper": "^2.9",
                 "laminas/laminas-stdlib": "^3.6",
-                "php": "~8.1.0 || ~8.2.0 || ~8.3.0"
+                "php": "~8.1.0 || ~8.2.0 || ~8.3.0 || ~8.4.0"
             },
             "conflict": {
                 "laminas/laminas-servicemanager": "<3.3",
                 "zendframework/zend-feed": "*"
             },
             "require-dev": {
-                "laminas/laminas-cache": "^2.13.2 || ^3.11",
-                "laminas/laminas-cache-storage-adapter-memory": "^1.1.0 || ^2.2",
+                "laminas/laminas-cache": "^2.13.2 || ^3.12",
+                "laminas/laminas-cache-storage-adapter-memory": "^1.1.0 || ^2.3",
                 "laminas/laminas-coding-standard": "~2.5.0",
                 "laminas/laminas-db": "^2.18",
-                "laminas/laminas-http": "^2.18",
-                "laminas/laminas-servicemanager": "^3.21.0",
-                "laminas/laminas-validator": "^2.38",
-                "phpunit/phpunit": "^10.3.1",
-                "psalm/plugin-phpunit": "^0.18.4",
+                "laminas/laminas-http": "^2.19",
+                "laminas/laminas-servicemanager": "^3.22.1",
+                "laminas/laminas-validator": "^2.46",
+                "phpunit/phpunit": "^10.5.5",
+                "psalm/plugin-phpunit": "^0.19.0",
                 "psr/http-message": "^2.0",
-                "vimeo/psalm": "^5.14.1"
+                "vimeo/psalm": "^5.18.0"
             },
             "suggest": {
                 "laminas/laminas-cache": "Laminas\\Cache component, for optionally caching feeds between requests",
@@ -1377,26 +1303,20 @@
                     "type": "community_bridge"
                 }
             ],
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
-            },
-            "time": "2023-10-11T20:16:37+00:00"
+            "time": "2024-10-09T10:53:30+00:00"
         },
         {
             "name": "laminas/laminas-stdlib",
-            "version": "3.19.0",
+            "version": "3.20.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-stdlib.git",
-                "reference": "6a192dd0882b514e45506f533b833b623b78fff3"
+                "reference": "8974a1213be42c3e2f70b2c27b17f910291ab2f4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-stdlib/zipball/6a192dd0882b514e45506f533b833b623b78fff3",
-                "reference": "6a192dd0882b514e45506f533b833b623b78fff3",
+                "url": "https://api.github.com/repos/laminas/laminas-stdlib/zipball/8974a1213be42c3e2f70b2c27b17f910291ab2f4",
+                "reference": "8974a1213be42c3e2f70b2c27b17f910291ab2f4",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -1406,17 +1326,17 @@
                 ]
             },
             "require": {
-                "php": "~8.1.0 || ~8.2.0 || ~8.3.0"
+                "php": "~8.1.0 || ~8.2.0 || ~8.3.0 || ~8.4.0"
             },
             "conflict": {
                 "zendframework/zend-stdlib": "*"
             },
             "require-dev": {
-                "laminas/laminas-coding-standard": "^2.5",
-                "phpbench/phpbench": "^1.2.15",
-                "phpunit/phpunit": "^10.5.8",
-                "psalm/plugin-phpunit": "^0.18.4",
-                "vimeo/psalm": "^5.20.0"
+                "laminas/laminas-coding-standard": "^3.0",
+                "phpbench/phpbench": "^1.3.1",
+                "phpunit/phpunit": "^10.5.38",
+                "psalm/plugin-phpunit": "^0.19.0",
+                "vimeo/psalm": "^5.26.1"
             },
             "type": "library",
             "autoload": {
@@ -1448,13 +1368,7 @@
                     "type": "community_bridge"
                 }
             ],
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
-            },
-            "time": "2024-01-19T12:39:49+00:00"
+            "time": "2024-10-29T13:46:07+00:00"
         },
         {
             "name": "longwave/laminas-diactoros",
@@ -1556,12 +1470,6 @@
                 "rss": "https://github.com/laminas/laminas-diactoros/releases.atom",
                 "source": "https://github.com/laminas/laminas-diactoros"
             },
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
-            },
             "time": "2024-09-11T14:26:18+00:00"
         },
         {
@@ -1635,12 +1543,6 @@
                 "issues": "https://github.com/Masterminds/html5-php/issues",
                 "source": "https://github.com/Masterminds/html5-php/tree/2.9.0"
             },
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
-            },
             "time": "2024-03-31T07:05:07+00:00"
         },
         {
@@ -1681,12 +1583,6 @@
             "support": {
                 "issues": "https://github.com/NREL/nrel-app-template-bootstrap4/issues",
                 "source": "https://github.com/NREL/nrel-app-template-bootstrap4/tree/master"
-            },
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
             },
             "time": "2024-08-08T14:07:55+00:00"
         },
@@ -1764,12 +1660,6 @@
                 "issues": "http://pear.php.net/bugs/search.php?cmd=display&package_name[]=Archive_Tar",
                 "source": "https://github.com/pear/Archive_Tar"
             },
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
-            },
             "time": "2024-03-16T16:21:40+00:00"
         },
         {
@@ -1827,26 +1717,20 @@
                 "issues": "http://pear.php.net/bugs/search.php?cmd=display&package_name[]=Console_Getopt",
                 "source": "https://github.com/pear/Console_Getopt"
             },
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
-            },
             "time": "2019-11-20T18:27:48+00:00"
         },
         {
             "name": "pear/pear-core-minimal",
-            "version": "v1.10.15",
+            "version": "v1.10.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pear/pear-core-minimal.git",
-                "reference": "ce0adade8b97561656ace07cdaac4751c271ea8c"
+                "reference": "c0f51b45f50683bf5bbf558036854ebc9b54d033"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pear/pear-core-minimal/zipball/ce0adade8b97561656ace07cdaac4751c271ea8c",
-                "reference": "ce0adade8b97561656ace07cdaac4751c271ea8c",
+                "url": "https://api.github.com/repos/pear/pear-core-minimal/zipball/c0f51b45f50683bf5bbf558036854ebc9b54d033",
+                "reference": "c0f51b45f50683bf5bbf558036854ebc9b54d033",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -1888,13 +1772,7 @@
                 "issues": "http://pear.php.net/bugs/search.php?cmd=display&package_name[]=PEAR",
                 "source": "https://github.com/pear/pear-core-minimal"
             },
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
-            },
-            "time": "2024-03-16T18:41:45+00:00"
+            "time": "2024-11-24T22:27:58+00:00"
         },
         {
             "name": "pear/pear_exception",
@@ -1959,12 +1837,6 @@
                 "issues": "http://pear.php.net/bugs/search.php?cmd=display&package_name[]=PEAR_Exception",
                 "source": "https://github.com/pear/PEAR_Exception"
             },
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
-            },
             "time": "2021-03-21T15:43:46+00:00"
         },
         {
@@ -2020,12 +1892,6 @@
             "support": {
                 "source": "https://github.com/php-fig/cache/tree/2.0.0"
             },
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
-            },
             "time": "2021-02-03T23:23:37+00:00"
         },
         {
@@ -2079,12 +1945,6 @@
             "support": {
                 "issues": "https://github.com/php-fig/container/issues",
                 "source": "https://github.com/php-fig/container/tree/1.1.2"
-            },
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
             },
             "time": "2021-11-05T16:50:12+00:00"
         },
@@ -2143,12 +2003,6 @@
             ],
             "support": {
                 "source": "https://github.com/php-fig/http-client"
-            },
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
             },
             "time": "2023-09-23T14:17:50+00:00"
         },
@@ -2211,12 +2065,6 @@
             "support": {
                 "source": "https://github.com/php-fig/http-factory"
             },
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
-            },
             "time": "2024-04-15T12:06:14+00:00"
         },
         {
@@ -2276,12 +2124,6 @@
             "support": {
                 "source": "https://github.com/php-fig/http-message/tree/1.1"
             },
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
-            },
             "time": "2023-04-04T09:50:52+00:00"
         },
         {
@@ -2338,12 +2180,6 @@
             "support": {
                 "source": "https://github.com/php-fig/log/tree/1.1.4"
             },
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
-            },
             "time": "2021-05-03T11:20:27+00:00"
         },
         {
@@ -2393,12 +2229,6 @@
             "support": {
                 "issues": "https://github.com/ralouphie/getallheaders/issues",
                 "source": "https://github.com/ralouphie/getallheaders/tree/develop"
-            },
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
             },
             "time": "2019-03-08T08:55:37+00:00"
         },
@@ -2461,12 +2291,6 @@
                 "source": "https://github.com/stackphp/builder/tree/v1.0.6"
             },
             "abandoned": true,
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
-            },
             "time": "2020-01-30T12:17:27+00:00"
         },
         {
@@ -2535,12 +2359,6 @@
             "support": {
                 "issues": "https://github.com/symfony-cmf/Routing/issues",
                 "source": "https://github.com/symfony-cmf/Routing/tree/2.3.4"
-            },
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
             },
             "time": "2021-11-08T16:33:10+00:00"
         },
@@ -2638,12 +2456,6 @@
                     "type": "tidelift"
                 }
             ],
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
-            },
             "time": "2022-11-05T17:10:16+00:00"
         },
         {
@@ -2719,12 +2531,6 @@
                 }
             ],
             "abandoned": "symfony/error-handler",
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
-            },
             "time": "2022-07-28T16:29:46+00:00"
         },
         {
@@ -2817,26 +2623,20 @@
                     "type": "tidelift"
                 }
             ],
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
-            },
             "time": "2022-11-16T16:18:09+00:00"
         },
         {
             "name": "symfony/deprecation-contracts",
-            "version": "v3.5.0",
+            "version": "v3.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/deprecation-contracts.git",
-                "reference": "0e0d29ce1f20deffb4ab1b016a7257c4f1e789a1"
+                "reference": "74c71c939a79f7d5bf3c1ce9f5ea37ba0114c6f6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/deprecation-contracts/zipball/0e0d29ce1f20deffb4ab1b016a7257c4f1e789a1",
-                "reference": "0e0d29ce1f20deffb4ab1b016a7257c4f1e789a1",
+                "url": "https://api.github.com/repos/symfony/deprecation-contracts/zipball/74c71c939a79f7d5bf3c1ce9f5ea37ba0114c6f6",
+                "reference": "74c71c939a79f7d5bf3c1ce9f5ea37ba0114c6f6",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -2880,7 +2680,7 @@
             "description": "A generic function and convention to trigger deprecation notices",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/deprecation-contracts/tree/v3.5.0"
+                "source": "https://github.com/symfony/deprecation-contracts/tree/v3.5.1"
             },
             "funding": [
                 {
@@ -2896,13 +2696,7 @@
                     "type": "tidelift"
                 }
             ],
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
-            },
-            "time": "2024-04-18T09:32:20+00:00"
+            "time": "2024-09-25T14:20:29+00:00"
         },
         {
             "name": "symfony/error-handler",
@@ -2976,12 +2770,6 @@
                     "type": "tidelift"
                 }
             ],
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
-            },
             "time": "2022-07-28T16:29:46+00:00"
         },
         {
@@ -3072,12 +2860,6 @@
                     "type": "tidelift"
                 }
             ],
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
-            },
             "time": "2022-07-20T09:59:04+00:00"
         },
         {
@@ -3163,26 +2945,20 @@
                     "type": "tidelift"
                 }
             ],
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
-            },
             "time": "2022-07-20T09:59:04+00:00"
         },
         {
             "name": "symfony/http-client-contracts",
-            "version": "v2.5.3",
+            "version": "v2.5.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-client-contracts.git",
-                "reference": "e5cc97c2b4a4db0ba26bebc154f1426e3fd1d2f1"
+                "reference": "fbfd73095ae958935396cf2243c47b01c677750c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-client-contracts/zipball/e5cc97c2b4a4db0ba26bebc154f1426e3fd1d2f1",
-                "reference": "e5cc97c2b4a4db0ba26bebc154f1426e3fd1d2f1",
+                "url": "https://api.github.com/repos/symfony/http-client-contracts/zipball/fbfd73095ae958935396cf2243c47b01c677750c",
+                "reference": "fbfd73095ae958935396cf2243c47b01c677750c",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -3237,7 +3013,7 @@
                 "standards"
             ],
             "support": {
-                "source": "https://github.com/symfony/http-client-contracts/tree/v2.5.3"
+                "source": "https://github.com/symfony/http-client-contracts/tree/v2.5.4"
             },
             "funding": [
                 {
@@ -3253,13 +3029,7 @@
                     "type": "tidelift"
                 }
             ],
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
-            },
-            "time": "2024-03-26T19:42:53+00:00"
+            "time": "2024-11-25T09:13:00+00:00"
         },
         {
             "name": "symfony/http-foundation",
@@ -3333,12 +3103,6 @@
                     "type": "tidelift"
                 }
             ],
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
-            },
             "time": "2022-11-04T16:17:57+00:00"
         },
         {
@@ -3449,12 +3213,6 @@
                     "type": "tidelift"
                 }
             ],
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
-            },
             "time": "2023-11-10T13:31:29+00:00"
         },
         {
@@ -3544,12 +3302,6 @@
                     "type": "tidelift"
                 }
             ],
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
-            },
             "time": "2022-09-01T18:18:29+00:00"
         },
         {
@@ -3635,12 +3387,6 @@
                     "type": "tidelift"
                 }
             ],
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
-            },
             "time": "2024-09-09T11:45:10+00:00"
         },
         {
@@ -3727,12 +3473,6 @@
                     "type": "tidelift"
                 }
             ],
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
-            },
             "time": "2024-09-09T11:45:10+00:00"
         },
         {
@@ -3822,12 +3562,6 @@
                     "type": "tidelift"
                 }
             ],
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
-            },
             "time": "2024-09-09T11:45:10+00:00"
         },
         {
@@ -3915,12 +3649,6 @@
                     "type": "tidelift"
                 }
             ],
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
-            },
             "time": "2024-09-09T11:45:10+00:00"
         },
         {
@@ -4007,12 +3735,6 @@
                     "type": "tidelift"
                 }
             ],
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
-            },
             "time": "2024-09-09T11:45:10+00:00"
         },
         {
@@ -4084,12 +3806,6 @@
                     "type": "tidelift"
                 }
             ],
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
-            },
             "time": "2024-09-09T11:45:10+00:00"
         },
         {
@@ -4172,12 +3888,6 @@
                     "type": "tidelift"
                 }
             ],
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
-            },
             "time": "2024-09-09T11:45:10+00:00"
         },
         {
@@ -4264,12 +3974,6 @@
                     "type": "tidelift"
                 }
             ],
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
-            },
             "time": "2024-09-09T11:45:10+00:00"
         },
         {
@@ -4338,12 +4042,6 @@
                     "type": "tidelift"
                 }
             ],
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
-            },
             "time": "2022-06-27T13:16:42+00:00"
         },
         {
@@ -4438,12 +4136,6 @@
                     "type": "tidelift"
                 }
             ],
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
-            },
             "time": "2022-11-28T22:46:34+00:00"
         },
         {
@@ -4539,12 +4231,6 @@
                     "type": "tidelift"
                 }
             ],
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
-            },
             "time": "2022-07-20T09:59:04+00:00"
         },
         {
@@ -4645,26 +4331,20 @@
                     "type": "tidelift"
                 }
             ],
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
-            },
             "time": "2022-09-19T08:38:33+00:00"
         },
         {
             "name": "symfony/service-contracts",
-            "version": "v2.5.3",
+            "version": "v2.5.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/service-contracts.git",
-                "reference": "a2329596ddc8fd568900e3fc76cba42489ecc7f3"
+                "reference": "f37b419f7aea2e9abf10abd261832cace12e3300"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/service-contracts/zipball/a2329596ddc8fd568900e3fc76cba42489ecc7f3",
-                "reference": "a2329596ddc8fd568900e3fc76cba42489ecc7f3",
+                "url": "https://api.github.com/repos/symfony/service-contracts/zipball/f37b419f7aea2e9abf10abd261832cace12e3300",
+                "reference": "f37b419f7aea2e9abf10abd261832cace12e3300",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -4724,7 +4404,7 @@
                 "standards"
             ],
             "support": {
-                "source": "https://github.com/symfony/service-contracts/tree/v2.5.3"
+                "source": "https://github.com/symfony/service-contracts/tree/v2.5.4"
             },
             "funding": [
                 {
@@ -4740,13 +4420,7 @@
                     "type": "tidelift"
                 }
             ],
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
-            },
-            "time": "2023-04-21T15:04:16+00:00"
+            "time": "2024-09-25T14:11:13+00:00"
         },
         {
             "name": "symfony/translation",
@@ -4841,26 +4515,20 @@
                     "type": "tidelift"
                 }
             ],
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
-            },
             "time": "2022-10-03T15:15:11+00:00"
         },
         {
             "name": "symfony/translation-contracts",
-            "version": "v2.5.3",
+            "version": "v2.5.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/translation-contracts.git",
-                "reference": "b0073a77ac0b7ea55131020e87b1e3af540f4664"
+                "reference": "450d4172653f38818657022252f9d81be89ee9a8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/translation-contracts/zipball/b0073a77ac0b7ea55131020e87b1e3af540f4664",
-                "reference": "b0073a77ac0b7ea55131020e87b1e3af540f4664",
+                "url": "https://api.github.com/repos/symfony/translation-contracts/zipball/450d4172653f38818657022252f9d81be89ee9a8",
+                "reference": "450d4172653f38818657022252f9d81be89ee9a8",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -4915,7 +4583,7 @@
                 "standards"
             ],
             "support": {
-                "source": "https://github.com/symfony/translation-contracts/tree/v2.5.3"
+                "source": "https://github.com/symfony/translation-contracts/tree/v2.5.4"
             },
             "funding": [
                 {
@@ -4931,13 +4599,7 @@
                     "type": "tidelift"
                 }
             ],
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
-            },
-            "time": "2024-01-23T13:51:25+00:00"
+            "time": "2024-09-25T14:11:13+00:00"
         },
         {
             "name": "symfony/validator",
@@ -5049,26 +4711,20 @@
                     "type": "tidelift"
                 }
             ],
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
-            },
             "time": "2022-10-25T13:54:11+00:00"
         },
         {
             "name": "symfony/var-dumper",
-            "version": "v5.4.43",
+            "version": "v5.4.48",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-dumper.git",
-                "reference": "6be6a6a8af4818564e3726fc65cf936f34743cef"
+                "reference": "42f18f170aa86d612c3559cfb3bd11a375df32c8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/6be6a6a8af4818564e3726fc65cf936f34743cef",
-                "reference": "6be6a6a8af4818564e3726fc65cf936f34743cef",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/42f18f170aa86d612c3559cfb3bd11a375df32c8",
+                "reference": "42f18f170aa86d612c3559cfb3bd11a375df32c8",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -5134,7 +4790,7 @@
                 "dump"
             ],
             "support": {
-                "source": "https://github.com/symfony/var-dumper/tree/v5.4.43"
+                "source": "https://github.com/symfony/var-dumper/tree/v5.4.48"
             },
             "funding": [
                 {
@@ -5150,13 +4806,7 @@
                     "type": "tidelift"
                 }
             ],
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
-            },
-            "time": "2024-08-30T16:01:46+00:00"
+            "time": "2024-11-08T15:21:10+00:00"
         },
         {
             "name": "symfony/yaml",
@@ -5233,26 +4883,20 @@
                     "type": "tidelift"
                 }
             ],
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
-            },
             "time": "2022-08-02T15:47:23+00:00"
         },
         {
             "name": "twbs/bootstrap",
-            "version": "v4.6.2",
+            "version": "v5.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twbs/bootstrap.git",
-                "reference": "e5643aaa89eb67327a5b4abe7db976f0ea276b70"
+                "reference": "6e1f75f420f68e1d52733b8e407fc7c3766c9dba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/e5643aaa89eb67327a5b4abe7db976f0ea276b70",
-                "reference": "e5643aaa89eb67327a5b4abe7db976f0ea276b70",
+                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/6e1f75f420f68e1d52733b8e407fc7c3766c9dba",
+                "reference": "6e1f75f420f68e1d52733b8e407fc7c3766c9dba",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -5265,11 +4909,6 @@
                 "twitter/bootstrap": "self.version"
             },
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.3.x-dev"
-                }
-            },
             "notification-url": "https://packagist-repo.nrel.gov/nrel/communications/downloads/",
             "license": [
                 "MIT"
@@ -5298,15 +4937,9 @@
             ],
             "support": {
                 "issues": "https://github.com/twbs/bootstrap/issues",
-                "source": "https://github.com/twbs/bootstrap/tree/v4.6.2"
+                "source": "https://github.com/twbs/bootstrap/tree/v5.3.3"
             },
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
-            },
-            "time": "2022-07-19T15:13:44+00:00"
+            "time": "2024-02-20T15:14:29+00:00"
         },
         {
             "name": "twig/twig",
@@ -5392,26 +5025,20 @@
                     "type": "tidelift"
                 }
             ],
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
-            },
             "time": "2024-09-09T17:53:56+00:00"
         },
         {
             "name": "typo3/phar-stream-wrapper",
-            "version": "v3.1.7",
+            "version": "v3.1.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3/phar-stream-wrapper.git",
-                "reference": "5cc2f04a4e2f5c7e9cc02a3bdf80fae0f3e11a8c"
+                "reference": "a931b28f422a60052db85c0a84a05a366453b2c0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3/phar-stream-wrapper/zipball/5cc2f04a4e2f5c7e9cc02a3bdf80fae0f3e11a8c",
-                "reference": "5cc2f04a4e2f5c7e9cc02a3bdf80fae0f3e11a8c",
+                "url": "https://api.github.com/repos/TYPO3/phar-stream-wrapper/zipball/a931b28f422a60052db85c0a84a05a366453b2c0",
+                "reference": "a931b28f422a60052db85c0a84a05a366453b2c0",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -5422,7 +5049,7 @@
             },
             "require": {
                 "ext-json": "*",
-                "php": "^7.0 || ^8.0"
+                "php": "^7.0 || ~8.0 || ~8.1 || ~8.2 || ~8.3"
             },
             "require-dev": {
                 "ext-xdebug": "*",
@@ -5457,15 +5084,9 @@
             ],
             "support": {
                 "issues": "https://github.com/TYPO3/phar-stream-wrapper/issues",
-                "source": "https://github.com/TYPO3/phar-stream-wrapper/tree/v3.1.7"
+                "source": "https://github.com/TYPO3/phar-stream-wrapper/tree/v3.1.8"
             },
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
-            },
-            "time": "2021-09-20T19:19:13+00:00"
+            "time": "2024-12-09T23:06:33+00:00"
         }
     ],
     "packages-dev": [
@@ -5541,12 +5162,6 @@
                 "issues": "https://github.com/alchemy-fr/Zippy/issues",
                 "source": "https://github.com/alchemy-fr/Zippy/tree/master"
             },
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
-            },
             "time": "2018-02-22T13:58:36+00:00"
         },
         {
@@ -5613,12 +5228,6 @@
             "support": {
                 "issues": "https://github.com/Chi-teck/drupal-code-generator/issues",
                 "source": "https://github.com/Chi-teck/drupal-code-generator/tree/2.6.2"
-            },
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
             },
             "time": "2022-11-11T15:34:04+00:00"
         },
@@ -5777,12 +5386,6 @@
                     "type": "tidelift"
                 }
             ],
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
-            },
             "time": "2021-09-13T08:19:44+00:00"
         },
         {
@@ -5844,12 +5447,6 @@
             "support": {
                 "issues": "https://github.com/consolidation/annotated-command/issues",
                 "source": "https://github.com/consolidation/annotated-command/tree/4.10.0"
-            },
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
             },
             "time": "2024-04-05T21:05:39+00:00"
         },
@@ -5917,12 +5514,6 @@
                 "issues": "https://github.com/consolidation/config/issues",
                 "source": "https://github.com/consolidation/config/tree/2.1.2"
             },
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
-            },
             "time": "2022-10-06T17:48:03+00:00"
         },
         {
@@ -5978,12 +5569,6 @@
             "description": "This project uses dflydev/dot-access-data to provide simple output filtering for applications built with annotated-command / Robo.",
             "support": {
                 "source": "https://github.com/consolidation/filter-via-dot-access-data/tree/2.0.2"
-            },
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
             },
             "time": "2021-12-30T03:56:08+00:00"
         },
@@ -6042,12 +5627,6 @@
             "support": {
                 "issues": "https://github.com/consolidation/log/issues",
                 "source": "https://github.com/consolidation/log/tree/2.1.1"
-            },
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
             },
             "time": "2022-02-24T04:27:32+00:00"
         },
@@ -6108,12 +5687,6 @@
             "support": {
                 "issues": "https://github.com/consolidation/output-formatters/issues",
                 "source": "https://github.com/consolidation/output-formatters/tree/4.5.0"
-            },
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
             },
             "time": "2024-04-02T15:18:52+00:00"
         },
@@ -6220,12 +5793,6 @@
                 "issues": "https://github.com/consolidation/robo/issues",
                 "source": "https://github.com/consolidation/robo/tree/4.0.2"
             },
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
-            },
             "time": "2022-04-21T09:29:58+00:00"
         },
         {
@@ -6286,12 +5853,6 @@
             "support": {
                 "issues": "https://github.com/consolidation/self-update/issues",
                 "source": "https://github.com/consolidation/self-update/tree/2.2.0"
-            },
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
             },
             "time": "2023-03-18T01:37:41+00:00"
         },
@@ -6359,12 +5920,6 @@
                 "issues": "https://github.com/consolidation/site-alias/issues",
                 "source": "https://github.com/consolidation/site-alias/tree/3.1.7"
             },
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
-            },
             "time": "2022-10-15T01:21:09+00:00"
         },
         {
@@ -6428,12 +5983,6 @@
             "support": {
                 "issues": "https://github.com/consolidation/site-process/issues",
                 "source": "https://github.com/consolidation/site-process/tree/4.2.1"
-            },
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
             },
             "time": "2022-10-18T13:19:35+00:00"
         },
@@ -6506,12 +6055,6 @@
             "support": {
                 "issues": "https://github.com/dflydev/dflydev-dot-access-configuration/issues",
                 "source": "https://github.com/dflydev/dflydev-dot-access-configuration/tree/master"
-            },
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
             },
             "time": "2022-12-09T04:37:12+00:00"
         },
@@ -6594,12 +6137,6 @@
                 "issues": "https://github.com/dflydev/dflydev-dot-access-data/issues",
                 "source": "https://github.com/dflydev/dflydev-dot-access-data/tree/v3.0.3"
             },
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
-            },
             "time": "2024-07-08T12:26:09+00:00"
         },
         {
@@ -6661,12 +6198,6 @@
             "support": {
                 "issues": "https://github.com/dflydev/dflydev-placeholder-resolver/issues",
                 "source": "https://github.com/dflydev/dflydev-placeholder-resolver/tree/v1.0.3"
-            },
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
             },
             "time": "2021-12-03T16:48:58+00:00"
         },
@@ -6743,12 +6274,6 @@
             "support": {
                 "issues": "https://github.com/doctrine/collections/issues",
                 "source": "https://github.com/doctrine/collections/tree/1.8.0"
-            },
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
             },
             "time": "2022-09-01T20:12:10+00:00"
         },
@@ -6848,12 +6373,6 @@
                     "type": "open_collective"
                 }
             ],
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
-            },
             "time": "2022-10-02T14:56:10+00:00"
         },
         {
@@ -6948,12 +6467,6 @@
                 "issues": "https://github.com/hechoendrupal/DrupalConsole/issues",
                 "source": "https://github.com/hechoendrupal/drupal-console-core/tree/1.9.8"
             },
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
-            },
             "time": "2022-10-02T14:16:53+00:00"
         },
         {
@@ -7020,12 +6533,6 @@
                 "issues": "https://github.com/hechoendrupal/DrupalConsole/issues",
                 "source": "https://github.com/hechoendrupal/drupal-console-en/tree/master"
             },
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
-            },
             "time": "2020-08-15T03:34:54+00:00"
         },
         {
@@ -7077,12 +6584,6 @@
             "support": {
                 "issues": "https://github.com/hechoendrupal/drupal-console-extend-plugin/issues",
                 "source": "https://github.com/hechoendrupal/drupal-console-extend-plugin/tree/0.9.5"
-            },
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
             },
             "time": "2020-11-18T00:15:28+00:00"
         },
@@ -7235,12 +6736,6 @@
                     "type": "github"
                 }
             ],
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
-            },
             "time": "2023-06-06T18:46:18+00:00"
         },
         {
@@ -7313,12 +6808,6 @@
                 "issues": "https://github.com/enlightn/security-checker/issues",
                 "source": "https://github.com/enlightn/security-checker/tree/v1.11.0"
             },
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
-            },
             "time": "2023-11-17T07:53:29+00:00"
         },
         {
@@ -7375,12 +6864,6 @@
             "support": {
                 "issues": "https://github.com/grasmash/expander/issues",
                 "source": "https://github.com/grasmash/expander/tree/2.0.3"
-            },
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
             },
             "time": "2022-04-25T22:17:46+00:00"
         },
@@ -7470,12 +6953,6 @@
                     "type": "github"
                 }
             ],
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
-            },
             "time": "2024-03-13T13:12:53+00:00"
         },
         {
@@ -7539,12 +7016,6 @@
             "support": {
                 "issues": "https://github.com/nikic/PHP-Parser/issues",
                 "source": "https://github.com/nikic/PHP-Parser/tree/v5.2.0"
-            },
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
             },
             "time": "2024-09-15T16:40:33+00:00"
         },
@@ -7631,12 +7102,6 @@
                 "issues": "https://github.com/bobthecow/psysh/issues",
                 "source": "https://github.com/bobthecow/psysh/tree/v0.12.4"
             },
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
-            },
             "time": "2024-06-10T01:18:23+00:00"
         },
         {
@@ -7691,12 +7156,6 @@
             "support": {
                 "issues": "https://github.com/stecman/symfony-console-completion/issues",
                 "source": "https://github.com/stecman/symfony-console-completion/tree/0.11.0"
-            },
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
             },
             "time": "2019-11-24T17:03:06+00:00"
         },
@@ -7801,26 +7260,20 @@
                     "type": "tidelift"
                 }
             ],
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
-            },
             "time": "2024-09-13T16:57:39+00:00"
         },
         {
             "name": "symfony/cache-contracts",
-            "version": "v2.5.3",
+            "version": "v2.5.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/cache-contracts.git",
-                "reference": "fee6db04d913094e2fb55ff8e7db5685a8134463"
+                "reference": "517c3a3619dadfa6952c4651767fcadffb4df65e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/cache-contracts/zipball/fee6db04d913094e2fb55ff8e7db5685a8134463",
-                "reference": "fee6db04d913094e2fb55ff8e7db5685a8134463",
+                "url": "https://api.github.com/repos/symfony/cache-contracts/zipball/517c3a3619dadfa6952c4651767fcadffb4df65e",
+                "reference": "517c3a3619dadfa6952c4651767fcadffb4df65e",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -7876,7 +7329,7 @@
                 "standards"
             ],
             "support": {
-                "source": "https://github.com/symfony/cache-contracts/tree/v2.5.3"
+                "source": "https://github.com/symfony/cache-contracts/tree/v2.5.4"
             },
             "funding": [
                 {
@@ -7892,13 +7345,7 @@
                     "type": "tidelift"
                 }
             ],
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
-            },
-            "time": "2024-01-23T13:51:25+00:00"
+            "time": "2024-09-25T14:11:13+00:00"
         },
         {
             "name": "symfony/config",
@@ -7982,12 +7429,6 @@
                     "type": "tidelift"
                 }
             ],
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
-            },
             "time": "2022-07-20T09:59:04+00:00"
         },
         {
@@ -8060,12 +7501,6 @@
                     "type": "tidelift"
                 }
             ],
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
-            },
             "time": "2022-06-27T13:16:42+00:00"
         },
         {
@@ -8146,12 +7581,6 @@
                     "type": "tidelift"
                 }
             ],
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
-            },
             "time": "2022-08-03T12:57:57+00:00"
         },
         {
@@ -8221,12 +7650,6 @@
                     "type": "tidelift"
                 }
             ],
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
-            },
             "time": "2022-10-03T15:15:11+00:00"
         },
         {
@@ -8296,12 +7719,6 @@
                     "type": "tidelift"
                 }
             ],
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
-            },
             "time": "2022-05-20T08:49:14+00:00"
         },
         {
@@ -8370,12 +7787,6 @@
                     "type": "tidelift"
                 }
             ],
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
-            },
             "time": "2022-07-29T07:35:46+00:00"
         },
         {
@@ -8460,12 +7871,6 @@
                     "type": "tidelift"
                 }
             ],
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
-            },
             "time": "2024-09-09T11:45:10+00:00"
         },
         {
@@ -8548,26 +7953,20 @@
                     "type": "tidelift"
                 }
             ],
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
-            },
             "time": "2024-09-09T11:45:10+00:00"
         },
         {
             "name": "symfony/string",
-            "version": "v6.4.12",
+            "version": "v6.4.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/string.git",
-                "reference": "f8a1ccebd0997e16112dfecfd74220b78e5b284b"
+                "reference": "73a5e66ea2e1677c98d4449177c5a9cf9d8b4c6f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/string/zipball/f8a1ccebd0997e16112dfecfd74220b78e5b284b",
-                "reference": "f8a1ccebd0997e16112dfecfd74220b78e5b284b",
+                "url": "https://api.github.com/repos/symfony/string/zipball/73a5e66ea2e1677c98d4449177c5a9cf9d8b4c6f",
+                "reference": "73a5e66ea2e1677c98d4449177c5a9cf9d8b4c6f",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -8630,7 +8029,7 @@
                 "utf8"
             ],
             "support": {
-                "source": "https://github.com/symfony/string/tree/v6.4.12"
+                "source": "https://github.com/symfony/string/tree/v6.4.15"
             },
             "funding": [
                 {
@@ -8646,26 +8045,20 @@
                     "type": "tidelift"
                 }
             ],
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
-            },
-            "time": "2024-09-20T08:15:52+00:00"
+            "time": "2024-11-13T13:31:12+00:00"
         },
         {
             "name": "symfony/var-exporter",
-            "version": "v6.4.9",
+            "version": "v6.4.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-exporter.git",
-                "reference": "f9a060622e0d93777b7f8687ec4860191e16802e"
+                "reference": "0f605f72a363f8743001038a176eeb2a11223b51"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-exporter/zipball/f9a060622e0d93777b7f8687ec4860191e16802e",
-                "reference": "f9a060622e0d93777b7f8687ec4860191e16802e",
+                "url": "https://api.github.com/repos/symfony/var-exporter/zipball/0f605f72a363f8743001038a176eeb2a11223b51",
+                "reference": "0f605f72a363f8743001038a176eeb2a11223b51",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -8719,7 +8112,7 @@
                 "serialize"
             ],
             "support": {
-                "source": "https://github.com/symfony/var-exporter/tree/v6.4.9"
+                "source": "https://github.com/symfony/var-exporter/tree/v6.4.13"
             },
             "funding": [
                 {
@@ -8735,13 +8128,7 @@
                     "type": "tidelift"
                 }
             ],
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
-            },
-            "time": "2024-06-24T15:53:56+00:00"
+            "time": "2024-09-25T14:18:03+00:00"
         },
         {
             "name": "webflo/drupal-finder",
@@ -8792,12 +8179,6 @@
             "support": {
                 "issues": "https://github.com/webflo/drupal-finder/issues",
                 "source": "https://github.com/webflo/drupal-finder/tree/1.3.1"
-            },
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
             },
             "time": "2024-06-28T13:45:36+00:00"
         },
@@ -8863,12 +8244,6 @@
                 "issues": "https://github.com/webmozarts/assert/issues",
                 "source": "https://github.com/webmozarts/assert/tree/1.11.0"
             },
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
-            },
             "time": "2022-06-03T18:03:27+00:00"
         },
         {
@@ -8926,12 +8301,6 @@
                 "source": "https://github.com/webmozart/path-util/tree/2.3.0"
             },
             "abandoned": "symfony/filesystem",
-            "transport-options": {
-                "ssl": {
-                    "verify_peer": false,
-                    "allow_self_signed": true
-                }
-            },
             "time": "2015-12-17T08:42:14+00:00"
         }
     ],
