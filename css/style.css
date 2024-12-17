@@ -91,6 +91,9 @@ section.region-secondary-menu {
     margin-left: 0px;
     margin-right: 0px;
 }
+section.region-secondary-menu .menu--account ul.navbar-nav{
+    width: 85px;
+}
 /* Remove border from Bootstrap Barrio sidebar block */
 .sidebar .block {
     border: none;
