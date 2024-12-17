@@ -42,6 +42,10 @@ table.table tr th {
     color: #333;
     border: none;
 }
+table tr th, table tr th a, table tr th a:hover, table tr th a:focus {
+    color: #0071b8;
+    font-weight: bold;
+}
 .page-item.active .page-link {
     cursor: default;
     background-color: #337ab7;
