@@ -8,6 +8,8 @@ global-styling:
       css/nrel.application.css: {}
       css/style.css: {}
       css/colors.css: {}
+  dependencies:
+    - core/jquery
 bootstrap:
   js:
     /libraries/bootstrap/dist/js/bootstrap.bundle.min.js: {}
