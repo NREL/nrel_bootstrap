@@ -149,7 +149,7 @@ function nrel_bootstrap_preprocess_nrel_bootstrap_card(&$variables) {
                     $variables['heading_attributes']['aria-controls'] =  preg_replace('/^#/', '', $variables['target']);
                     $variables['heading_attributes']['aria-expanded'] = !$variables['collapsed'] ? 'true' : 'false';
                     $variables['heading_attributes']['aria-pressed'] = !$variables['collapsed'] ? 'true' : 'false';
-                    $variables['heading_attributes']['data-toggle'] = 'collapse';
+                    $variables['heading_attributes']['data-bs-toggle'] = 'collapse';
                     $variables['heading_attributes']['role'] = 'button';
                 }
             }
