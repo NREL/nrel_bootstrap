@@ -87,12 +87,16 @@ label[class$="-label"] {
 input.form-submit {
     width: auto;
 }
-section.region-secondary-menu {
+ection.region-secondary-menu {
     margin-left: 0px;
     margin-right: 0px;
 }
+section.region-secondary-menu nav {
+    padding-left: 0px;
+    padding-right: 0px;
+}
 section.region-secondary-menu .menu--account ul.navbar-nav{
-    width: 85px;
+    width: 100%;
 }
 /* Remove border from Bootstrap Barrio sidebar block */
 .sidebar .block {
@@ -252,6 +256,10 @@ form .form-type-textarea {
 }
 
 /* Override Bootstrap Barrio nav */
+.program-header .navbar-light .navbar-nav > li > a.is-active, .program-header .navbar-light .navbar-nav > li > a.is-active:hover, .program-header .navbar-light .navbar-nav > li > a.is-active:focus {
+    background-color: #5E6A71;
+    color: #fff;
+}
 .nav-pills > li.active > a {
     color: #fff;
     background-color: #0079c2;
