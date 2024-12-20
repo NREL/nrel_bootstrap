@@ -96,11 +96,11 @@ section.region-secondary-menu nav {
     padding-right: 0px;
 }
 section.region-secondary-menu .menu--account ul.navbar-nav {
-    width: 85px;
+    width: 100%;
 }
 @media (min-width: 768px) {
     section.region-secondary-menu .menu--account ul.navbar-nav {
-        width: 100%;
+        width: 85px;
     }
 }
 /* Remove border from Bootstrap Barrio sidebar block */

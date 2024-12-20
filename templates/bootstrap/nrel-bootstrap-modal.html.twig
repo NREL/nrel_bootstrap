@@ -64,7 +64,7 @@
         {%
           set description_classes = [
           'help-block',
-          description and description.position == 'invisible' ? 'sr-only',
+          description and description.position == 'invisible' ? 'visually-hidden-focusable',
         ]
         %}
         <div{{ body_attributes.addClass(body_classes) }}>
