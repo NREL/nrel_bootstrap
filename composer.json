@@ -27,12 +27,11 @@
         }
     },
     "require": {
-        "drupal/bootstrap_layouts": "^5.1",
-        "drupal/bootstrap_barrio": "~5.1.0",
+        "drupal/bootstrap_layouts": "^5.4",
+        "drupal/bootstrap_barrio": "^5.1",
         "nrel/nrel_app_template_bootstrap4": "dev-master"
     },
     "require-dev": {
-        "drupal/console": "~1",
         "drush/drush": "*"
     },
     "repositories": {
