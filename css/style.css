@@ -301,9 +301,6 @@ nav-tabs li > a:hover {
 .accordion .accordion-item h2.accordion-header {
     margin-top: 0px;
 }
-.ui-accordion .ui-accordion-header {
-    margin-bottom: 12px;
-}
 .accordion .accordion-item {
     margin-bottom: 12px;
     border-color: #0071B8;
