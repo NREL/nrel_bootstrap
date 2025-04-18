@@ -1,0 +1,1 @@
+The JS files will be copied from the nrel_app_template_bootstrap4 template into this folder on composer install or conmposer update.
