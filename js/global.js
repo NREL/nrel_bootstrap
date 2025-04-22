@@ -9,9 +9,8 @@
 
   Drupal.behaviors.nrel_bootstrap = {
     attach: function (context, settings) {
-      $('[data-bs-toggle="tooltip"]').each(function() {
-        var tooltip = new bootstrap.Tooltip($(this), options);
-      });
+      const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+      const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
       /* The Views Bootstrap accordions are missing the collapsed class when the page is first loaded. This is
        * possibly a side-effect of using a template override to allow Views Bootstrap accordions to work with BS5 - @see
        * https://www.drupal.org/project/views_bootstrap/issues/3168271 and
