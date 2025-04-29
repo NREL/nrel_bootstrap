@@ -1,7 +1,7 @@
 name: NREL Bootstrap
 type: theme
 description: 'NREL Bootstrap Barrio SubTheme.'
-core_version_requirement: ^11
+core_version_requirement: ^10 | ^11
 version: '11.1'
 base theme: bootstrap_barrio
 
