@@ -1275,12 +1275,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:NREL/nrel-app-template-bootstrap4.git",
-                "reference": "533e0bcfd65a12eefeededcae4de4098971916cb"
+                "reference": "b86cf9ca9c32bc159dec9821075097072ac5c00d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NREL/nrel-app-template-bootstrap4/zipball/533e0bcfd65a12eefeededcae4de4098971916cb",
-                "reference": "533e0bcfd65a12eefeededcae4de4098971916cb",
+                "url": "https://api.github.com/repos/NREL/nrel-app-template-bootstrap4/zipball/b86cf9ca9c32bc159dec9821075097072ac5c00d",
+                "reference": "b86cf9ca9c32bc159dec9821075097072ac5c00d",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -1314,7 +1314,7 @@
                     "allow_self_signed": true
                 }
             },
-            "time": "2025-03-27T18:59:29+00:00"
+            "time": "2025-07-21T22:39:17+00:00"
         },
         {
             "name": "pear/archive_tar",
