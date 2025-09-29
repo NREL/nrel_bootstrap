@@ -394,3 +394,7 @@ nav-tabs li > a:hover {
   height: 15px;
   width: 15px;
 }
+/* Override Bootstrap Barrio alerts to not display alerts fixed to the bottom of the screen */
+.alert-wrapper {
+    position: initial;
+}
