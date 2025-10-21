@@ -42,7 +42,6 @@
   ]
 %}
 <div{{ attributes.addClass(classes) }}>
-
   {# Heading #}
   {% if heading %}
     {% block heading %}
@@ -74,7 +73,7 @@
     {%
       set description_classes = [
         'help-block',
-        description and description.position == 'invisible' ? 'visually-hidden-focusable',
+        description and description_display == 'invisible' ? 'visually-hidden-focusable',
       ]
     %}
 
@@ -88,12 +87,12 @@
       <div class="collapse" id="{{ target }}">
     {% endif %}
     <div{{ body_attributes.addClass(body_classes) }}>
-      {% if description and description.position == 'before' %}
-        <p{{ description.attributes.addClass(description_classes) }}>{{ description.content }}</p>
+      {% if description and description_display == 'before' %}
+        <p{{ description.attributes.addClass(description_classes) }}>{{ description }}</p>
       {% endif %}
       {{ body }}
-      {% if description and description.position == 'after' or description.position == 'invisible' %}
-        <p{{ description.attributes.addClass(description_classes) }}>{{ description.content }}</p>
+      {% if description and description_display == 'after' or description_display == 'invisible' %}
+        <p{{ description.attributes.addClass(description_classes) }}>{{ description }}</p>
       {% endif %}
     </div>
     {% if collapsible %}
