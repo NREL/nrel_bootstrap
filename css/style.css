@@ -308,7 +308,7 @@ nav-tabs li > a:hover {
     display: none;
 }
 .accordion .accordion-header .accordion-button {
-    padding: 0;
+    padding: 10px;
     background-color: white;
 }
 .accordion .accordion-header .accordion-button::after {
