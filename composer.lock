@@ -1277,13 +1277,13 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "git@github.com:NREL/nrel-app-template-bootstrap4.git",
-                "reference": "b86cf9ca9c32bc159dec9821075097072ac5c00d"
+                "url": "git@github.com:NREL/ysi.ml.nrel.gov-frontend.git",
+                "reference": "bac047b0d8b59a4ea5df05d4e112c899aae5f3db"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NREL/nrel-app-template-bootstrap4/zipball/b86cf9ca9c32bc159dec9821075097072ac5c00d",
-                "reference": "b86cf9ca9c32bc159dec9821075097072ac5c00d",
+                "url": "https://api.github.com/repos/NREL/ysi.ml.nrel.gov-frontend/zipball/bac047b0d8b59a4ea5df05d4e112c899aae5f3db",
+                "reference": "bac047b0d8b59a4ea5df05d4e112c899aae5f3db",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -1292,7 +1292,6 @@
                     }
                 ]
             },
-            "default-branch": true,
             "type": "library",
             "notification-url": "https://packagist-repo.nrel.gov/nrel/communications/downloads/",
             "license": [
@@ -1308,8 +1307,7 @@
             "description": "NREL.gov App branded theme for Bootstrap 4",
             "homepage": "https://github.com/NREL/nrel-app-template-bootstrap4",
             "support": {
-                "issues": "https://github.com/NREL/nrel-app-template-bootstrap4/issues",
-                "source": "https://github.com/NREL/nrel-app-template-bootstrap4/tree/master"
+                "issues": "https://github.com/NREL/nrel-app-template-bootstrap4/issues"
             },
             "transport-options": {
                 "ssl": {
@@ -1317,7 +1315,7 @@
                     "allow_self_signed": true
                 }
             },
-            "time": "2025-07-21T22:39:17+00:00"
+            "time": "2022-06-28T21:11:27+00:00"
         },
         {
             "name": "pear/archive_tar",
