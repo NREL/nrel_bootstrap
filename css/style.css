@@ -189,12 +189,12 @@ form label.form-required:after, form h2.form-required:after {
      color: #333;
 }
 header .logo {
-    background: url("../img/nrel-logo-2025.svg") no-repeat center;
+    background: url("../img/nlr.png") no-repeat center;
 }
 @media (min-width: 768px) {
     header .logo {
         /* background: url("{{f:75212}}") no-repeat left; */
-        background: url("../img/nrel-logo-2025.svg") no-repeat left;
+        background: url("../img/nnlr.png") no-repeat left;
     }
 }
 
