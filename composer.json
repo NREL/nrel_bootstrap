@@ -9,12 +9,7 @@
     "authors": [
         {
             "name": "Shaun Laws (slaws)",
-            "email": "shaun.laws@nrel.gov",
-            "role": "Co-maintainer"
-        },
-        {
-            "name": "Christian Modern (cmodern)",
-            "email": "christian.modern@nrel.gov",
+            "email": "shaun.laws@nlr.gov",
             "role": "Co-maintainer"
         }
     ],
