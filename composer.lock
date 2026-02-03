@@ -1275,12 +1275,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:NatLabRockies/nrel-app-template-bootstrap4.git",
-                "reference": "c391775fdb4aa176fa8b5d7192347e6677983f74"
+                "reference": "15064abbf15f5c03c55803347a266fd84517dc2b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NatLabRockies/nrel-app-template-bootstrap4/zipball/c391775fdb4aa176fa8b5d7192347e6677983f74",
-                "reference": "c391775fdb4aa176fa8b5d7192347e6677983f74",
+                "url": "https://api.github.com/repos/NatLabRockies/nrel-app-template-bootstrap4/zipball/15064abbf15f5c03c55803347a266fd84517dc2b",
+                "reference": "15064abbf15f5c03c55803347a266fd84517dc2b",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -1314,7 +1314,7 @@
                     "allow_self_signed": true
                 }
             },
-            "time": "2026-01-29T21:48:36+00:00"
+            "time": "2026-02-02T21:31:19+00:00"
         },
         {
             "name": "pear/archive_tar",
