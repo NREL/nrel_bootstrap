@@ -5,16 +5,11 @@
     "license": "GPL-2.0",
     "prefer-stable": true,
     "minimum-stability": "dev",
-    "homepage": "https://github.com/NREL/nrel_bootstrap",
+    "homepage": "https://github.com/NatLabRockies/nrel_bootstrap",
     "authors": [
         {
             "name": "Shaun Laws (slaws)",
             "email": "shaun.laws@nrel.gov",
-            "role": "Co-maintainer"
-        },
-        {
-            "name": "Christian Modern (cmodern)",
-            "email": "christian.modern@nrel.gov",
             "role": "Co-maintainer"
         }
     ],
