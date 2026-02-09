@@ -159,34 +159,32 @@
                         {% endif %}
                         </li>
                     {% endif %}
-                    {% apply spaceless %}
-                        {% for key,menu_data in mobile_menu_data %}
-                        <li><span> {{ menu_data.title  }}</span>
-                            {% if menu_data.topics is not empty  %}
-                            <ul>
-                                {% for topic_key,topic_content in menu_data.topics %}
-                                <li class="topic-menu">
-                                    <span>
-                                        <div class="topic-title"> {{ topic_content['title'] }}</div>
-                                        {% if topic_content.subtopics is not empty %}
-                                        {% for subtopic_key,subtopic_content in topic_content.subtopics %}
-                                            <div class="subtopic-title">
-                                            <a href="{{ path('entity.node.canonical', {'node': subtopic_key}) }}">{{ subtopic_content.title }}</a>
-                                            </div>
-                                        {% endfor %}
-                                        {% endif %}
-                                    </span>
-                                </li>
-                                {% endfor %}
-                            </ul>
-                            {% endif %}
-                        </li>
-                        {% endfor %}
+                    {% for key,menu_data in mobile_menu_data %}
+                    <li><span> {{ menu_data.title  }}</span>
+                        {% if menu_data.topics is not empty  %}
+                        <ul>
+                            {% for topic_key,topic_content in menu_data.topics %}
+                            <li class="topic-menu">
+                                <span>
+                                    <div class="topic-title"> {{ topic_content['title'] }}</div>
+                                    {% if topic_content.subtopics is not empty %}
+                                    {% for subtopic_key,subtopic_content in topic_content.subtopics %}
+                                        <div class="subtopic-title">
+                                        <a href="{{ path('entity.node.canonical', {'node': subtopic_key}) }}">{{ subtopic_content.title }}</a>
+                                        </div>
+                                    {% endfor %}
+                                    {% endif %}
+                                </span>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                        {% endif %}
+                    </li>
+                    {% endfor %}
 
-                        <li>
-                        <span id="mobile-appended-content"></span>
-                        </li>
-                    {% endapply %}
+                    <li>
+                    <span id="mobile-appended-content"></span>
+                    </li>
                     </ul>
                 </nav><!--mobile-menu-->
              </div><!--container-->
