@@ -1573,13 +1573,13 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "git@github.com:NREL/ysi.ml.nrel.gov-frontend.git",
-                "reference": "bac047b0d8b59a4ea5df05d4e112c899aae5f3db"
+                "url": "git@github.com:NatLabRockies/nrel-app-template-bootstrap4.git",
+                "reference": "e9a56591fee5450fa21375793537216bc0cf3d6d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NREL/ysi.ml.nrel.gov-frontend/zipball/bac047b0d8b59a4ea5df05d4e112c899aae5f3db",
-                "reference": "bac047b0d8b59a4ea5df05d4e112c899aae5f3db",
+                "url": "https://api.github.com/repos/NatLabRockies/nrel-app-template-bootstrap4/zipball/e9a56591fee5450fa21375793537216bc0cf3d6d",
+                "reference": "e9a56591fee5450fa21375793537216bc0cf3d6d",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -1588,6 +1588,7 @@
                     }
                 ]
             },
+            "default-branch": true,
             "type": "library",
             "notification-url": "https://packagist-repo.nrel.gov/nrel/communications/downloads/",
             "license": [
@@ -1603,7 +1604,8 @@
             "description": "NREL.gov App branded theme for Bootstrap 4",
             "homepage": "https://github.com/NREL/nrel-app-template-bootstrap4",
             "support": {
-                "issues": "https://github.com/NREL/nrel-app-template-bootstrap4/issues"
+                "issues": "https://github.com/NREL/nrel-app-template-bootstrap4/issues",
+                "source": "https://github.com/NatLabRockies/nrel-app-template-bootstrap4/tree/master"
             },
             "transport-options": {
                 "ssl": {
@@ -1611,7 +1613,7 @@
                     "allow_self_signed": true
                 }
             },
-            "time": "2022-06-28T21:11:27+00:00"
+            "time": "2026-02-10T21:29:35+00:00"
         },
         {
             "name": "paragonie/random_compat",

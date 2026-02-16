@@ -16,36 +16,33 @@
 <header id="banner" class="header" role="banner" aria-label="{{ 'Site header'|t}}">
   <div class="banner-logo">
     <div class="container app">
-      <div class="row">
+      <div class="row align-items-center">
 
         <div class="col-md-6 col-xl-4 order-md-2">
-          <a href="https://www.nrel.gov"><div class="logo"><img src="/themes/contrib/nrel_bootstrap/img/nlr.png" class="sr-only" alt="National Laboratory of the Rockies" /></div></a>
+          <a href="https://www.nlr.gov"><div class="logo"><img src="/themes/contrib/nrel_bootstrap/img/nlr.png" class="sr-only" alt="National Laboratory of the Rockies" /></div></a>
         </div>
 
         <div class="col-12 d-md-none">
-          <!-- Start MOBILE collapsible site search bar -->
+          <!-- MOBILE collapsible site search bar -->
           <div class="site-search-bar">
             <div class="container">
               <div class="row">
                 <div class="col d-flex justify-content-center mb-1">
-									<nav class="navbar navbar-light" aria-label="Search">
+									<nav class="navbar navbar-light" aria-label="Site search">
 										<div id="searchbar-collapse-mobile" class="navbar-collapse collapse">
                       <form
-                              method="get"
-                              class="site-searchbar-form form-inline ThunderstoneForm"
-                              action="https://search4.nrel.gov/texis/search/"
-                              id="ThunderstoneSearchFormMobile">
-
-                        <input type="hidden" name="pr" value="metanrel" />
+                        method="get"
+                        class="site-searchbar-form form-inline"
+                        action="/search"
+                        id="site-search-form-mobile">
                         <div class="form-group">
-                          <label for="querymobile" class="visually-hidden-focusable">Search site</label>
+                          <label for="querymobile" class="sr-only">Search</label>
                           <input
                                   type="search"
-                                  id="query" name="query"
+                                  id="querymobile" name="query"
                                   maxlength="2047"
-                                  placeholder="Search site"
-                                  class="form-control"
-                                  aria-label="Search site">
+                                  placeholder="Search"
+                                  class="form-control">
                           <button type="submit" class="btn btn-default">Search</button>
                         </div>
                       </form>
