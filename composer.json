@@ -1,6 +1,6 @@
 {
     "name": "nrel/nrel_bootstrap",
-    "description": "NREL.gov APP branded theme for Bootstrap 3 and 4",
+    "description": "NLR.gov APP branded theme for Bootstrap 3, 4 and 5",
     "type": "drupal-theme",
     "license": "GPL-2.0",
     "prefer-stable": true,
@@ -9,7 +9,7 @@
     "authors": [
         {
             "name": "Shaun Laws (slaws)",
-            "email": "shaun.laws@nrel.gov",
+            "email": "shaun.laws@nlr.gov",
             "role": "Co-maintainer"
         }
     ],
@@ -65,7 +65,7 @@
         ]
     },
     "support": {
-        "issues": "https://github.com/NREL/nrel_bootstrap/issues"
+        "issues": "https://github.com/NatLabRockies/nrel_bootstrap/issues"
     },
     "config": {
         "allow-plugins": {
