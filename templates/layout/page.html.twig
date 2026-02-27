@@ -192,42 +192,39 @@
             </div><!--container-->
         </div><!--program-header-->
         <!-- mobile search button -->
-        <button type="button" class="custom-toggler site-navbar-toggler site-searchbar-toggle d-md-none" data-toggle="collapse" data-target="#searchbar-collapse-mobile" aria-expanded="false" aria-label="Toggle Search">
-            <span class="fas fa-search"></span><span class="sr-only">Toggle Search</span>
+        <button type="button" class="custom-toggler site-navbar-toggler site-searchbar-toggle d-md-none" data-bs-toggle="collapse" data-bs-target="#searchbar-collapse-mobile" aria-expanded="false" aria-label="Toggle Search">
+            <span class="fas fa-search"></span><span class="visually-hidden-focusable">Toggle Search</span>
         </button>
-        <!-- Start collapsible site search bar -->
+          <!-- Start Desktop collapsible site search bar -->
         <div class="site-search-bar">
             <div class="container">
                 <div class="row">
-                    <div class="col">
-											  <nav class="navbar navbar-light" aria-label="Search">
-                            <div class="navbar-collapse collapse" id="searchbar-collapse">
+                    <div class="col>
+                        <nav class="navbar navbar-light" aria-label="Site search">
+                            <div id="searchbar-collapse" class="navbar-collapse collapse">
                                 <form
-                                        method="get"
-                                        class="site-searchbar-form form-inline ThunderstoneForm"
-                                        action="https://search4.nrel.gov/texis/search/"
-                                        id="ThunderstoneSearchFormMobile">
-
-                                    <input type="hidden" name="pr" value="metanrel" />
+                                    method="get"
+                                    class="site-searchbar-form form-inline"
+                                    action="/search"
+                                    id="site-search-form">
                                     <div class="form-group">
-                                        <label for="querymobile" class="sr-only">Search site</label>
+                                        <label for="querymobile" class="sr-only">Search</label>
                                         <input
-                                                type="search"
-                                                id="querymobile" name="query"
-                                                maxlength="2047"
-                                                placeholder="Search site"
-                                                class="form-control"
-                                                aria-label="Search site">
-                                        <button type="submit" class="btn btn-default">Search</button>
+                                            type="search"
+                                            id="query" name="query"
+                                            maxlength="2047"
+                                            placeholder="Search"
+                                            class="form-control">
+                                    <button type="submit" class="btn btn-default">Search</button>
                                     </div>
                                 </form>
                             </div>
-                        </nav>
+                        </nav>    
                     </div>
                 </div>
             </div>
         </div>
-        <!-- End collapsible site search bar -->
+        <!-- End MOBILE collapsible site search bar -->
         {% if page.highlighted %}
             <div class="highlighted">
                 <aside class="{{ container }} section clearfix" role="complementary">
