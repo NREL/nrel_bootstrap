@@ -37,7 +37,7 @@
         },
         "assets": {
             "type": "composer",
-            "url": "https://packagist-repo.nrel.gov/nrel/communications/",
+            "url": "https://packagist-repo.nrel.gov/natlabrockies/communications/",
             "options" : {
                 "ssl" : {
                     "verify_peer": false,
