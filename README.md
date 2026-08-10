@@ -1,3 +1,13 @@
+# ARCHIVED - This repository has moved
+
+This repository has been migrated to GitHub Enterprise:
+
+**https://github.nrel.gov/drupal/nrel_bootstrap**
+
+All future development happens there. This repo is archived and read-only.
+
+---
+
 # NREL Bootstrap
 
 NREL Bootstrap is a Bootstrap-based theme that implements the NLR Application standard theme - https://github.com/NatLabRockies/nrel-app-template-bootstrap4.
